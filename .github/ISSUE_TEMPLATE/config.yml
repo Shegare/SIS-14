@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Request a Feature
-    url: https://discord.gg/rGvu9hKffJ
-    about: Submit feature requests on our Discord server (https://discord.gg/rGvu9hKffJ).
+- name: Предложение
+  url: https://discord.gg/ZU2wCTA7gt
+  about: Свои предложения можете оставлять в соответствующем канале Discord.
+- name: Сообщить об уязвимости
+  url: https://discord.gg/ZU2wCTA7gt
+  about: Пожалуйста, сообщайте о серьезных эксплойтах и уязвимостях безопасности @shegare (discord id 479338527163678726) в Discord.
