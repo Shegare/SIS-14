@@ -34,7 +34,7 @@ Skill Issue Station - форк основанный на репозитории 
 
 ## Лицензия
 
-Оригинальный код Space Station 14, разработанный [Space Wizards Federation](https://github.com/space-wizards/space-station-14), распространяется под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Новый код и модификации, созданные для этого репозитория, распространяются под лицензией [AGPL-3.0-or-later](https://github.com/Shegare/SIS-14/blob/master/AGPL-3.0-or-later_LICENSE.txt). Файлы, лицензированные под **AGPL-3.0-or-later**, содержат соответствующий комментарий в начале файла.
+Оригинальный код Space Station 14, разработанный [Space Wizards Federation](https://github.com/space-wizards/space-station-14), распространяется под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Новый код и модификации, созданные для этого репозитория, распространяются под лицензией [AGPL-3.0-or-later](https://github.com/Shegare/SIS-14/blob/master/LICENSE_AGPL.txt). Файлы, лицензированные под **AGPL-3.0-or-later**, содержат соответствующий комментарий в начале файла.
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
 
