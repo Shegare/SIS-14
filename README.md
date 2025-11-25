@@ -4,7 +4,7 @@
 
 Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
-Skill Issue Station - форк, основанный на репозитории Space Axolotl 14.
+Skill Issue Station - форк основанный на репозитории [Space Axolotl](https://github.com/lzk228/space-axolotl-14).
 
 ## Наши ссылки
 
@@ -29,11 +29,12 @@ Skill Issue Station - форк, основанный на репозитории
 
 ## Контрибьютинг
 
-Если Вы желаете помочь в улучшении репозитория, решением проблем или создания нового контента, мы рады принять вклад от любого человека. Заходите в Discord, если хотите помочь. Не бойтесь просить о помощи!
+Если вы желаете помочь в улучшении репозитория, решением проблем или создания нового контента, мы рады принять вклад от любого человека.
+Также присоединяйтесь в наше Discord сообщество, если хотите помочь. Не бойтесь просить о помощи!
 
 ## Лицензия
 
-Оригинальный код Space Station 14, разработанный [Space Wizards Federation](https://github.com/space-wizards/space-station-14), распространяется под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Весь новый код и модификации, созданные для этого репозитория, распространяются под лицензией **AGPL-3.0-or-later**. В начале лицензируемых файлов указан комментарий, который служит напоминанием о применимых условиях использования кода. Полные тексты лицензий находятся в каталоге `LICENSES/`.
+Оригинальный код Space Station 14, разработанный [Space Wizards Federation](https://github.com/space-wizards/space-station-14), распространяется под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Новый код и модификации, созданные для этого репозитория, распространяются под лицензией [AGPL-3.0-or-later](https://github.com/Shegare/SIS-14/blob/master/AGPL-3.0-or-later_LICENSE.txt). Файлы, лицензированные под **AGPL-3.0-or-later**, содержат соответствующий комментарий в начале файла.
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
 
