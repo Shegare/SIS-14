@@ -461,7 +461,7 @@ namespace Content.Server.Ghost
         }
 
         public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityCoordinates? spawnPosition = null,
-            bool canReturn = false, bool isAdminGhost = false) // SIS-AGhost
+            bool canReturn = false, bool isAdminGhost = false) // SIS-Auto_AGhost
         {
             if (!Resolve(mind, ref mind.Comp))
                 return null;
@@ -482,13 +482,13 @@ namespace Content.Server.Ghost
                 return null;
             }
 
-            // SIS-AGhost Start
+            // SIS-Auto_AGhost Start
             var ghost = SpawnAtPosition(
                 isAdminGhost
                     ? GameTicker.AdminObserverPrototypeName
                     : GameTicker.ObserverPrototypeName,
                 spawnPosition.Value);
-            // SIS-AGhost End
+            // SIS-Auto_AGhost End
 
             var ghostComponent = Comp<GhostComponent>(ghost);
 
