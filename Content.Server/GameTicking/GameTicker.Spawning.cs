@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2021-2025 Space Wizards Federation
+// SPDX-FileCopyrightText: 2025 SIS-14 contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
@@ -380,21 +385,21 @@ namespace Content.Server.GameTicking
         /// <summary>
         /// Causes the given player to join the current game as observer ghost. See also <see cref="SpawnObserver"/>
         /// </summary>
-        public void JoinAsObserver(ICommonSession player)
+        public void JoinAsObserver(ICommonSession player, bool isAdminGhost = false) // SIS-AGhost
         {
             // Can't spawn players with a dummy ticker!
             if (DummyTicker)
                 return;
 
             PlayerJoinGame(player);
-            SpawnObserver(player);
+            SpawnObserver(player, isAdminGhost); // SIS-AGhost
         }
 
         /// <summary>
         /// Spawns an observer ghost and attaches the given player to it. If the player does not yet have a mind, the
         /// player is given a new mind with the observer role. Otherwise, the current mind is transferred to the ghost.
         /// </summary>
-        public void SpawnObserver(ICommonSession player)
+        public void SpawnObserver(ICommonSession player, bool isAdminGhost = false) // SIS-AGhost
         {
             if (DummyTicker)
                 return;
@@ -410,7 +415,7 @@ namespace Content.Server.GameTicking
                 makeObserver = true;
             }
 
-            var ghost = _ghost.SpawnGhost(mind.Value);
+            var ghost = _ghost.SpawnGhost(mind.Value, isAdminGhost: isAdminGhost); // SIS-AGhost
             if (makeObserver)
                 _roles.MindAddRole(mind.Value, "MindRoleObserver");
 

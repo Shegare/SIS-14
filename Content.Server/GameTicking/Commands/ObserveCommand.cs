@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2020-2024 Space Wizards Federation
+// SPDX-FileCopyrightText: 2025 SIS-14 contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Administration.Managers;
 using Content.Shared.Administration;
 using Content.Shared.GameTicking;
@@ -41,7 +46,7 @@ namespace Content.Server.GameTicking.Commands
             if (ticker.PlayerGameStatuses.TryGetValue(player.UserId, out var status) &&
                 status != PlayerGameStatus.JoinedGame)
             {
-                ticker.JoinAsObserver(player);
+                ticker.JoinAsObserver(player, _adminManager.IsAdmin(player)); // SIS-AGhost
             }
             else
             {
