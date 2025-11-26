@@ -68,6 +68,10 @@
     radius: 6
     castShadows: false
     enabled: false
+  # SIS-Ghost_Speed_Up Start
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 24
+  # SIS-Ghost_Speed_Up End
 
 # proto for player ghosts specifically
 - type: entity
