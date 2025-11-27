@@ -21,6 +21,22 @@
     whitelist:
       tags:
         - Trash
+        # SIS-Trash_Bag_Buff Start
+        - BulletFoam
+        - CannonBall
+        - CartridgeAntiMateriel
+        - CartridgeCap
+        - CartridgeCaselessRifle
+        - CartridgeDebug
+        - CartridgeHeavyRifle
+        - CartridgeRocket
+        - Grenade
+        - NozzleBackTank
+        - ShellShotgun
+        - SpeedLoaderCap
+        - SpeedLoaderMagnum
+        - SyringeGunAmmo
+        # SIS-Trash_Bag_Buff End
   - type: UseDelay
     delay: 0.5
   - type: Tag
