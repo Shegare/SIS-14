@@ -6983,16 +6983,18 @@ entities:
       parent: 2
 - proto: ComputerShuttleCargo
   entities:
+  - uid: 952
+    components:
+    - type: Transform
+      pos: 2.5,11.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
   - uid: 938
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,10.5
-      parent: 2
-  - uid: 952
-    components:
-    - type: Transform
-      pos: 2.5,11.5
       parent: 2
 - proto: ComputerSurveillanceCameraMonitor
   entities:
