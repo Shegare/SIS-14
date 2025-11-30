@@ -87,6 +87,7 @@ holopad-cargo-salvage-bay = Снабжение — Утилизаторский 
 holopad-cargo-breakroom = Снабжение — Комната отдыха
 holopad-cargo-ats = Снабжение — АТС
 holopad-cargo-shuttle = Снабжение — Шаттл
+holopad-cargo-mining-shuttle = Снабжение — Шахтёрский шаттл
 holopad-cargo-mailroom = Снабжение — Почта
 # Engineering
 holopad-engineering-atmos-front = Атмос — Приёмная

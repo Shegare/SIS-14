@@ -98,6 +98,7 @@ holopad-cargo-salvage-bay = Cargo - Salvage Bay
 holopad-cargo-breakroom  = Cargo - Breakroom
 holopad-cargo-ats = Cargo - ATS
 holopad-cargo-shuttle = Cargo - Shuttle
+holopad-cargo-mining-shuttle = Cargo - Mining Shuttle
 holopad-cargo-mailroom = Cargo - Mailroom
 
 # Engineering
