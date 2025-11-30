@@ -925,6 +925,14 @@
 
 - type: entity
   parent: HolopadLongRange
+  id: HolopadCargoMiningShuttle
+  suffix: Salvage Shuttle
+  components:
+  - type: Label
+    currentLabel: holopad-cargo-mining-shuttle
+
+- type: entity
+  parent: HolopadLongRange
   id: HolopadCentCommEvacShuttle
   suffix: Evac Shuttle
   components:
