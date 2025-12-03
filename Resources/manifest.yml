@@ -1,5 +1,8 @@
 defaultWindowTitle: Space Station 14
-windowIconSet: /Textures/Logo/icon
-splashLogo: /Textures/Logo/logo-ru.png # RU-Localization
+
+# SIS-Logo Start
+windowIconSet: /Textures/Logo/icon-ru
+splashLogo: /Textures/Logo/logo-ru.png
+# SIS-Logo End
 
 # PJB PLEASE
