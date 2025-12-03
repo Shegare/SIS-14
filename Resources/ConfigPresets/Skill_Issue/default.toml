@@ -4,7 +4,7 @@ desc = "Этот сервер - попытка показать русскому
 maxplayers = 100
 soft_max_players = 50
 map_rotation = true
-role_timers = false
+role_timers = true
 
 [infolinks]
 bug_report = "https://github.com/Shegare/SIS-14/issues/new/choose"
