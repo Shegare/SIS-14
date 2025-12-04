@@ -64,8 +64,6 @@
       - EscapeShuttleCondition
       - StealCondition
   - type: DieCondition
-  - type: ObjectiveLimit
-    limit: 1
 
 #- type: entity
 #  parent: [BaseTraitorObjective, BaseLivingObjective]

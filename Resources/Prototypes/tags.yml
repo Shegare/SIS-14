@@ -159,7 +159,7 @@
   id: Bottle # Storage whitelist: ChemMaster, ChemBag, SmartFridge, ClothingBeltJanitor, ClothingBeltMedical, ClothingBeltPlant
 
 - type: Tag
-  id: BoxCardboard # CargoBounty: BountyCardboardBox. Storage whitelist: MailCart
+  id: BoxCardboard # CargoBounty: BountyCardboardBox
 
 - type: Tag
   id: BoxHug # ConstructionGraph: HugBot
@@ -465,7 +465,7 @@
   id: DockEmergency # Used bv EmergencyShuttleSystem for finding a priority FTL destination.
 
 - type: Tag
-  id: Document # A superset of Paper tag. Represents a paper-like entity with writing on it, but is not necessarily writeable itself. Storage whitelist: MailCart
+  id: Document # A superset of Paper tag. Represents a paper-like entity with writing on it, but is not necessarily writeable itself.
 
 - type: Tag
   id: DonkPocket # Storage whitelist: FoodBoxDonkpocket
@@ -581,7 +581,7 @@
   id: Flower # CargoBounty: flowerwreath. CargoBounty: BountyFlower
 
 - type: Tag
-  id: Folder # Storage whitelist: Bookshelf, NoticeBoard, MailCart
+  id: Folder # Storage whitelist: Bookshelf, NoticeBoard
 
 - type: Tag
   id: FoodSnack # Storage whitelist: CandyBucket, CandyBowl. ItemMapper: CandyBowl
@@ -966,12 +966,6 @@
   id: MopBasic # ItemMapper: JanitorialTrolley. ConstructionGraph: MoproachShoes
 
 - type: Tag
-  id: MothershipCoreGhostrole # spawn whitelist : SpawnPointGhostRoleMothershipCore
-
-- type: Tag
-  id: MothershipModule # Cyborg module category for evil xenoborg core
-
-- type: Tag
   id: Mouse # CargoBounty: BountyMouse
 
 - type: Tag
@@ -986,9 +980,6 @@
 
 - type: Tag
   id: NoConsoleSound # Blacklist on BaseComputer, StationMap. Tagged entity will not make sound when opening the UI.
-
-- type: Tag
-  id: NotGhostnadoWarpable # Prevents the entity from being selected via "Warp to most followed" ghost warp
 
 - type: Tag
   id: NozzleBackTank # Used by WeaponSprayNozzle to find a tagged entity for supplying ammo.
@@ -1025,16 +1016,13 @@
 ## P ##
 
 - type: Tag
-  id: PackageDelivery # ItemMapper: MailCart
-
-- type: Tag
   id: Packet # Storage whitelist: ClothingBeltChef
 
 - type: Tag
   id: Pancake # CargoBounty: BountyPancake
 
 - type: Tag
-  id: Paper # A writeable piece of paper. Subset of Document tag. SpecialDigestible: OrganMothStomach, OrganReptilianStomach. Storage whitelist: MailCart
+  id: Paper # A writeable piece of paper. Subset of Document tag. SpecialDigestible: OrganMothStomach, OrganReptilianStomach
 
 - type: Tag
   id: ParadoxCloneObjectiveBlacklist # objective entities with this tag don't get copied to paradox clones
@@ -1549,22 +1537,19 @@
 ## X ##
 
 - type: Tag
-  id: XenoborgGhostrole # spawn whitelist : SpawnPointGhostRoleXenoborg
+  id: XenoborgModuleEngi # Cyborg module category
 
 - type: Tag
-  id: XenoborgModuleEngi # Cyborg module category for evil engineer xenoborg
+  id: XenoborgModuleGeneric # Cyborg module category
 
 - type: Tag
-  id: XenoborgModuleGeneric # Cyborg module category for evil xenoborg
+  id: XenoborgModuleHeavy # Cyborg module category
 
 - type: Tag
-  id: XenoborgModuleHeavy # Cyborg module category for evil heavy xenoborg
+  id: XenoborgModuleScout # Cyborg module category
 
 - type: Tag
-  id: XenoborgModuleScout # Cyborg module category for evil scout xenoborg
-
-- type: Tag
-  id: XenoborgModuleStealth # Cyborg module category for evil stealth xenoborg
+  id: XenoborgModuleStealth # Cyborg module category
 
 ## Y ##
 ## Z ##

@@ -66,7 +66,7 @@ namespace Content.Server.PowerSink
                 if (!transform.Anchored)
                     continue;
 
-                _battery.ChangeCharge((entity, battery), networkLoad.NetworkLoad.ReceivingPower * frameTime);
+                _battery.ChangeCharge(entity, networkLoad.NetworkLoad.ReceivingPower * frameTime, battery);
 
                 var currentBatteryThreshold = battery.CurrentCharge / battery.MaxCharge;
 

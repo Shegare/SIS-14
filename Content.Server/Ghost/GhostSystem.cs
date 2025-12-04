@@ -338,8 +338,7 @@ namespace Content.Server.Ghost
             if (_followerSystem.GetMostGhostFollowed() is not {} target)
                 return;
 
-            // If there is a ghostnado happening you almost definitely wanna join it, so we automatically follow instead of just warping.
-            _followerSystem.StartFollowingEntity(uid, target);
+            WarpTo(uid, target);
         }
 
         private void WarpTo(EntityUid uid, EntityUid target)

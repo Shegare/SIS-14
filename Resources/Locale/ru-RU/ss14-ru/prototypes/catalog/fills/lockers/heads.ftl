@@ -38,5 +38,5 @@ ent-LockerHeadOfSecurityFilledHardsuit = { ent-LockerHeadOfSecurity }
     .suffix = Заполненный, Скафандр
     .desc = { ent-LockerHeadOfSecurity.desc }
 ent-LockerFreezerVaultFilled = { ent-LockerFreezerBase }
-    .suffix = Хранилище, Заполненный
+    .suffix = Хранилище, Закрыт
     .desc = { ent-LockerFreezerBase.desc }

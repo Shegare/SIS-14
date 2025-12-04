@@ -280,14 +280,14 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/energycrossbow_shoot.ogg
+      path: /Audio/Weapons/click.ogg
   - type: BallisticAmmoProvider
     whitelist:
       tags:
       - BulletFoam
     capacity: 1
     soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/energycrossbow_reload.ogg
+      path: /Audio/Items/bow_pull.ogg
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -533,6 +533,7 @@
   parent: BeachBall
   id: EvilBeachBall
   suffix: evil
+  name: beach ball
   description: Someone's drawn ">:3c" on the side of this beach ball in indelible ink.
   components:
     - type: LaunchOnTrigger
