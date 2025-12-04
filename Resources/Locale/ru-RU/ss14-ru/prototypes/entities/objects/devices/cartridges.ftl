@@ -1,5 +1,3 @@
-ent-BasePDACartridge = { ent-BaseItem }
-    .desc = { ent-BaseItem.desc }
 ent-NotekeeperCartridge = картридж Заметки
     .desc = Программа для хранения заметок.
 ent-NanoTaskCartridge = картридж НаноДела

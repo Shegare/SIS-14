@@ -27,8 +27,6 @@
   - type: Sprite
     sprite: Objects/Specific/Robotics/borgmodule.rsi
   - type: BorgModule
-    borgFitTypes:
-    - borg-type-all
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
   - type: StaticPrice
@@ -68,9 +66,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-salvage
   - type: Tag
     tags:
     - BorgModuleCargo
@@ -96,9 +91,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-engineer
   - type: Tag
     tags:
     - BorgModuleEngineering
@@ -126,9 +118,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-janitor
   - type: Tag
     tags:
     - BorgModuleJanitor
@@ -156,9 +145,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-medical
   - type: Tag
     tags:
     - BorgModuleMedical
@@ -186,9 +172,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-generic
   - type: Tag
     tags:
     - BorgModuleScience
@@ -216,9 +199,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-service
   - type: Tag
     tags:
     - BorgModuleService
@@ -246,9 +226,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-syndicate
   - type: Tag
     tags:
     - BorgModuleSyndicate
@@ -277,9 +254,6 @@
   parent: BaseBorgModule
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - borg-type-syndicate-assault
   - type: Tag
     tags:
     - BorgModuleSyndicateAssault
@@ -307,9 +281,6 @@
   parent: BaseBorgModule
   id: BaseXenoborgModuleGeneric
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - xenoborg-type-all
   - type: Tag
     tags:
     - XenoborgModuleGeneric
@@ -337,9 +308,6 @@
   parent: BaseBorgModule
   id: BaseXenoborgModuleEngi
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - xenoborg-type-engi
   - type: Tag
     tags:
     - XenoborgModuleEngi
@@ -367,9 +335,6 @@
   id: BaseXenoborgModuleHeavy
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - xenoborg-type-heavy
   - type: Tag
     tags:
     - XenoborgModuleHeavy
@@ -397,9 +362,6 @@
   id: BaseXenoborgModuleScout
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - xenoborg-type-scout
   - type: Tag
     tags:
     - XenoborgModuleScout
@@ -427,9 +389,6 @@
   id: BaseXenoborgModuleStealth
   abstract: true
   components:
-  - type: BorgModule
-    borgFitTypes:
-    - xenoborg-type-stealth
   - type: Tag
     tags:
     - XenoborgModuleStealth
@@ -1382,51 +1341,6 @@
     - type: StaticPrice
       price: 2000
 
-# mothership module
-- type: entity
-  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
-  id: MothershipModule
-  name: mothership module
-  description: A module that helps the mothership borg brains and install other modules.
-  components:
-  - type: Tag
-    tags:
-    - MothershipModule
-  - type: Sprite
-    layers:
-    - state: xenoborg_generic
-    - state: icon-xenoborg-basic
-  - type: ItemBorgModule
-    hands:
-    - item: DoorRemoteXenoborg
-    - hand:
-        emptyRepresentative: MMIFilled
-        emptyLabel: borg-slot-brains-empty
-        whitelist:
-          components:
-          - Brain
-          - BorgBrain
-    - hand:
-        emptyRepresentative: XenoborgModuleBasic
-        emptyLabel: borg-slot-modules-empty
-        whitelist:
-          components:
-          - BorgModule
-    - hand:
-        emptyRepresentative: BorgModuleConstructionMaterialPlaceholder
-        emptyLabel: borg-slot-construction-empty
-        whitelist:
-          tags:
-          - ConstructionMaterial
-    - hand:
-        emptyRepresentative: PowerCellHigh
-        emptyLabel: borg-slot-powercell-empty
-        whitelist:
-          components:
-          - PowerCell
-  - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-module-module }
-
 # xenoborg modules
 - type: entity
   parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
@@ -1440,13 +1354,7 @@
     - state: icon-xenoborg-basic
   - type: ItemBorgModule
     hands:
-    - hand:
-        emptyRepresentative: BorgModuleConstructionMaterialPlaceholder
-        emptyLabel: borg-slot-construction-empty
-        whitelist:
-          tags:
-          - ConstructionMaterial
-    - item: XenoborgMaterialBag
+    - item: MaterialBag
     - item: PinpointerMothership
     - item: HandheldGPSBasic
   - type: BorgModuleIcon
@@ -1567,7 +1475,6 @@
     hands:
     - item: HandheldGPSBasic
     - item: HandHeldMassScannerBorg
-    - item: PinpointerMothership
     - item: HandheldStationMapUnpowered
     - item: WeaponGrapplingGun
     - item: JetpackXenoborg

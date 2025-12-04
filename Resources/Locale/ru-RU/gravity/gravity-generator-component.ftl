@@ -29,4 +29,3 @@ gravity-generator-window-power-label = { $draw } / { $max } Вт
 
 gravity-generator-window-eta-none = Н/Д
 gravity-generator-window-eta-value = { TOSTRING($left, "m\\:ss") }
-gravity-generator-unanchoring-failed = Can't unanchor an active gravity generator.

@@ -112,5 +112,3 @@ ent-BulletLaserMagnum = лазерный заряд магнума
     .desc = { ent-BulletLaser.desc }
 ent-BulletLaserWindowPiercingMagnum = пролетающий окна заряд магнума
     .desc = { ent-BulletLaser.desc }
-ent-EnergyCrossbowBolt = energy bolt
-    .desc = This'll hurt.

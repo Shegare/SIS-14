@@ -40,7 +40,7 @@ namespace Content.Server.Power
                 shell.WriteLine(Loc.GetString($"cmd-setbatterypercent-battery-not-found", ("id", id)));
                 return;
             }
-            _batterySystem.SetCharge((id.Value, battery), battery.MaxCharge * percent / 100);
+            _batterySystem.SetCharge(id.Value, battery.MaxCharge * percent / 100, battery);
             // Don't acknowledge b/c people WILL forall this
         }
     }

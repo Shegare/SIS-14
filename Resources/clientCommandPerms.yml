@@ -74,7 +74,6 @@
     - fullstatereset
     - dumpentities
     - showaccessreaders
-    - quickinspect
 
 - Flags: MAPPING
   Commands:
