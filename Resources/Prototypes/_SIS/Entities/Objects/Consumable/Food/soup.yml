@@ -7,10 +7,10 @@
     sprite: _SIS/Objects/Consumable/Food/bowl.rsi
 
 - type: entity
-  name: хумус
+  name: hummus
   parent: SIS_FoodBowlBase
   id: FoodHummus
-  description: Уникальное блюдо разработаное с помощью блюспейс технологий, на далёкой планете хумуса древними существами, рецепт которого был открыт ксеноархеологами 20 лет назад
+  description: A unique dish created with bluespace technology on the distant Hummus planet by ancient beings. The recipe was uncovered by xenoarchaeologists 20 years ago.
   components:
   - type: FlavorProfile
     flavors:

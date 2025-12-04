@@ -1,6 +1,6 @@
 - type: microwaveMealRecipe
   id: RecipeHummus
-  name: рецепт хумуса
+  name: hummus recipe
   result: FoodHummus
   time: 20
   group: Savory
