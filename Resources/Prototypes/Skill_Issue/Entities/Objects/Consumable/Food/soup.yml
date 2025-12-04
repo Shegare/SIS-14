@@ -1,0 +1,24 @@
+- type: entity
+  name: хумус
+  parent: FoodBowlBase
+  id: FoodHummus
+  description: Уникальное блюдо разработаное с помощью блюспейс технологий, на далёкой планете хумуса древними существами, рецепт которого был открыт ксеноархеологами 20 лет назад
+  components:
+  - type: FlavorProfile
+    flavors:
+      - creamy
+      - peas
+      - garlic
+  - type: Sprite
+    layers:
+    - state: bowl
+    - state: hummus
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
