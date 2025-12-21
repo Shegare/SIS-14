@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+	"copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/cdbcb1e858b11f083994a7a269ed67ef5b452ce9, xenoborg actions by Samuka-C (github). Security modules created by Samur7 (github) for SIS-14",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name":"adv-security-module"
+        },
+        {
+            "name":"basic-security-module"
+        },
+        {
+            "name": "drozd-module"
+        }
+    ]
+}

@@ -325,6 +325,7 @@
     - id: WeaponTaser
     - id: WantedListCartridge
     - id: DrinkHosFlask
+    - id: BorgModuleDrozd # SIS-Security_Cyborg
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
