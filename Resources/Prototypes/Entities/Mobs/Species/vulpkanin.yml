@@ -201,6 +201,7 @@
     #         state: jumpsuit
     #   back:
     #    sizeMaps:
+    #      32:
     #        sprite: Mobs/Species/Vulpkanin/displacement.rsi
     #        state: back
     #   outerClothing:
@@ -233,6 +234,7 @@
     #       32:
     #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
     #         state: eyes
+    #  belt:
     #    sizeMaps:
     #       32:
     #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
