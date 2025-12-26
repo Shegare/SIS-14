@@ -79,11 +79,11 @@
       required: false
 
 # SIS-Vulpkanin Start
-- type: humanoidBaseSprite
-  id: MobVulpkaninEyes
-  baseSprite:
-    sprite: Mobs/Species/Vulpkanin/parts.rsi
-    state: eyes
+#- type: humanoidBaseSprite
+#  id: MobVulpkaninEyes
+#  baseSprite:
+#    sprite: Mobs/Species/Vulpkanin/parts.rsi
+#    state: eyes
 # SIS-Vulpkanin End
 
 - type: humanoidBaseSprite
