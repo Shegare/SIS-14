@@ -27,7 +27,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-#    Eyes: MobVulpkaninEyes # SIS-Vulpkanin
+    # Eyes: MobVulpkaninEyes # SIS-Vulpkanin
     LArm: MobVulpkaninLArm
     RArm: MobVulpkaninRArm
     LHand: MobVulpkaninLHand
@@ -77,13 +77,15 @@
     Legs:
       points: 6
       required: false
+
 # SIS-Vulpkanin Start
-# - type: humanoidBaseSprite
-#  id: MobVulpkaninEyes
-#  baseSprite:
-#    sprite: Mobs/Species/Vulpkanin/parts.rsi
-#    state: eyes
+- type: humanoidBaseSprite
+  id: MobVulpkaninEyes
+  baseSprite:
+    sprite: Mobs/Species/Vulpkanin/parts.rsi
+    state: eyes
 # SIS-Vulpkanin End
+
 - type: humanoidBaseSprite
   id: MobVulpkaninHead
   baseSprite:
