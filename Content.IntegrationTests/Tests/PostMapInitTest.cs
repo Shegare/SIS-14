@@ -91,6 +91,7 @@ namespace Content.IntegrationTests.Tests
             "Bagel",
             "CentComm",
             "Box",
+            "Atlas",
             "Marathon",
             "MeteorArena",
             "Saltern",
