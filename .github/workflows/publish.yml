@@ -5,6 +5,10 @@ concurrency:
   cancel-in-progress: true
 
 on:
+  # SIS-CDN Start
+  push:
+    branches: [ master ]
+  # SIS-CDN End
   workflow_dispatch:
   # schedule:
   #   - cron: '0 0 * * *'
