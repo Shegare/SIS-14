@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/09/2025 06:22:32
-  entityCount: 18233
+  time: 12/28/2025 17:48:32
+  entityCount: 18234
 maps:
 - 1793
 grids:
@@ -43668,12 +43668,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 92.5,96.5
       parent: 1
-  - uid: 8015
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 86.5,92.5
-      parent: 1
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 15917
@@ -43747,6 +43741,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 87.5,77.5
+      parent: 1
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 8015
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 86.5,92.5
       parent: 1
 - proto: ComputerStationRecords
   entities:
@@ -56104,6 +56106,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,93.5
+      parent: 1
+- proto: GasMinerPlasma
+  entities:
+  - uid: 18234
+    components:
+    - type: Transform
+      pos: 44.5,97.5
       parent: 1
 - proto: GasMixerFlipped
   entities:

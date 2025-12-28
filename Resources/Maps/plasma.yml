@@ -4,7 +4,7 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/24/2025 22:34:01
+  time: 12/28/2025 17:47:29
   entityCount: 26479
 maps:
 - 1
@@ -10247,6 +10247,7 @@ entities:
       id: Plasma
     - type: ImplicitRoof
     - type: NavMap
+    - type: ExplosionAirtightGrid
 - proto: AccordionInstrument
   entities:
   - uid: 25884
@@ -14967,7 +14968,7 @@ entities:
       pos: -131.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -64391.965
+      secondsUntilStateChange: -64454.168
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -66806,6 +66807,9 @@ entities:
     - type: Transform
       pos: -89.5,25.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Quartermaster
 - proto: ComputerCargoOrders
   entities:
   - uid: 4727
@@ -67165,12 +67169,6 @@ entities:
     - type: Transform
       pos: -90.5,25.5
       parent: 2
-  - uid: 26345
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -96.5,32.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 2680
@@ -67207,6 +67205,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -96.5,33.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 16998
@@ -67232,6 +67233,14 @@ entities:
     components:
     - type: Transform
       pos: -91.5,25.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 16798
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -96.5,32.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -131755,6 +131764,23 @@ entities:
     - type: Transform
       pos: -107.48633,-20.615337
       parent: 2
+- proto: PlushieSpawner50
+  entities:
+  - uid: 14357
+    components:
+    - type: Transform
+      pos: -21.5,11.5
+      parent: 2
+  - uid: 14359
+    components:
+    - type: Transform
+      pos: -20.5,11.5
+      parent: 2
+  - uid: 24648
+    components:
+    - type: Transform
+      pos: -19.5,11.5
+      parent: 2
 - proto: PortableFlasher
   entities:
   - uid: 2394
@@ -146294,7 +146320,7 @@ entities:
     - type: Transform
       pos: -107.5,-2.5
       parent: 2
-- proto: SpacemenFigureSpawner
+- proto: SpacemenFigurineSpawner90
   entities:
   - uid: 26079
     components:
@@ -153020,23 +153046,6 @@ entities:
     components:
     - type: Transform
       pos: -42.5,-1.5
-      parent: 2
-- proto: ToySpawner
-  entities:
-  - uid: 14357
-    components:
-    - type: Transform
-      pos: -21.5,11.5
-      parent: 2
-  - uid: 14359
-    components:
-    - type: Transform
-      pos: -20.5,11.5
-      parent: 2
-  - uid: 24648
-    components:
-    - type: Transform
-      pos: -19.5,11.5
       parent: 2
 - proto: TrainingBomb
   entities:
@@ -171053,7 +171062,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -264498.72
+      secondsUntilStateChange: -264560.9
       state: Opening
     - type: Airlock
       autoClose: False

@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/01/2025 20:40:27
-  entityCount: 16060
+  time: 12/28/2025 17:45:58
+  entityCount: 16062
 maps:
 - 126
 grids:
@@ -7123,6 +7123,7 @@ entities:
     - type: RadiationGridResistance
     - type: SpreaderGrid
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
   - uid: 126
     components:
     - type: MetaData
@@ -42766,6 +42767,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.5,21.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Cargo
   - uid: 5285
     components:
     - type: Transform
@@ -42978,12 +42982,6 @@ entities:
     - type: Transform
       pos: 20.5,46.5
       parent: 2
-  - uid: 9957
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,39.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 5375
@@ -43042,6 +43040,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,31.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 7471
@@ -43062,6 +43063,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 6.5,25.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 1817
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,39.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -43989,7 +43998,7 @@ entities:
       pos: 59.5,39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19835.2
+      secondsUntilStateChange: -19915.756
       state: Closing
 - proto: CurtainsWhiteOpen
   entities:
@@ -49845,7 +49854,7 @@ entities:
       pos: 26.5,37.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -67128.984
+      secondsUntilStateChange: -67209.54
       state: Closing
   - uid: 9362
     components:
@@ -51640,6 +51649,20 @@ entities:
     components:
     - type: Transform
       pos: 49.5,-25.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 16061
+    components:
+    - type: Transform
+      pos: 49.5,-31.5
+      parent: 2
+- proto: GasMinerTritium
+  entities:
+  - uid: 16062
+    components:
+    - type: Transform
+      pos: 49.5,-33.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -72826,7 +72849,7 @@ entities:
       pos: 12.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5300.9326
+      secondsUntilStateChange: -5381.49
       state: Closing
   - uid: 5750
     components:
@@ -75924,6 +75947,13 @@ entities:
     components:
     - type: Transform
       pos: -3.4634295,-18.46823
+      parent: 2
+- proto: PlushieSpawner50
+  entities:
+  - uid: 8652
+    components:
+    - type: Transform
+      pos: 84.5,12.5
       parent: 2
 - proto: PortableFlasher
   entities:
@@ -87073,11 +87103,6 @@ entities:
     - type: Transform
       pos: 46.5,-37.5
       parent: 2
-  - uid: 1817
-    components:
-    - type: Transform
-      pos: 50.5,-33.5
-      parent: 2
   - uid: 3967
     components:
     - type: Transform
@@ -90681,13 +90706,6 @@ entities:
     - type: Transform
       pos: 12.5,12.5
       parent: 2
-- proto: ToySpawner
-  entities:
-  - uid: 8652
-    components:
-    - type: Transform
-      pos: 84.5,12.5
-      parent: 2
 - proto: TrashBag
   entities:
   - uid: 8394
@@ -90719,6 +90737,13 @@ entities:
     components:
     - type: Transform
       pos: 64.6922,25.570868
+      parent: 2
+- proto: TritiumCanister
+  entities:
+  - uid: 9957
+    components:
+    - type: Transform
+      pos: 50.5,-33.5
       parent: 2
 - proto: TrumpetInstrument
   entities:

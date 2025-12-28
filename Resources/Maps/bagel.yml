@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/08/2025 08:17:25
-  entityCount: 25476
+  time: 12/28/2025 17:34:23
+  entityCount: 25477
 maps:
 - 943
 grids:
@@ -14518,6 +14518,9 @@ entities:
     - type: Transform
       pos: 7.5,26.5
       parent: 60
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
     - type: DeviceNetwork
       deviceLists:
       - 25535
@@ -63150,14 +63153,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -118.5,15.5
       parent: 60
-- proto: ComputerRadar
-  entities:
-  - uid: 19022
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 51.5,2.5
-      parent: 60
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 5802
@@ -63224,6 +63219,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 49.5,11.5
+      parent: 60
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 2933
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 51.5,2.5
       parent: 60
 - proto: ComputerSolarControl
   entities:
@@ -71385,13 +71388,6 @@ entities:
       parent: 60
     - type: FaxMachine
       name: Bridge
-- proto: FigureSpawner
-  entities:
-  - uid: 5340
-    components:
-    - type: Transform
-      pos: -36.5,-34.5
-      parent: 60
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 1942
@@ -75707,6 +75703,13 @@ entities:
     components:
     - type: Transform
       pos: -44.5,34.5
+      parent: 60
+- proto: GasMinerPlasma
+  entities:
+  - uid: 2937
+    components:
+    - type: Transform
+      pos: -44.5,40.5
       parent: 60
 - proto: GasMinerWaterVapor
   entities:
@@ -113841,6 +113844,13 @@ entities:
     - type: Transform
       pos: 49.47655,18.540401
       parent: 60
+- proto: MechFigurineSpawner50
+  entities:
+  - uid: 5340
+    components:
+    - type: Transform
+      pos: -36.5,-34.5
+      parent: 60
 - proto: MedicalBed
   entities:
   - uid: 108
@@ -115780,6 +115790,23 @@ entities:
     components:
     - type: Transform
       pos: 30.505884,-10.627335
+      parent: 60
+- proto: PlushieSpawner50
+  entities:
+  - uid: 5303
+    components:
+    - type: Transform
+      pos: -39.5,-34.5
+      parent: 60
+  - uid: 6968
+    components:
+    - type: Transform
+      pos: -63.5,2.5
+      parent: 60
+  - uid: 17839
+    components:
+    - type: Transform
+      pos: -47.5,20.5
       parent: 60
 - proto: PonderingOrb
   entities:
@@ -140882,23 +140909,6 @@ entities:
     components:
     - type: Transform
       pos: -2.47266,-11.475237
-      parent: 60
-- proto: ToySpawner
-  entities:
-  - uid: 5303
-    components:
-    - type: Transform
-      pos: -39.5,-34.5
-      parent: 60
-  - uid: 6968
-    components:
-    - type: Transform
-      pos: -63.5,2.5
-      parent: 60
-  - uid: 17839
-    components:
-    - type: Transform
-      pos: -47.5,20.5
       parent: 60
 - proto: TrashBag
   entities:

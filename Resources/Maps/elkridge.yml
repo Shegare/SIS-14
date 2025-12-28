@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/07/2025 22:51:59
-  entityCount: 18708
+  time: 12/28/2025 17:38:08
+  entityCount: 18709
 maps:
 - 1
 grids:
@@ -53014,8 +53014,8 @@ entities:
     - type: Transform
       parent: 15428
     - type: Clothing
-      inSlotFlag: HEAD
       inSlot: head
+      inSlotFlag: HEAD
     - type: Physics
       canCollide: False
 - proto: ClothingHeadHatBlacksoft
@@ -53317,8 +53317,8 @@ entities:
     - type: Transform
       parent: 15428
     - type: Clothing
-      inSlotFlag: NECK
       inSlot: neck
+      inSlotFlag: NECK
     - type: Physics
       canCollide: False
 - proto: ClothingNeckCloakTrans
@@ -54073,12 +54073,6 @@ entities:
     - type: Transform
       pos: -41.5,-5.5
       parent: 2
-  - uid: 7678
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 22.5,45.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 4652
@@ -54126,6 +54120,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 22.5,46.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 17634
@@ -54149,6 +54146,14 @@ entities:
     components:
     - type: Transform
       pos: 0.5,40.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 7678
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 22.5,45.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -65416,6 +65421,13 @@ entities:
     components:
     - type: Transform
       pos: 39.5,-37.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 18709
+    components:
+    - type: Transform
+      pos: 20.5,-37.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -104025,7 +104037,7 @@ entities:
     - type: Transform
       pos: 28.5,-30.5
       parent: 2
-- proto: SpacemenFigureSpawner
+- proto: SpacemenFigurineSpawner90
   entities:
   - uid: 3089
     components:

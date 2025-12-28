@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/07/2025 22:21:20
-  entityCount: 28813
+  time: 12/28/2025 17:35:32
+  entityCount: 28814
 maps:
 - 780
 grids:
@@ -74432,12 +74432,6 @@ entities:
     - type: Transform
       pos: 4.5,-40.5
       parent: 8364
-  - uid: 22558
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -29.5,-38.5
-      parent: 8364
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 2591
@@ -74520,6 +74514,14 @@ entities:
     components:
     - type: Transform
       pos: -41.5,-29.5
+      parent: 8364
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 22558
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -29.5,-38.5
       parent: 8364
 - proto: ComputerSolarControl
   entities:
@@ -87252,23 +87254,6 @@ entities:
       parent: 8364
     - type: FaxMachine
       name: Captain
-- proto: FigureSpawner
-  entities:
-  - uid: 7074
-    components:
-    - type: Transform
-      pos: 56.5,1.5
-      parent: 8364
-  - uid: 11690
-    components:
-    - type: Transform
-      pos: 56.5,0.5
-      parent: 8364
-  - uid: 11691
-    components:
-    - type: Transform
-      pos: 12.5,10.5
-      parent: 8364
 - proto: filingCabinet
   entities:
   - uid: 15378
@@ -91528,6 +91513,13 @@ entities:
       parent: 8364
     - type: GasMiner
       maxExternalPressure: 4500
+- proto: GasMinerPlasma
+  entities:
+  - uid: 28814
+    components:
+    - type: Transform
+      pos: 27.5,-47.5
+      parent: 8364
 - proto: GasMinerWaterVapor
   entities:
   - uid: 16806
@@ -133174,6 +133166,23 @@ entities:
     - type: Transform
       pos: -31.488705,-11.49092
       parent: 8364
+- proto: MechFigurineSpawner50
+  entities:
+  - uid: 7074
+    components:
+    - type: Transform
+      pos: 56.5,1.5
+      parent: 8364
+  - uid: 11690
+    components:
+    - type: Transform
+      pos: 56.5,0.5
+      parent: 8364
+  - uid: 11691
+    components:
+    - type: Transform
+      pos: 12.5,10.5
+      parent: 8364
 - proto: MedicalBed
   entities:
   - uid: 5082
@@ -135250,6 +135259,33 @@ entities:
     components:
     - type: Transform
       pos: -21.53196,-58.55052
+      parent: 8364
+- proto: PlushieSpawner50
+  entities:
+  - uid: 5445
+    components:
+    - type: Transform
+      pos: 4.5,11.5
+      parent: 8364
+  - uid: 11692
+    components:
+    - type: Transform
+      pos: 58.5,17.5
+      parent: 8364
+  - uid: 11693
+    components:
+    - type: Transform
+      pos: 12.5,11.5
+      parent: 8364
+  - uid: 15957
+    components:
+    - type: Transform
+      pos: -28.5,-55.5
+      parent: 8364
+  - uid: 21954
+    components:
+    - type: Transform
+      pos: -48.5,-12.5
       parent: 8364
 - proto: PortableFlasher
   entities:
@@ -161012,33 +161048,6 @@ entities:
     components:
     - type: Transform
       pos: 31.579891,15.170173
-      parent: 8364
-- proto: ToySpawner
-  entities:
-  - uid: 5445
-    components:
-    - type: Transform
-      pos: 4.5,11.5
-      parent: 8364
-  - uid: 11692
-    components:
-    - type: Transform
-      pos: 58.5,17.5
-      parent: 8364
-  - uid: 11693
-    components:
-    - type: Transform
-      pos: 12.5,11.5
-      parent: 8364
-  - uid: 15957
-    components:
-    - type: Transform
-      pos: -28.5,-55.5
-      parent: 8364
-  - uid: 21954
-    components:
-    - type: Transform
-      pos: -48.5,-12.5
       parent: 8364
 - proto: TrainingBomb
   entities:
