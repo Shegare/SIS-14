@@ -63,6 +63,7 @@
         mining: !type:GridSpawnGroup
           paths:
             - /Maps/_SIS/Shuttles/mining.yml
+            nameGrid: false
         # SIS-Mining_Shuttle End
         # Spawn last
         ruins: !type:GridSpawnGroup
