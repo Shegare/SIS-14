@@ -51,7 +51,7 @@
 | Поддиректория | Проект | Исходный репозиторий | Исходная лицензия |
 |---------------|-------|-----------------------|----------|
 | `_SIS`        | Skill Issue Station | https://github.com/Shegare/SIS-14 | AGPL-3.0-or-later |
-| `Axolotl`     | Axolotl | https://github.com/space-axolotl-14/space-axolotl-14 | MIT |
+| `Axolotl`     | Space Axolotl | https://github.com/space-axolotl-14/space-axolotl-14 | MIT |
 
 Дополнительные репозитории с портированным кодом (без пространств имён):
 
