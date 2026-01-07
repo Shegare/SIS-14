@@ -5,7 +5,7 @@
   description: Rebirth in a new guise. It takes 8 minutes to recharge.
   components:
   - type: Action
-    icon: { sprite: Mobs/Ghosts/ghost_human.rsi, state: icon } # TODO-SIS: Нормальный спрайт
+    icon: { sprite: _SIS/Mobs/Ghosts/ghost.rsi, state: icon }
     startDelay: true
     useDelay: 5 # TODO-SIS: Нормальное КД
   - type: InstantAction
