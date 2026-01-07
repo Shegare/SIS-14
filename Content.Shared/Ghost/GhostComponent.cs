@@ -49,11 +49,14 @@ public sealed partial class GhostComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? BooActionEntity;
 
+    // SIS-Ghost_Respawn Start
     [DataField]
     public EntProtoId RespawnAction = "RespawnAction";
 
     [DataField, AutoNetworkedField]
     public EntityUid? RespawnActionEntity;
+    // SIS-Ghost_Respawn Start
+
     // End actions
 
     /// <summary>
@@ -118,6 +121,7 @@ public sealed partial class ToggleGhostVisibilityToAllEvent : InstantActionEvent
 
 public sealed partial class BooActionEvent : InstantActionEvent { }
 
+// SIS-Ghost_Respawn Start
 public sealed partial class RespawnActionEvent : InstantActionEvent;
 
 [Serializable, NetSerializable]
@@ -125,3 +129,4 @@ public enum RespawnUiKey : byte
 {
     Key,
 }
+// SIS-Ghost_Respawn End
