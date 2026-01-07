@@ -1,6 +1,7 @@
 using Content.Shared.Actions;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Ghost;
 
@@ -43,6 +44,11 @@ public sealed partial class GhostComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid? BooActionEntity;
 
+    [DataField]
+    public EntProtoId RespawnAction = "RespawnAction";
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? RespawnActionEntity;
     // End actions
 
     /// <summary>
@@ -106,3 +112,11 @@ public sealed partial class ToggleGhostHearingActionEvent : InstantActionEvent {
 public sealed partial class ToggleGhostVisibilityToAllEvent : InstantActionEvent { }
 
 public sealed partial class BooActionEvent : InstantActionEvent { }
+
+public sealed partial class RespawnActionEvent : InstantActionEvent;
+
+[Serializable, NetSerializable]
+public enum RespawnUiKey : byte
+{
+    Key,
+}

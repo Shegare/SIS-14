@@ -16,6 +16,7 @@ namespace Content.Client.Ghost
         [Dependency] private readonly PointLightSystem _pointLightSystem = default!;
         [Dependency] private readonly ContentEyeSystem _contentEye = default!;
         [Dependency] private readonly SpriteSystem _sprite = default!;
+        [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
 
         public int AvailableGhostRoleCount { get; private set; }
 
@@ -68,6 +69,8 @@ namespace Content.Client.Ghost
             SubscribeLocalEvent<EyeComponent, ToggleLightingActionEvent>(OnToggleLighting);
             SubscribeLocalEvent<EyeComponent, ToggleFoVActionEvent>(OnToggleFoV);
             SubscribeLocalEvent<GhostComponent, ToggleGhostsActionEvent>(OnToggleGhosts);
+
+            SubscribeLocalEvent<GhostComponent, RespawnActionEvent>(OnRespawnAction);
         }
 
         private void OnStartup(EntityUid uid, GhostComponent component, ComponentStartup args)
@@ -200,6 +203,16 @@ namespace Content.Client.Ghost
         public void ToggleGhostVisibility(bool? visibility = null)
         {
             GhostVisibility = visibility ?? !GhostVisibility;
+        }
+
+        private void OnRespawnAction(EntityUid uid, GhostComponent component, RespawnActionEvent args)
+        {
+            if (args.Handled)
+                return;
+
+            _ui.OpenUi(uid, RespawnUiKey.Key, args.Performer, predicted: true);
+
+            args.Handled = true;
         }
     }
 }
