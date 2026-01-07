@@ -82,6 +82,12 @@
   - type: Tag
     tags: # BAD: Intentional removal of inherited tag
     - AllowGhostShownByEvent
+  # SIS-Ghost_Respawn Start
+  - type: UserInterface
+    interfaces:
+      enum.RespawnUiKey.Key:
+        type: RespawnBoundUserInterface
+  # SIS-Ghost_Respawn End
 
 - type: entity
   parent: BaseMentalAction
