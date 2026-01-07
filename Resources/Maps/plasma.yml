@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/28/2025 17:47:29
-  entityCount: 26479
+  time: 01/07/2026 18:43:00
+  entityCount: 26489
 maps:
 - 1
 grids:
@@ -14968,7 +14968,7 @@ entities:
       pos: -131.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -64454.168
+      secondsUntilStateChange: -64759.355
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16464,11 +16464,14 @@ entities:
   - uid: 4410
     components:
     - type: MetaData
-      name: Telecommunications APC
+      name: Telecommunications East APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -84.5,-10.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
     - type: Fixtures
       fixtures: {}
   - uid: 4419
@@ -16824,6 +16827,19 @@ entities:
     - type: Transform
       pos: -99.5,23.5
       parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 16798
+    components:
+    - type: MetaData
+      name: Telecommunications West APC
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -88.5,-9.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
     - type: Fixtures
       fixtures: {}
   - uid: 16994
@@ -33235,6 +33251,11 @@ entities:
     components:
     - type: Transform
       pos: -15.5,-3.5
+      parent: 2
+  - uid: 16856
+    components:
+    - type: Transform
+      pos: -88.5,-9.5
       parent: 2
   - uid: 16947
     components:
@@ -53074,6 +53095,26 @@ entities:
     - type: Transform
       pos: -45.5,-44.5
       parent: 2
+  - uid: 16861
+    components:
+    - type: Transform
+      pos: -88.5,-9.5
+      parent: 2
+  - uid: 16868
+    components:
+    - type: Transform
+      pos: -88.5,-8.5
+      parent: 2
+  - uid: 16872
+    components:
+    - type: Transform
+      pos: -87.5,-8.5
+      parent: 2
+  - uid: 16907
+    components:
+    - type: Transform
+      pos: -86.5,-8.5
+      parent: 2
   - uid: 16960
     components:
     - type: Transform
@@ -53189,6 +53230,11 @@ entities:
     - type: Transform
       pos: -15.5,-63.5
       parent: 2
+  - uid: 17797
+    components:
+    - type: Transform
+      pos: -85.5,-8.5
+      parent: 2
   - uid: 17835
     components:
     - type: Transform
@@ -53228,6 +53274,11 @@ entities:
     components:
     - type: Transform
       pos: -85.5,-18.5
+      parent: 2
+  - uid: 17990
+    components:
+    - type: Transform
+      pos: -84.5,-8.5
       parent: 2
   - uid: 18106
     components:
@@ -66797,26 +66848,21 @@ entities:
       parent: 2
 - proto: ComputerCargoBounty
   entities:
-  - uid: 4728
-    components:
-    - type: Transform
-      pos: -84.5,31.5
-      parent: 2
   - uid: 19545
     components:
     - type: Transform
       pos: -89.5,25.5
       parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Quartermaster
 - proto: ComputerCargoOrders
   entities:
   - uid: 4727
     components:
     - type: Transform
-      pos: -85.5,31.5
+      pos: -84.5,31.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Cargo
   - uid: 5568
     components:
     - type: Transform
@@ -67169,6 +67215,11 @@ entities:
     - type: Transform
       pos: -90.5,25.5
       parent: 2
+  - uid: 21476
+    components:
+    - type: Transform
+      pos: -94.5,43.5
+      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 2680
@@ -67236,7 +67287,12 @@ entities:
       parent: 2
 - proto: ComputerShuttleSalvage
   entities:
-  - uid: 16798
+  - uid: 4728
+    components:
+    - type: Transform
+      pos: -85.5,31.5
+      parent: 2
+  - uid: 20536
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -84562,6 +84618,11 @@ entities:
       parent: 2
     missingComponents:
     - GasMiner
+  - uid: 21087
+    components:
+    - type: Transform
+      pos: -110.5,2.5
+      parent: 2
   - uid: 21477
     components:
     - type: MetaData
@@ -130222,6 +130283,11 @@ entities:
     - type: Transform
       pos: -129.5,1.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
+      - - Engineering
+      - - Research
 - proto: NodeScanner
   entities:
   - uid: 7393
@@ -147713,6 +147779,11 @@ entities:
     - type: Transform
       pos: -129.5,3.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
+      - - Engineering
+      - - Research
 - proto: SubstationBasic
   entities:
   - uid: 2020
@@ -171062,7 +171133,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -264560.9
+      secondsUntilStateChange: -264866.12
       state: Opening
     - type: Airlock
       autoClose: False
