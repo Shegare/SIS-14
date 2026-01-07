@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2021-2025 Space Wizards Federation
+// SPDX-FileCopyrightText: 2026 SIS-14 contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.Movement.Systems;
 using Content.Shared.Actions;
 using Content.Shared.Ghost;
