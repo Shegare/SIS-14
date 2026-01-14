@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 268.0.0
+  engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 12/07/2025 22:34:43
+  time: 01/14/2026 06:14:38
   entityCount: 9769
 maps: []
 grids:
@@ -54,8 +54,6 @@ entities:
     components:
     - type: MetaData
       name: Central Command
-    - type: Transform
-      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:
@@ -5222,11 +5220,19 @@ entities:
     - type: Transform
       pos: -21.5,8.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
+    missingComponents:
+    - WiresPanel
   - uid: 2900
     components:
     - type: Transform
       pos: -16.5,8.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
+    missingComponents:
+    - WiresPanel
   - uid: 4614
     components:
     - type: Transform
@@ -5257,6 +5263,10 @@ entities:
     - type: Transform
       pos: -32.5,8.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
+    missingComponents:
+    - WiresPanel
 - proto: AirlockCentralCommandLocked
   entities:
   - uid: 2663
@@ -5276,6 +5286,8 @@ entities:
     - type: Transform
       pos: -20.5,2.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 3368
     components:
     - type: Transform
@@ -5288,11 +5300,17 @@ entities:
     - type: Transform
       pos: -33.5,2.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 9565
     components:
     - type: Transform
       pos: -37.5,8.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
+    missingComponents:
+    - WiresPanel
 - proto: AirlockChemistryGlassLocked
   entities:
   - uid: 786
@@ -5319,6 +5337,8 @@ entities:
     - type: Transform
       pos: -38.5,-3.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockEngineeringGlassLocked
   entities:
   - uid: 3028
@@ -5822,13 +5842,6 @@ entities:
       parent: 1668
     - type: Fixtures
       fixtures: {}
-  - uid: 2943
-    components:
-    - type: Transform
-      pos: -19.5,8.5
-      parent: 1668
-    - type: Fixtures
-      fixtures: {}
 - proto: APCHyperCapacity
   entities:
   - uid: 215
@@ -6111,10 +6124,19 @@ entities:
       parent: 1668
     - type: Fixtures
       fixtures: {}
+  - uid: 9217
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -34.5,8.5
+      parent: 1668
+    - type: Fixtures
+      fixtures: {}
   - uid: 9220
     components:
     - type: Transform
-      pos: -34.5,8.5
+      rot: 3.141592653589793 rad
+      pos: -19.5,8.5
       parent: 1668
     - type: Fixtures
       fixtures: {}
@@ -6839,7 +6861,7 @@ entities:
     - type: Transform
       pos: 21.5,-13.5
       parent: 1668
-- proto: BlastDoor
+- proto: BlastDoorCentralCommand
   entities:
   - uid: 3912
     components:
@@ -7016,7 +7038,7 @@ entities:
     - type: Transform
       pos: -16.5,-39.5
       parent: 1668
-- proto: BlastDoorOpen
+- proto: BlastDoorCentralCommandOpen
   entities:
   - uid: 3
     components:
@@ -7113,6 +7135,8 @@ entities:
     - type: Transform
       pos: -4.5,1.5
       parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 325
     components:
     - type: Transform
@@ -42382,21 +42406,11 @@ entities:
     - type: Transform
       pos: 13.5,21.5
       parent: 1668
+    - type: DoorBolt
+      boltsDown: True
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: HighSecCentralCommandLocked
-  entities:
-  - uid: 2212
-    components:
-    - type: Transform
-      pos: 13.5,29.5
-      parent: 1668
-    - type: Godmode
-      oldDamage: {}
-  - uid: 5998
-    components:
-    - type: Transform
-      pos: -14.5,6.5
-      parent: 1668
-- proto: HighSecCommandLocked
   entities:
   - uid: 1583
     components:
@@ -42407,6 +42421,26 @@ entities:
     components:
     - type: Transform
       pos: 3.5,0.5
+      parent: 1668
+    - type: AccessReader
+      accessListsOriginal: []
+  - uid: 2212
+    components:
+    - type: Transform
+      pos: 13.5,29.5
+      parent: 1668
+    - type: DoorBolt
+      boltsDown: True
+    - type: AccessReader
+      accessListsOriginal: []
+    - type: Godmode
+      oldDamage: {}
+    missingComponents:
+    - WiresPanel
+  - uid: 5998
+    components:
+    - type: Transform
+      pos: -14.5,6.5
       parent: 1668
 - proto: HolofanProjector
   entities:
@@ -42822,6 +42856,32 @@ entities:
     - type: Transform
       pos: 9.280961,-23.462322
       parent: 1668
+- proto: LockableButtonCentcomm
+  entities:
+  - uid: 2943
+    components:
+    - type: MetaData
+      name: ERT Ready Room
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -42.5,-7.5
+      parent: 1668
+    - type: AccessReader
+      accessListsOriginal:
+      - - CentralCommand
+    - type: DeviceLinkSource
+      linkedPorts:
+        6905:
+        - - Pressed
+          - Toggle
+        6904:
+        - - Pressed
+          - Toggle
+        6903:
+        - - Pressed
+          - Toggle
+    - type: Fixtures
+      fixtures: {}
 - proto: LockerAtmosphericsFilled
   entities:
   - uid: 4033
@@ -48331,41 +48391,57 @@ entities:
     - type: Transform
       pos: -19.5,16.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2755
     components:
     - type: Transform
       pos: -19.5,15.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2779
     components:
     - type: Transform
       pos: -24.5,9.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2780
     components:
     - type: Transform
       pos: -24.5,10.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2781
     components:
     - type: Transform
       pos: -24.5,12.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2782
     components:
     - type: Transform
       pos: -24.5,13.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2897
     components:
     - type: Transform
       pos: -20.5,8.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2898
     components:
     - type: Transform
       pos: -22.5,8.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 2981
     components:
     - type: Transform
@@ -49225,21 +49301,29 @@ entities:
     - type: Transform
       pos: -29.5,9.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 6934
     components:
     - type: Transform
       pos: -29.5,10.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 6935
     components:
     - type: Transform
       pos: -29.5,12.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 6936
     components:
     - type: Transform
       pos: -29.5,13.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 6954
     components:
     - type: Transform
@@ -49349,11 +49433,15 @@ entities:
     - type: Transform
       pos: -31.5,8.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 7324
     components:
     - type: Transform
       pos: -33.5,8.5
       parent: 1668
+    - type: Godmode
+      oldDamage: {}
   - uid: 7359
     components:
     - type: Transform
@@ -50047,7 +50135,7 @@ entities:
     - type: Transform
       pos: -20.5,-4.5
       parent: 1668
-- proto: ShuttersNormalOpen
+- proto: ShuttersNormalCentralCommandOpen
   entities:
   - uid: 81
     components:
@@ -50851,33 +50939,6 @@ entities:
         - - Off
           - Close
         4747:
-        - - On
-          - Open
-        - - Off
-          - Close
-    - type: Fixtures
-      fixtures: {}
-  - uid: 9217
-    components:
-    - type: MetaData
-      name: ERT Ready Room
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -42.5,-7.5
-      parent: 1668
-    - type: DeviceLinkSource
-      linkedPorts:
-        6903:
-        - - On
-          - Open
-        - - Off
-          - Close
-        6904:
-        - - On
-          - Open
-        - - Off
-          - Close
-        6905:
         - - On
           - Open
         - - Off

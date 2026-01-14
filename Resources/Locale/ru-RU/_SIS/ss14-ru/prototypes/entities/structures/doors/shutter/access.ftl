@@ -1,0 +1,12 @@
+ent-BlastDoorCentralCommandOpen = { ent-BlastDoor }
+    .suffix = Открытый, Центральное командование, Закрыт
+    .desc = { ent-BlastDoor.desc }
+ent-ShuttersWindowCentralCommandOpen = { ent-ShuttersWindow }
+    .suffix = Открытые, Центральное командование, Закрыт
+    .desc = { ent-ShuttersWindow.desc }
+ent-ShuttersNormalCentralCommand = { ent-BaseShutter }
+    .suffix = Открытые, Центральное командование, Закрыт
+    .desc = { ent-BaseShutter.desc }
+ent-ShuttersNormalCentralCommandOpen = { ent-BaseShutter }
+    .suffix = Открытые, Центральное командование, Закрыт
+    .desc = { ent-BaseShutter.desc }
