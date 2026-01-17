@@ -265,6 +265,7 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    - id: PsiPka # SIS-Psi_Pka
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

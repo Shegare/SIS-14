@@ -2,13 +2,19 @@
 <img alt="Space Station 14" width="880" height="300" src="https://i.imgur.com/0gsjX0j.png">
 </div>
 
-Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
+> **Language Notice**: This is a Russian-language fork. Documentation and legal information are in Russian. For questions in English, please open an issue.
 
-Skill Issue Station - форк основанный на репозитории [Space Axolotl](https://github.com/lzk228/space-axolotl-14).
+Space Station 14 это ремейк Space Station 13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
+
+Skill Issue Station - форк основанный на репозитории [Space Axolotl](https://github.com/space-axolotl-14/space-axolotl-14).
 
 ## Наши ссылки
 
+<div class="header" align="center">
+
 [Discord](https://discord.gg/ZU2wCTA7gt)
+
+</div>
 
 ## Ссылки оффициальных разработчиков
 
@@ -29,14 +35,31 @@ Skill Issue Station - форк основанный на репозитории 
 
 ## Контрибьютинг
 
-Если вы желаете помочь в улучшении репозитория, решением проблем или создания нового контента, мы рады принять вклад от любого человека.
-Также присоединяйтесь в наше Discord сообщество, если хотите помочь. Не бойтесь просить о помощи!
+Если вы желаете помочь в улучшении репозитория, решением проблем или создания нового контента,
+мы рады принять вклад от любого человека. Присоединяйтесь в наше Discord сообщество, если хотите помочь.
+Не бойтесь просить о помощи!
+
+**Отправляя Pull Request, вы соглашаетесь лицензировать свой вклад под AGPL-3.0-or-later.**
 
 ## Лицензия
 
-Оригинальный код Space Station 14, разработанный [Space Wizards Federation](https://github.com/space-wizards/space-station-14), распространяется под лицензией [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT). Новый код и модификации, созданные для этого репозитория, распространяются под лицензией [AGPL-3.0-or-later](https://github.com/Shegare/SIS-14/blob/master/LICENSE_AGPL.txt). Файлы, лицензированные под **AGPL-3.0-or-later**, содержат соответствующий комментарий в начале файла.
+**Основная лицензия проекта: [AGPL-3.0-or-later](https://github.com/Shegare/SIS-14/blob/master/LICENSE_AGPL.txt)**
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
+Ознакомьтесь с файлом [LEGAL.md](https://github.com/Shegare/SIS-14/blob/master/LEGAL.md)
+для получения подробной юридической информации о лицензировании кода, включая:
+- Таблицу авторских прав для каждого пространства имён
+- Информацию о модифицированных MIT-файлах
+- Требования к использованию кода
+
+### Ассеты
+
+Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/),
+если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных.
+[Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
 
 > [!NOTE]
-> Некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+> Некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+> или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+>
+> AGPL-3.0-or-later требует раскрытия исходного кода при сетевом использовании.
+> Подробности в [LICENSE_AGPL.txt](https://github.com/Shegare/SIS-14/blob/master/LICENSE_AGPL.txt).

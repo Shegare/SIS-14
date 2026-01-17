@@ -4,8 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 12/13/2025 09:20:39
-  entityCount: 152
+  time: 12/28/2025 17:53:17
+  entityCount: 151
 maps: []
 grids:
 - 181
@@ -27,6 +27,8 @@ entities:
     components:
     - type: MetaData
       name: NT-Reclaimer
+    - type: Transform
+      parent: invalid
     - type: MapGrid
       chunks:
         -1,0:
@@ -1112,13 +1114,6 @@ entities:
     components:
     - type: Transform
       pos: -4.5,-6.5
-      parent: 181
-- proto: SalvageShuttleConsoleCircuitboard
-  entities:
-  - uid: 100
-    components:
-    - type: Transform
-      pos: -1.5,5.5
       parent: 181
 - proto: SMESBasic
   entities:

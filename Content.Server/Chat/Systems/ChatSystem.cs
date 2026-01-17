@@ -736,7 +736,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     public string TransformSpeech(EntityUid sender, string message)
     {
         var ev = new TransformSpeechEvent(sender, message);
-        RaiseLocalEvent(ev);
+        RaiseLocalEvent(sender, ev, true);
 
         return ev.Message;
     }
@@ -771,7 +771,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         return message;
     }
 
-    public static readonly ProtoId<ReplacementAccentPrototype> ChatSanitize_Accent = "chatsanitize";
+    public static readonly ProtoId<ReplacementAccentPrototype> ChatSanitize_Accent = "ruСhatsanitize"; // RU-Localization
 
     public string SanitizeMessageReplaceWords(string message)
     {

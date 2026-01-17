@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.3.0
+  engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/02/2025 23:05:17
-  entityCount: 2641
+  time: 12/28/2025 17:52:30
+  entityCount: 2642
 maps:
 - 1
 grids:
@@ -1362,6 +1362,7 @@ entities:
     - type: RadiationGridResistance
     - type: SpreaderGrid
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
 - proto: AirAlarm
   entities:
   - uid: 3
@@ -2185,7 +2186,7 @@ entities:
   - uid: 96
     components:
     - type: Transform
-      pos: -1.5352863,14.547528
+      pos: -1.5,14.5
       parent: 2
 - proto: BoxHandcuff
   entities:
@@ -6983,16 +6984,18 @@ entities:
       parent: 2
 - proto: ComputerShuttleCargo
   entities:
+  - uid: 952
+    components:
+    - type: Transform
+      pos: 2.5,11.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
   - uid: 938
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,10.5
-      parent: 2
-  - uid: 952
-    components:
-    - type: Transform
-      pos: 2.5,11.5
       parent: 2
 - proto: ComputerSurveillanceCameraMonitor
   entities:
@@ -12428,6 +12431,13 @@ entities:
     components:
     - type: Transform
       pos: 4.470603,-3.5184174
+      parent: 2
+- proto: MiningDrill
+  entities:
+  - uid: 2642
+    components:
+    - type: Transform
+      pos: -1.5,14.5
       parent: 2
 - proto: MopBucket
   entities:

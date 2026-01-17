@@ -1,62 +1,62 @@
 <Document>
-  # Space Law: Crime Listing
-  Crime codes are colored by linked crime groups, which are collections of non-stackable crimes. Suffixes are also included in the Quick Crime Guide to identify linked crimes.
+  # Космическое Закон: Перечень Преступлений
+  Коды схожих преступлений объединены одним цветом. Каждый цвет обозначает группу, в которой наказания не складываются (применяется только самое строгое).
 
-  ## Quick Crime Guide
+  ## Руководство по Борьбе с Преступностью
   <Table Columns="6">
     <ColorBox>
       <Box>
-        1-XX - Minor
+        1-XX - Лёгкое
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        2-XX - Moderate
+        2-XX - Среднее
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        3-XX - Major
+        3-XX - Крупное
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        4-XX - Extreme
+        4-XX - Тяжёлое
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        5-XX - Capital
+        5-XX - Критическое
       </Box>
     </ColorBox>
     <ColorBox>
       <Box>
-        Code
+        Код
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
+        Жестокое обращение с животными
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply (E)
+        Отказ Подчиниться (Escape)
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest (E)
+        Побег из-под Ареста (E)
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Custody (E)
+        Побег из-под Стражи (E)
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Permanent Confinement (E)
+        Побег из Постоянного Заключения (E)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -66,17 +66,17 @@
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession: Minor (P)
+        Хранение Экипировки: Лёгкое (Possession)
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession: Major (P)
+        Хранение Экипировки: Крупное (P)
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession: Highly Illegal (P)
+        Хранение Экипировки: Незаконное (P)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -94,7 +94,7 @@
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty Theft (H)
+        Мелкая Кража (Heist)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -103,12 +103,12 @@
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft (H)
+        Крупная кража (H)
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Kidnapping
+        Похищение
       </Box>
     </ColorBox>
     <ColorBox>
@@ -122,17 +122,17 @@
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vandalism (D)
+        Вандализм (Destruction)
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage of Property (D)
+        Повреждение Имущества (D)
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Destruction (D)
+        Массовое Разрушение (D)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -141,7 +141,7 @@
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Station-Wide Destruction (D)
+        Разрушение всей Станции (D)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -151,7 +151,7 @@
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass (T)
+        Проникновение (Trespass)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -160,7 +160,7 @@
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass (T)
+        Проникновение в стратегическую точку  (T)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -182,22 +182,22 @@
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Endangerment (V)
+        Угроза Жизни (Violence)
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Assault (V)
+        Нападение (V)
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder (V)
+        Попытка Убийства (V)
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Prevention of Revival (V)
+        Помеха Возрождению (V)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -215,17 +215,17 @@
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Manslaughter (V)
+        Непредумышленное Убийство (V)
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder (V)
+        Убийство (V)
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Murder (V)
+        Массовое Убийство (V)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -235,7 +235,7 @@
     </ColorBox>
     <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Disturbance (R)
+        Нарушение Общественного Порядка (Rioting)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -244,7 +244,7 @@
     </ColorBox>
     <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting (R)
+        Бунт (R)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -253,7 +253,7 @@
     </ColorBox>
     <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Refusal of Mental Shielding (R)
+        Отказ от Импланта "Щит разума" (R)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -263,9 +263,9 @@
     </ColorBox>
   </Table>
 
-  ## Minor Crimes
-  - Warnings should be issued for a first offense.
-  - If multiple minor crimes have been committed or it is a repeat offense, 5 minutes per minor crime is the maximum.
+  ## Лёгкие Преступления
+  - Для первого нарушения следует выдавать предупреждение.
+  - Если было совершено несколько мелких преступлений или это повторное правонарушение, максимум 5 минут на каждое мелкое преступление.
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -415,9 +415,9 @@
     </ColorBox>
   </Table>
 
-  ## Moderate Crimes
-  - The maximum sentence per moderate crime is 5 minutes.
-  - Depending on the situation you may want to issue a warning instead of a detaining.
+  ## Средние Преступления
+  - Максимальное наказание за преступление средней тяжести составляет 5 минут.
+  - В зависимости от ситуации вы можете вынести предупреждение вместо задержания.
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -523,10 +523,10 @@
     </ColorBox>
   </Table>
 
-  ## Major Crimes
-  - The maximum sentence per major crime is 10 minutes.
-  - Assault and Manslaughter are linked crimes, and cannot be stacked against a suspect.
-  - It is recommended to not use maximum sentences for those being compliant.
+  ## Крупные Преступления
+  - Максимальное наказание за крупное преступление составляет 10 минут.
+  - Срок за Нападение и Непредумышленное Убийство не может складываться.
+  - Рекомендуется не использовать максимальные сроки наказания для тех, кто соблюдает требования законодательства.
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -715,11 +715,11 @@
     </ColorBox>
   </Table>
 
-  ## Extreme Crimes
-  - The maximum sentence per extreme crime is 15 minutes.
-  - Particularly violent offenders may be placed in perma. (Attacking officers in an attempt to escape prison)
-  - Attempted murder and murder are linked crimes and cannot be stacked together.
-  - Attempted murderers should be granted a more lenient sentence than a murderer.
+  ## Тяжёлые Преступления
+  - Максимальное наказание за тяжкое преступление составляет 15 минут.
+  - Особо жестокие преступники могут быть арестованы на весь срок смены. (Нападение на СБ при попытке сбежать из заключения)
+  - Срок за Покушение на Убийство и Убийство не может складываться.
+  - За Покушение на убийство должно быть назначено более мягкое наказание, чем за Убийство.
   <Table Columns="4">
     <ColorBox>
       <Box>
@@ -823,8 +823,8 @@
     </ColorBox>
   </Table>
 
-  ## Capital Crimes
-  - Capital crimes should usually lead to a death sentence or shift lasting detainment.
+  ## Критические Преступления
+  - Особо тяжкие преступления, как правило, должны приводить к смертной казни или длительному содержанию под стражей на весь срок смены.
   <Table Columns="4">
     <ColorBox>
       <Box>

@@ -28,6 +28,7 @@
             - material: ReinforcedPlasmaGlass
               amount: 1
               doAfter: 3
+
         - to: uraniumWindowDirectional
           steps:
             - material: UraniumGlass

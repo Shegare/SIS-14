@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2019-2025 Space Wizards Federation
+# SPDX-FileCopyrightText: 2026 SIS-14 contributors
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: Incorporeal
   save: false
@@ -82,6 +87,12 @@
   - type: Tag
     tags: # BAD: Intentional removal of inherited tag
     - AllowGhostShownByEvent
+  # SIS-Ghost_Respawn Start
+  - type: UserInterface
+    interfaces:
+      enum.RespawnUiKey.Key:
+        type: RespawnBoundUserInterface
+  # SIS-Ghost_Respawn End
 
 - type: entity
   parent: BaseMentalAction

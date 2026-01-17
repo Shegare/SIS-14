@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2021-2025 Space Wizards Federation
-// SPDX-FileCopyrightText: 2025 SIS-14 contributors
+// SPDX-FileCopyrightText: 2025-2026 SIS-14 contributors
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -234,6 +234,7 @@ namespace Content.Server.Ghost
         private void OnMapInit(EntityUid uid, GhostComponent component, MapInitEvent args)
         {
             _actions.AddAction(uid, ref component.BooActionEntity, component.BooAction);
+            _actions.AddAction(uid, ref component.RespawnActionEntity, component.RespawnAction); // SIS-Ghost_Respawn Start
             _actions.AddAction(uid, ref component.ToggleGhostHearingActionEntity, component.ToggleGhostHearingAction);
             _actions.AddAction(uid, ref component.ToggleLightingActionEntity, component.ToggleLightingAction);
             _actions.AddAction(uid, ref component.ToggleFoVActionEntity, component.ToggleFoVAction);
