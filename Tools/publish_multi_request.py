@@ -15,8 +15,11 @@ RELEASE_DIR = "release"
 #  CONFIGURATION PARAMETERS
 #  Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "http://cdn.axolotl-station.ru/"
-FORK_ID = "axolotl"
+
+# SIS-CDN Start
+ROBUST_CDN_URL = "https://skill-issue-station.space/cdn/"
+FORK_ID = "sis-14"
+# SIS-CDN End
 
 def main():
     parser = argparse.ArgumentParser()

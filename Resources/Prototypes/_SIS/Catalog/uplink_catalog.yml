@@ -1,0 +1,54 @@
+# Wearables
+
+- type: listing
+  id: UplinkClothingHeadHelmetSwatSyndicate
+  name: uplink-clothing-head-helmet-swat-syndicat-name
+  description: uplink-clothing-head-helmet-swat-syndicat-desc
+  productEntity: ClothingHeadHelmetSwatSyndicate
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkWearables
+
+#Chemicals
+
+- type: listing
+  id: UplinkSyndiHypo
+  name: uplink-syndihypo-name
+  description: uplink-syndihypo-desc
+  icon: { sprite: Objects/Specific/Medical/syndihypo.rsi, state: hypo }
+  productEntity: SyndiHypo
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 12
+  cost:
+    Telecrystal: 14
+  categories:
+  - UplinkChemicals
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+
+# Guns
+
+- type: listing
+  id: FireAxeFlaming
+  name: uplink-FireAxeFlaming
+  description: uplink-FireAxeFlaming.desc
+  productEntity: FireAxeFlaming
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 13
+  categories:
+  - UplinkWeaponry

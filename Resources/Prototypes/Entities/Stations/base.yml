@@ -59,11 +59,6 @@
             - type: TradeStation
           paths:
             - /Maps/Shuttles/trading_outpost.yml
-        # SIS-Mining_Shuttle Start
-        mining: !type:GridSpawnGroup
-          paths:
-            - /Maps/_SIS/Shuttles/mining.yml
-        # SIS-Mining_Shuttle End
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
@@ -117,6 +112,11 @@
             inherent: true
           protos:
           - VGRoid
+        # SIS-Mining_Shuttle Start
+        mining: !type:GridSpawnGroup
+          paths:
+            - /Maps/_SIS/Shuttles/mining.yml
+        # SIS-Mining_Shuttle End
 
 - type: entity
   id: BaseStationCentcomm

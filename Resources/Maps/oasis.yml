@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.3.0
+  engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 11/25/2025 05:12:37
-  entityCount: 31152
+  time: 12/28/2025 17:44:20
+  entityCount: 31169
 maps:
 - 1
 grids:
@@ -8810,6 +8810,7 @@ entities:
     - type: BecomesStation
       id: Oasis
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
   - uid: 21002
     components:
     - type: MetaData
@@ -10069,6 +10070,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 1634
@@ -15511,7 +15513,7 @@ entities:
       pos: -22.5,26.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -245266.3
+      secondsUntilStateChange: -245601.27
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16367,7 +16369,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344094.94
+      secondsUntilStateChange: -344429.9
       state: Opening
   - uid: 6934
     components:
@@ -16379,7 +16381,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344097.56
+      secondsUntilStateChange: -344432.53
       state: Opening
   - uid: 6935
     components:
@@ -16391,7 +16393,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344096.4
+      secondsUntilStateChange: -344431.38
       state: Opening
   - uid: 6936
     components:
@@ -16402,7 +16404,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344095.62
+      secondsUntilStateChange: -344430.6
       state: Opening
 - proto: AirlockTheatreLocked
   entities:
@@ -18086,6 +18088,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -20.5,-30.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
     - type: Fixtures
       fixtures: {}
   - uid: 1689
@@ -18100,6 +18105,16 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -33.5,-15.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 1949
+    components:
+    - type: MetaData
+      name: Med Hall APC
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,-45.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -42004,11 +42019,6 @@ entities:
     - type: Transform
       pos: -25.5,-44.5
       parent: 2
-  - uid: 1949
-    components:
-    - type: Transform
-      pos: -18.5,-39.5
-      parent: 2
   - uid: 1956
     components:
     - type: Transform
@@ -58169,6 +58179,11 @@ entities:
     - type: Transform
       pos: -31.5,9.5
       parent: 2
+  - uid: 28631
+    components:
+    - type: Transform
+      pos: -18.5,-45.5
+      parent: 2
   - uid: 28752
     components:
     - type: Transform
@@ -72120,6 +72135,46 @@ entities:
     - type: Transform
       pos: -2.5,43.5
       parent: 2
+  - uid: 23739
+    components:
+    - type: Transform
+      pos: -19.5,-32.5
+      parent: 2
+  - uid: 23740
+    components:
+    - type: Transform
+      pos: -20.5,-32.5
+      parent: 2
+  - uid: 23741
+    components:
+    - type: Transform
+      pos: -20.5,-33.5
+      parent: 2
+  - uid: 23742
+    components:
+    - type: Transform
+      pos: -20.5,-34.5
+      parent: 2
+  - uid: 23807
+    components:
+    - type: Transform
+      pos: -20.5,-35.5
+      parent: 2
+  - uid: 23829
+    components:
+    - type: Transform
+      pos: -20.5,-36.5
+      parent: 2
+  - uid: 24120
+    components:
+    - type: Transform
+      pos: -20.5,-37.5
+      parent: 2
+  - uid: 24121
+    components:
+    - type: Transform
+      pos: -20.5,-38.5
+      parent: 2
   - uid: 24170
     components:
     - type: Transform
@@ -72379,6 +72434,51 @@ entities:
     components:
     - type: Transform
       pos: -31.5,31.5
+      parent: 2
+  - uid: 28619
+    components:
+    - type: Transform
+      pos: -20.5,-39.5
+      parent: 2
+  - uid: 28621
+    components:
+    - type: Transform
+      pos: -20.5,-40.5
+      parent: 2
+  - uid: 28622
+    components:
+    - type: Transform
+      pos: -20.5,-41.5
+      parent: 2
+  - uid: 28623
+    components:
+    - type: Transform
+      pos: -20.5,-42.5
+      parent: 2
+  - uid: 28624
+    components:
+    - type: Transform
+      pos: -20.5,-43.5
+      parent: 2
+  - uid: 28625
+    components:
+    - type: Transform
+      pos: -20.5,-44.5
+      parent: 2
+  - uid: 28628
+    components:
+    - type: Transform
+      pos: -20.5,-45.5
+      parent: 2
+  - uid: 28629
+    components:
+    - type: Transform
+      pos: -19.5,-45.5
+      parent: 2
+  - uid: 28630
+    components:
+    - type: Transform
+      pos: -18.5,-45.5
       parent: 2
   - uid: 28635
     components:
@@ -83380,11 +83480,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,15.5
       parent: 21002
-  - uid: 29784
-    components:
-    - type: Transform
-      pos: -56.5,-16.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 9892
@@ -83415,6 +83510,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -57.5,-20.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerShuttleCargo
   entities:
   - uid: 11278
@@ -83428,6 +83526,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -57.5,-3.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 20864
+    components:
+    - type: Transform
+      pos: -56.5,-16.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -84460,8 +84565,8 @@ entities:
       pos: -24.5,-20.5
       parent: 2
     - type: EntityStorage
-      open: True
       removedMasks: 28
+      open: True
     - type: Fixtures
       fixtures:
         fix1:
@@ -97203,13 +97308,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -55.5,-36.5
       parent: 2
-- proto: FigureSpawner
-  entities:
-  - uid: 23863
-    components:
-    - type: Transform
-      pos: -2.5,-62.5
-      parent: 2
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 1114
@@ -100261,7 +100359,7 @@ entities:
       pos: -13.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -335418.94
+      secondsUntilStateChange: -335753.9
     - type: DeviceNetwork
       deviceLists:
       - 18275
@@ -104532,7 +104630,7 @@ entities:
       parent: 2
 - proto: GasMinerPlasma
   entities:
-  - uid: 23739
+  - uid: 28632
     components:
     - type: Transform
       pos: -41.5,17.5
@@ -147223,7 +147321,7 @@ entities:
       pos: 36.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -372250.72
+      secondsUntilStateChange: -372585.7
       state: Opening
   - uid: 5211
     components:
@@ -150387,6 +150485,13 @@ entities:
     components:
     - type: Transform
       pos: -56.05085,0.6887263
+      parent: 2
+- proto: MechFigurineSpawner50
+  entities:
+  - uid: 23863
+    components:
+    - type: Transform
+      pos: -2.5,-62.5
       parent: 2
 - proto: MedicalBed
   entities:
@@ -153793,6 +153898,34 @@ entities:
     - type: Transform
       pos: 31.976513,24.950718
       parent: 1
+- proto: PlushieSpawner50
+  entities:
+  - uid: 20680
+    components:
+    - type: Transform
+      pos: -17.5,36.5
+      parent: 2
+  - uid: 20681
+    components:
+    - type: Transform
+      pos: -18.5,35.5
+      parent: 2
+  - uid: 22268
+    components:
+    - type: Transform
+      pos: 21.5,-5.5
+      parent: 21002
+  - uid: 23048
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 14.5,6.5
+      parent: 21002
+  - uid: 23050
+    components:
+    - type: Transform
+      pos: 14.5,-7.5
+      parent: 21002
 - proto: PonderingOrb
   entities:
   - uid: 23786
@@ -173725,7 +173858,7 @@ entities:
     - type: Transform
       pos: -23.5,33.5
       parent: 2
-- proto: SpacemenFigureSpawner
+- proto: SpacemenFigurineSpawner90
   entities:
   - uid: 20677
     components:
@@ -175012,13 +175145,6 @@ entities:
     components:
     - type: Transform
       pos: 47.5,-15.5
-      parent: 2
-- proto: SpawnPointZookeeper
-  entities:
-  - uid: 20864
-    components:
-    - type: Transform
-      pos: -19.5,-3.5
       parent: 2
 - proto: SpiderWeb
   entities:
@@ -182015,34 +182141,6 @@ entities:
     - type: Transform
       pos: 35.30755,22.53226
       parent: 2
-- proto: ToySpawner
-  entities:
-  - uid: 20680
-    components:
-    - type: Transform
-      pos: -17.5,36.5
-      parent: 2
-  - uid: 20681
-    components:
-    - type: Transform
-      pos: -18.5,35.5
-      parent: 2
-  - uid: 22268
-    components:
-    - type: Transform
-      pos: 21.5,-5.5
-      parent: 21002
-  - uid: 23048
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 14.5,6.5
-      parent: 21002
-  - uid: 23050
-    components:
-    - type: Transform
-      pos: 14.5,-7.5
-      parent: 21002
 - proto: TrashBag
   entities:
   - uid: 3060
@@ -204383,7 +204481,7 @@ entities:
       pos: 24.5,2.5
       parent: 21002
     - type: Door
-      secondsUntilStateChange: -717455.25
+      secondsUntilStateChange: -717790.25
       state: Opening
   - uid: 28863
     components:

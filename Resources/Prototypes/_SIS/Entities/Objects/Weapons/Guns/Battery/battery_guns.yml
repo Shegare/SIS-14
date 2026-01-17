@@ -4,5 +4,5 @@
   name: rechargable disabler SMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse. It recharges over time.
   components:
-  - type: PredictedBatterySelfRecharger
+  - type: BatterySelfRecharger
     autoRechargeRate: 6
