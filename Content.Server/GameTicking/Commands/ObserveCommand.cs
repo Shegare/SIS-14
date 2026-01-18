@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2020-2024 Space Wizards Federation
-// SPDX-FileCopyrightText: 2025 SIS-14 contributors
+// SPDX-FileCopyrightText: 2025 Skill Issue Station contributors
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
