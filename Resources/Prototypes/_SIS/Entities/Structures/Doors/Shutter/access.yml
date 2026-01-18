@@ -21,6 +21,8 @@
       board: [ DoorElectronicsCentralCommand ]
   - type: AccessReader
     containerAccessProvider: board
+  - type: Door
+    canPry: false
 
 - type: entity
   parent: ShuttersNormal
@@ -32,6 +34,8 @@
       board: [ DoorElectronicsCentralCommand ]
   - type: AccessReader
     containerAccessProvider: board
+  - type: Door
+    canPry: false
 
 - type: entity
   parent: ShuttersNormalOpen
@@ -43,3 +47,5 @@
       board: [ DoorElectronicsCentralCommand ]
   - type: AccessReader
     containerAccessProvider: board
+  - type: Door
+    canPry: false
