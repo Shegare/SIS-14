@@ -1,15 +1,27 @@
+using Content.Shared._SIS.Respawn;
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
 using JetBrains.Annotations;
-using Robust.Client.Console;
+using Robust.Client.Player;
 using Robust.Client.UserInterface;
 
 namespace Content.Client._SIS.Respawn.UI;
 
 [UsedImplicitly]
-public sealed class RespawnBoundUserInterface(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
+public sealed class RespawnBoundUserInterface : BoundUserInterface
 {
-    [Dependency] private readonly IClientConsoleHost _console = default!;
+    [Dependency] private readonly IEntityManager _entityManager = default!;
+    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    private readonly SharedMindSystem _mindSystem = default!;
 
     private RespawnWindow? _window;
+
+
+    public RespawnBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
+    {
+        IoCManager.InjectDependencies(this);
+        _mindSystem = _entityManager.System<SharedMindSystem>();
+    }
 
     protected override void Open()
     {
@@ -18,22 +30,26 @@ public sealed class RespawnBoundUserInterface(EntityUid owner, Enum uiKey) : Bou
         _window = this.CreateWindow<RespawnWindow>();
         _window.OpenCentered();
 
-        _window.OnRequestPressed += ButtonPressed;
-        _window.OnClose += Close;
-    }
+        var session = _playerManager.LocalSession;
+        if (_mindSystem.TryGetMind(session, out var mindUid, out _)
+            && _entityManager.TryGetComponent<RespawnStatusComponent>(mindUid, out var comp))
+        {
+            _window.RespawnStatus = comp;
+        }
 
-    private void ButtonPressed()
-    {
-        _console.ExecuteCommand("respawn");
-        Close();
+        _window.OnRequestPressed += () =>
+        {
+            _entityManager.RaisePredictiveEvent(new RespawnRequestEvent());
+            Close();
+        };
+
+        _window.OnClose += Close;
     }
 
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);
-        if (!disposing)
-            return;
-
+        if (!disposing) return;
         _window?.Close();
         _window = null;
     }

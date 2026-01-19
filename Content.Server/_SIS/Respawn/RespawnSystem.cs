@@ -1,0 +1,81 @@
+using Content.Server.GameTicking;
+using Content.Shared._SIS.Respawn;
+using Content.Shared.Actions;
+using Content.Shared.Administration.Logs;
+using Content.Shared.Database;
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
+using Robust.Shared.Player;
+using Robust.Shared.Timing;
+
+namespace Content.Server._SIS.Respawn;
+
+public sealed class RespawnSystem : SharedRespawnSystem
+{
+    [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly GameTicker _ticker = default!;
+    [Dependency] private readonly ISharedAdminLogManager _logManager = default!;
+    [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<RespawnComponent, MapInitEvent>(OnMapInit);
+
+        SubscribeLocalEvent<RespawnComponent, PlayerAttachedEvent>(UpdateTimer);
+        SubscribeLocalEvent<RespawnComponent, MindAddedMessage>(UpdateTimer);
+
+        SubscribeLocalEvent<RespawnComponent, RespawnActionEvent>(OnRespawnAction);
+        SubscribeNetworkEvent<RespawnRequestEvent>(OnRespawnRequest);
+    }
+
+    private void OnMapInit(EntityUid uid, RespawnComponent component, MapInitEvent args)
+    {
+        _actions.AddAction(uid, ref component.RespawnActionEntity, component.RespawnAction);
+    }
+
+    private void UpdateTimer(EntityUid uid, RespawnComponent component, EntityEventArgs args)
+    {
+        if (!_mindSystem.TryGetMind(uid, out var mindUid, out _))
+            return;
+
+        if (HasComp<RespawnStatusComponent>(mindUid))
+            return;
+
+        EnsureComp<RespawnStatusComponent>(mindUid, out var comp);
+        comp.TimeOfDeath = _timing.CurTime;
+        Dirty(mindUid, comp);
+    }
+
+    public void OnRespawnAction(EntityUid uid, RespawnComponent component, RespawnActionEvent args)
+    {
+        if (args.Handled) return;
+        _ui.TryToggleUi(uid, RespawnUiKey.Key, args.Performer);
+        args.Handled = true;
+    }
+
+    public void OnRespawnRequest(RespawnRequestEvent msg, EntitySessionEventArgs args)
+    {
+        var playerSession = args.SenderSession;
+        var uid = playerSession.AttachedEntity;
+
+        if (uid == null)
+            return;
+
+        if (!_mindSystem.TryGetMind(playerSession, out var mindUid, out _))
+            return;
+
+        if (!TryComp<RespawnStatusComponent>(mindUid, out var comp))
+            return;
+
+        if (GetRespawnCooldown(comp).TotalSeconds > 0)
+            return;
+
+        RemComp<RespawnStatusComponent>(mindUid);
+        _ticker.Respawn(playerSession);
+        _logManager.Add(LogType.Respawn, $"{playerSession} used respawn menu");
+    }
+}

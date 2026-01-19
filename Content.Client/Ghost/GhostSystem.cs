@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Client.Movement.Systems;
+using Content.Shared._SIS.Respawn;
 using Content.Shared.Actions;
 using Content.Shared.Ghost;
 using Robust.Client.Console;
@@ -21,7 +22,6 @@ namespace Content.Client.Ghost
         [Dependency] private readonly PointLightSystem _pointLightSystem = default!;
         [Dependency] private readonly ContentEyeSystem _contentEye = default!;
         [Dependency] private readonly SpriteSystem _sprite = default!;
-        [Dependency] private readonly SharedUserInterfaceSystem _ui = default!; // SIS-Ghost_Respawn
 
         public int AvailableGhostRoleCount { get; private set; }
 
@@ -74,7 +74,7 @@ namespace Content.Client.Ghost
             SubscribeLocalEvent<EyeComponent, ToggleLightingActionEvent>(OnToggleLighting);
             SubscribeLocalEvent<EyeComponent, ToggleFoVActionEvent>(OnToggleFoV);
             SubscribeLocalEvent<GhostComponent, ToggleGhostsActionEvent>(OnToggleGhosts);
-            SubscribeLocalEvent<GhostComponent, RespawnActionEvent>(OnRespawnAction); // SIS-Ghost_Respawn
+
         }
 
         private void OnStartup(EntityUid uid, GhostComponent component, ComponentStartup args)
@@ -209,16 +209,6 @@ namespace Content.Client.Ghost
             GhostVisibility = visibility ?? !GhostVisibility;
         }
 
-        // SIS-Ghost_Respawn Start
-        private void OnRespawnAction(EntityUid uid, GhostComponent component, RespawnActionEvent args)
-        {
-            if (args.Handled)
-                return;
 
-            _ui.OpenUi(uid, RespawnUiKey.Key, args.Performer, predicted: true);
-
-            args.Handled = true;
-        }
-        // SIS-Ghost_Respawn End
     }
 }

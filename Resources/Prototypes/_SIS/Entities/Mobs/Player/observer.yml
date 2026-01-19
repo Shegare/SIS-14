@@ -6,7 +6,5 @@
   components:
   - type: Action
     icon: { sprite: _SIS/Mobs/Ghosts/ghost.rsi, state: icon }
-    startDelay: true
-    useDelay: 600
   - type: InstantAction
     event: !type:RespawnActionEvent

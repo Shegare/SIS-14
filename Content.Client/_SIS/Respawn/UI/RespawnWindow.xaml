@@ -11,6 +11,7 @@
                        Text="{Loc 'ghost-respawn-window-test'}" />
         <Button Name="RequestButton"
                 Text="{Loc 'ghost-respawn-request-role-button'}"
+                Disabled="True"
                 TextAlign="Center"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center" />

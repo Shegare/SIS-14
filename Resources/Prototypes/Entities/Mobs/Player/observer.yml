@@ -88,6 +88,7 @@
     tags: # BAD: Intentional removal of inherited tag
     - AllowGhostShownByEvent
   # SIS-Ghost_Respawn Start
+  - type: Respawn
   - type: UserInterface
     interfaces:
       enum.RespawnUiKey.Key:

@@ -1,12 +1,6 @@
-// SPDX-FileCopyrightText: 2023-2025 Space Wizards Federation
-// SPDX-FileCopyrightText: 2026 Skill Issue Station contributors
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using Content.Shared.Actions;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 
 namespace Content.Shared.Ghost;
 
@@ -48,14 +42,6 @@ public sealed partial class GhostComponent : Component
 
     [DataField, AutoNetworkedField]
     public EntityUid? BooActionEntity;
-
-    // SIS-Ghost_Respawn Start
-    [DataField]
-    public EntProtoId RespawnAction = "RespawnAction";
-
-    [DataField, AutoNetworkedField]
-    public EntityUid? RespawnActionEntity;
-    // SIS-Ghost_Respawn Start
 
     // End actions
 
@@ -120,13 +106,3 @@ public sealed partial class ToggleGhostHearingActionEvent : InstantActionEvent {
 public sealed partial class ToggleGhostVisibilityToAllEvent : InstantActionEvent { }
 
 public sealed partial class BooActionEvent : InstantActionEvent { }
-
-// SIS-Ghost_Respawn Start
-public sealed partial class RespawnActionEvent : InstantActionEvent;
-
-[Serializable, NetSerializable]
-public enum RespawnUiKey : byte
-{
-    Key,
-}
-// SIS-Ghost_Respawn End
