@@ -74,6 +74,11 @@
     sprite: Clothing/OuterClothing/Bio/security.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Bio/security.rsi
+# SIS-14 BioSecurity Fix Start
+  - type: HideLayerClothing
+    slots:
+    - Tail
+# SIS-14 BioSecurity Fix End
   - type: Armor
     modifiers:
       coefficients:
