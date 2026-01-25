@@ -11,6 +11,7 @@ public sealed class RespawnBoundUserInterface : BoundUserInterface
 {
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
+
     private readonly SharedMindSystem _mindSystem = default!;
 
     private RespawnWindow? _window;

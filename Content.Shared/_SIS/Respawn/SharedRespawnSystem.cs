@@ -8,8 +8,8 @@ public abstract class SharedRespawnSystem : EntitySystem
 
     public TimeSpan GetRespawnCooldown(RespawnStatusComponent comp)
     {
-        var unlockTime = comp.TimeToUnlockRespawn + comp.TimeOfDeath;
-        var cooldown = unlockTime - _timing.CurTime;
+        var requiredTime = comp.TimeToUnlockRespawn + comp.TimeOfDeath;
+        var cooldown = requiredTime - _timing.CurTime;
         return cooldown;
     }
 }
