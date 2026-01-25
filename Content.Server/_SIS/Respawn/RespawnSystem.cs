@@ -39,7 +39,8 @@ public sealed class RespawnSystem : SharedRespawnSystem
 
     private void OnMindAdded(EntityUid uid, RespawnComponent component, EntityEventArgs args)
     {
-        if (!_mindSystem.TryGetMind(uid, out var mindUid, out _))
+        if (!_mindSystem.TryGetMind(uid, out var mindUid, out _)
+            || HasComp<RespawnStatusComponent>(mindUid))
             return;
 
         EnsureComp<RespawnStatusComponent>(mindUid, out var comp);
