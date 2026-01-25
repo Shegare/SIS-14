@@ -1,10 +1,4 @@
-// SPDX-FileCopyrightText: 2021-2025 Space Wizards Federation
-// SPDX-FileCopyrightText: 2026 Skill Issue Station contributors
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
 using Content.Client.Movement.Systems;
-using Content.Shared._SIS.Respawn;
 using Content.Shared.Actions;
 using Content.Shared.Ghost;
 using Robust.Client.Console;
@@ -74,7 +68,6 @@ namespace Content.Client.Ghost
             SubscribeLocalEvent<EyeComponent, ToggleLightingActionEvent>(OnToggleLighting);
             SubscribeLocalEvent<EyeComponent, ToggleFoVActionEvent>(OnToggleFoV);
             SubscribeLocalEvent<GhostComponent, ToggleGhostsActionEvent>(OnToggleGhosts);
-
         }
 
         private void OnStartup(EntityUid uid, GhostComponent component, ComponentStartup args)
@@ -208,7 +201,5 @@ namespace Content.Client.Ghost
         {
             GhostVisibility = visibility ?? !GhostVisibility;
         }
-
-
     }
 }

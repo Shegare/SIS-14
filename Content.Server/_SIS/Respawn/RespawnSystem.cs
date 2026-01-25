@@ -25,8 +25,8 @@ public sealed class RespawnSystem : SharedRespawnSystem
 
         SubscribeLocalEvent<RespawnComponent, MapInitEvent>(OnMapInit);
 
-        SubscribeLocalEvent<RespawnComponent, PlayerAttachedEvent>(UpdateTimer);
-        SubscribeLocalEvent<RespawnComponent, MindAddedMessage>(UpdateTimer);
+        SubscribeLocalEvent<RespawnComponent, PlayerAttachedEvent>(OnMindAdded);
+        SubscribeLocalEvent<RespawnComponent, MindAddedMessage>(OnMindAdded);
 
         SubscribeLocalEvent<RespawnComponent, RespawnActionEvent>(OnRespawnAction);
         SubscribeNetworkEvent<RespawnRequestEvent>(OnRespawnRequest);
@@ -37,12 +37,9 @@ public sealed class RespawnSystem : SharedRespawnSystem
         _actions.AddAction(uid, ref component.RespawnActionEntity, component.RespawnAction);
     }
 
-    private void UpdateTimer(EntityUid uid, RespawnComponent component, EntityEventArgs args)
+    private void OnMindAdded(EntityUid uid, RespawnComponent component, EntityEventArgs args)
     {
         if (!_mindSystem.TryGetMind(uid, out var mindUid, out _))
-            return;
-
-        if (HasComp<RespawnStatusComponent>(mindUid))
             return;
 
         EnsureComp<RespawnStatusComponent>(mindUid, out var comp);

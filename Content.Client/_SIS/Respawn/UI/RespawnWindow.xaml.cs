@@ -36,8 +36,11 @@ public sealed partial class RespawnWindow : DefaultWindow
         var remaining = _respawnSystem.GetRespawnCooldown(RespawnStatus);
         if (remaining.TotalSeconds > 0)
         {
-            RequestButton.Disabled = true;
-            RequestButton.Text = Loc.GetString("ghost-respawn-request-role-button-timer", ("minutes", $"{remaining.Minutes:00}"), ("seconds", $"{remaining.Seconds:00}"));
+            RequestButton.Text = Loc.GetString(
+                "ghost-respawn-request-role-button-timer",
+                ("minutes", $"{remaining.Minutes:00}"),
+                ("seconds", $"{remaining.Seconds:00}")
+            );
         }
         else
         {

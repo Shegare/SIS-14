@@ -1,6 +1,5 @@
 using Content.Shared._SIS.Respawn;
 using Content.Shared.Mind;
-using Content.Shared.Mind.Components;
 using JetBrains.Annotations;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
@@ -15,7 +14,6 @@ public sealed class RespawnBoundUserInterface : BoundUserInterface
     private readonly SharedMindSystem _mindSystem = default!;
 
     private RespawnWindow? _window;
-
 
     public RespawnBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
     {
