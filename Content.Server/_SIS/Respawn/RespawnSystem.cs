@@ -62,13 +62,9 @@ public sealed class RespawnSystem : SharedRespawnSystem
         if (uid == null)
             return;
 
-        if (!_mindSystem.TryGetMind(playerSession, out var mindUid, out _))
-            return;
-
-        if (!TryComp<RespawnStatusComponent>(mindUid, out var comp))
-            return;
-
-        if (GetRespawnCooldown(comp).TotalSeconds > 0)
+        if (!_mindSystem.TryGetMind(playerSession, out var mindUid, out _)
+            || !TryComp<RespawnStatusComponent>(mindUid, out var comp)
+            || GetRespawnCooldown(comp).TotalSeconds > 0)
             return;
 
         RemComp<RespawnStatusComponent>(mindUid);
