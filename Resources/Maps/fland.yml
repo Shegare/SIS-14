@@ -4,8 +4,8 @@ meta:
   engineVersion: 270.1.0
   forkId: ""
   forkVersion: ""
-  time: 01/08/2026 20:58:33
-  entityCount: 36094
+  time: 01/27/2026 14:46:24
+  entityCount: 36096
 maps:
 - 1
 grids:
@@ -96943,6 +96943,13 @@ entities:
     - type: Transform
       pos: -1.5,-24.5
       parent: 13329
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 36096
+    components:
+    - type: Transform
+      pos: 16.5,-29.5
+      parent: 13329
 - proto: ComputerSolarControl
   entities:
   - uid: 26230
@@ -116203,6 +116210,13 @@ entities:
     components:
     - type: Transform
       pos: 75.5,-41.5
+      parent: 13329
+- proto: GasMinerPlasma
+  entities:
+  - uid: 36095
+    components:
+    - type: Transform
+      pos: 92.5,-34.5
       parent: 13329
 - proto: GasMinerWaterVapor
   entities:
