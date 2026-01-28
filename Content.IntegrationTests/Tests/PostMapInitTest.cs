@@ -102,6 +102,9 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Exo",
             "Snowball",
+            // SIS-Maps Start
+            "Atlas",
+            // SIS-Maps End
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
