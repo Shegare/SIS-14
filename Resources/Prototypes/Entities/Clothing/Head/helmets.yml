@@ -69,9 +69,9 @@
   description: An extremely robust helmet, commonly used by paramilitary forces. This one has the Nanotrasen logo emblazoned on the top.
   components:
   - type: Sprite
-    sprite: _SIS/Clothing/Head/Helmets/swat.rsi # SIS-Swat_Resprite
+    sprite: _SIS/Clothing/Head/Helmets/swat.rsi # SIS
   - type: Clothing
-    sprite: _SIS/Clothing/Head/Helmets/swat.rsi # SIS-Swat_Resprite
+    sprite: _SIS/Clothing/Head/Helmets/swat.rsi # SIS
   - type: Armor #This is intentionally not spaceproof, when the time comes to port the values from SS13 this should be buffed from what it was.
     modifiers:
       coefficients:

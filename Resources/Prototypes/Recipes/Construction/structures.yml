@@ -170,7 +170,7 @@
 - type: construction
   id: DiagonalShuttleWall
   name: construction-recipe-diagonal-shuttle-wall
-  graph: DiagonalGirder # SIS-DiagonalGirder
+  graph: DiagonalGirder # SIS
   startNode: start
   targetNode: diagonalshuttleWall
   category: construction-category-structures

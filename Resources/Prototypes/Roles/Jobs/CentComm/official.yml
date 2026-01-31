@@ -20,16 +20,16 @@
   id: CentcommGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
-    shoes: ClothingShoesBootsLaceup # SIS-CentcomGear
+    shoes: ClothingShoesBootsLaceup # SIS
     head: ClothingHeadHatCentcom
     eyes: ClothingEyesGlassesCommand
-    # gloves: ClothingHandsGlovesColorBlack # SIS-CentcomGear
-    outerClothing: ClothingOuterArmorBasic # SIS-CentcomGear
+    # gloves: ClothingHandsGlovesColorBlack # SIS
+    outerClothing: ClothingOuterArmorBasic # SIS
     id: CentcomPDA
-    ears: ClothingHeadsetCentCom # SIS-CentcomGear
+    ears: ClothingHeadsetCentCom # SIS
     belt: WeaponPistolN1984
     pocket1: BoxFolderCentComClipboardThreePapers
-    # pocket2: PenCentcom # SIS-CentcomGear
+    # pocket2: PenCentcom # SIS
 
 - type: chameleonOutfit
   id: CentralCommandOfficialOutfit

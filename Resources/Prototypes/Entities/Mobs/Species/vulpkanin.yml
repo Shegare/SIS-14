@@ -124,7 +124,7 @@
             state: hair
   - type: Inventory
     speciesId: vulpkanin
-  # SIS-Vulpkanin Start
+  # SIS-Start
   #  displacements:
   #    jumpsuit:
   #      sizeMaps:
@@ -171,7 +171,7 @@
   #        32:
   #          sprite: Mobs/Species/Vulpkanin/displacement.rsi
   #          state: belt
-  # SIS-Vulpkanin End
+  # SIS-End
 
 - type: entity
   parent: [BaseSpeciesDummy]
@@ -184,17 +184,17 @@
     - Snout
     - HeadTop
     - HeadSide
-    # SIS-Vulpkanin Start
+    # SIS-Start
     # markingsDisplacement:
     #   Hair:
     #     sizeMaps:
     #       32:
     #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
     #         state: hair
-    # SIS-Vulpkanin End
+    # SIS-End
   - type: Inventory
     speciesId: vulpkanin
-    # SIS-Vulpkanin Start
+    # SIS-Start
     # displacements:
     #   jumpsuit:
     #     sizeMaps:
@@ -241,4 +241,4 @@
     #       32:
     #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
     #         state: belt
-    # SIS-Vulpkanin End
+    # SIS-End

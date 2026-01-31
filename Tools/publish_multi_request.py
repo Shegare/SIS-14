@@ -16,10 +16,10 @@ RELEASE_DIR = "release"
 #  Forks should change these to publish to their own infrastructure.
 #
 
-# SIS-CDN Start
+# SIS-Start
 ROBUST_CDN_URL = "https://skill-issue-station.space/cdn/"
 FORK_ID = "sis-14"
-# SIS-CDN End
+# SIS-End
 
 def main():
     parser = argparse.ArgumentParser()

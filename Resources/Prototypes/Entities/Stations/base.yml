@@ -112,11 +112,11 @@
             inherent: true
           protos:
           - VGRoid
-        # SIS-Mining_Shuttle Start
+        # SIS-Start
         mining: !type:GridSpawnGroup
           paths:
             - /Maps/_SIS/Shuttles/mining.yml
-        # SIS-Mining_Shuttle End
+        # SIS-End
 
 - type: entity
   id: BaseStationCentcomm

@@ -73,14 +73,12 @@
     radius: 6
     castShadows: false
     enabled: false
-  # SIS-Ghost_Speed_Up Start
+  # SIS-Start
   - type: MovementSpeedModifier
     baseWalkSpeed: 24
-  # SIS-Ghost_Speed_Up End
-  # SIS-Ghost_Show_Job Start
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
-  # SIS-Ghost_Show_Job End
+  # SIS-End
 
 # proto for player ghosts specifically
 - type: entity
@@ -91,13 +89,13 @@
   - type: Tag
     tags: # BAD: Intentional removal of inherited tag
     - AllowGhostShownByEvent
-  # SIS-Ghost_Respawn Start
+  # SIS-Start
   - type: Respawn
   - type: UserInterface
     interfaces:
       enum.RespawnUiKey.Key:
         type: RespawnBoundUserInterface
-  # SIS-Ghost_Respawn End
+  # SIS-End
 
 - type: entity
   parent: BaseMentalAction

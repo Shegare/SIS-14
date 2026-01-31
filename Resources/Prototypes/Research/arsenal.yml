@@ -218,7 +218,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponAdvancedLaser
-  - BorgModuleAdvancedSecurity # SIS-Security_Cyborg
+  - BorgModuleAdvancedSecurity # SIS
   - PortableRecharger
 
 - type: technology

@@ -1,7 +1,6 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Atlas # SIS-Station_Atlas
   - Bagel
   - Box
   - Elkridge
@@ -13,3 +12,4 @@
   - Reach
   - Exo
   - Snowball
+  - Atlas # SIS

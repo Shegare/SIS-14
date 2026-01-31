@@ -84,7 +84,6 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: SalvageShuttleConsoleCircuitboard # SIS-Mining_Shuttle
         - id: CargoBountyComputerCircuitboard
         - id: CargoRequestComputerCircuitboard
         - id: CargoSaleComputerCircuitboard
@@ -92,6 +91,7 @@
         - id: SalvageMagnetMachineCircuitboard
         - id: SalvageJobBoardComputerCircuitboard
         - id: MailTeleporterMachineCircuitboard
+        - id: SalvageShuttleConsoleCircuitboard # SIS
 
 - type: entity
   parent: BoxStamps
