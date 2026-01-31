@@ -5,6 +5,8 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
@@ -28,6 +30,8 @@ public sealed class RespawnSystem : SharedRespawnSystem
         SubscribeLocalEvent<RespawnComponent, PlayerAttachedEvent>(OnMindAdded);
         SubscribeLocalEvent<RespawnComponent, MindAddedMessage>(OnMindAdded);
 
+        SubscribeLocalEvent<MindContainerComponent, PlayerAttachedEvent>(CheckNewLife);
+
         SubscribeLocalEvent<RespawnComponent, RespawnActionEvent>(OnRespawnAction);
         SubscribeNetworkEvent<RespawnRequestEvent>(OnRespawnRequest);
     }
@@ -46,6 +50,18 @@ public sealed class RespawnSystem : SharedRespawnSystem
         EnsureComp<RespawnStatusComponent>(mindUid, out var comp);
         comp.TimeOfDeath = _timing.CurTime;
         Dirty(mindUid, comp);
+    }
+
+    private void CheckNewLife(EntityUid uid, MindContainerComponent component, ref PlayerAttachedEvent args)
+    {
+        if (!TryComp<MobStateComponent>(uid, out var comp)
+            || comp.CurrentState == MobState.Dead)
+            return;
+
+        if (!_mindSystem.TryGetMind(uid, out var mindUid, out _))
+            return;
+
+        RemComp<RespawnStatusComponent>(mindUid);
     }
 
     public void OnRespawnAction(EntityUid uid, RespawnComponent component, RespawnActionEvent args)
