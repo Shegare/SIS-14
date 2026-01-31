@@ -64,14 +64,14 @@ public sealed class RespawnSystem : SharedRespawnSystem
         RemComp<RespawnStatusComponent>(mindUid);
     }
 
-    public void OnRespawnAction(EntityUid uid, RespawnComponent component, RespawnActionEvent args)
+    private void OnRespawnAction(EntityUid uid, RespawnComponent component, RespawnActionEvent args)
     {
         if (args.Handled) return;
         _ui.TryToggleUi(uid, RespawnUiKey.Key, args.Performer);
         args.Handled = true;
     }
 
-    public void OnRespawnRequest(RespawnRequestEvent msg, EntitySessionEventArgs args)
+    private void OnRespawnRequest(RespawnRequestEvent msg, EntitySessionEventArgs args)
     {
         var playerSession = args.SenderSession;
         var uid = playerSession.AttachedEntity;
