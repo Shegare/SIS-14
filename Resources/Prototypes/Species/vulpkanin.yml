@@ -1,6 +1,6 @@
 - type: species
   id: Vulpkanin
-  name: species-name
+  name: species-name-vulpkanin
   roundStart: true
   prototype: MobVulpkanin
   sprites: MobVulpkaninSprites
