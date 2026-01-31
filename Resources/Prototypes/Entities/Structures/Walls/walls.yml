@@ -729,6 +729,8 @@
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: RadiationBlocker
+    resistance: 5
   # SIS-Start
   - type: Construction
     graph: DiagonalGirder
@@ -736,8 +738,6 @@
   - type: StaticPrice
     price: 285
   # SIS-End
-  - type: RadiationBlocker
-    resistance: 5
 
 # Riveting
 - type: entity
