@@ -45,4 +45,4 @@ new_player_threshold = 120
 random_characters = false # SIS
 random_species_weights = ""
 ssd_sleep_time = 3600
-ssd_sleep = false # SIS
+# ssd_sleep = false # SIS
