@@ -27,7 +27,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    # Eyes: MobVulpkaninEyes # SIS-Vulpkanin
+    # Eyes: MobVulpkaninEyes # SIS
     LArm: MobVulpkaninLArm
     RArm: MobVulpkaninRArm
     LHand: MobVulpkaninLHand
@@ -78,94 +78,94 @@
       points: 6
       required: false
 
-# SIS-Vulpkanin Start
-#- type: humanoidBaseSprite
-#  id: MobVulpkaninEyes
-#  baseSprite:
-#    sprite: Mobs/Species/Vulpkanin/parts.rsi
-#    state: eyes
-# SIS-Vulpkanin End
+# SIS-Start
+# - type: humanoidBaseSprite
+#   id: MobVulpkaninEyes
+#   baseSprite:
+#     sprite: Mobs/Species/Vulpkanin/parts.rsi
+#     state: eyes
+# SIS-End
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHead
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHeadMale
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHeadFemale
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: head_f
 
 - type: humanoidBaseSprite
   id: MobVulpkaninTorso
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobVulpkaninTorsoMale
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobVulpkaninTorsoFemale
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: torso_f
 
 - type: humanoidBaseSprite
   id: MobVulpkaninLLeg
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobVulpkaninLHand
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobVulpkaninLArm
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobVulpkaninLFoot
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobVulpkaninRLeg
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobVulpkaninRHand
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobVulpkaninRArm
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobVulpkaninRFoot
   baseSprite:
-    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS-Vulpkanin
+    sprite: _SIS/Mobs/Species/Vulpkanin/parts.rsi # SIS
     state: r_foot

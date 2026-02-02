@@ -574,7 +574,7 @@
       behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
-            DiagonalGirder: # SIS-DiagonalGirder
+            DiagonalGirder: # SIS
               min: 1
               max: 1
         - !type:DoActsBehavior
@@ -723,21 +723,21 @@
         damage: 300
       behaviors:
       - !type:ChangeConstructionNodeBehavior
-        node: diagonalGirder # SIS-DiagonalGirder
+        node: diagonalGirder # SIS
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  # SIS-DiagonalGirder Start
+  - type: RadiationBlocker
+    resistance: 5
+  # SIS-Start
   - type: Construction
     graph: DiagonalGirder
     node: diagonalReinforcedWall
   - type: StaticPrice
     price: 285
-  # SIS-DiagonalGirder End
-  - type: RadiationBlocker
-    resistance: 5
+  # SIS-End
 
 # Riveting
 - type: entity
@@ -897,14 +897,14 @@
         damage: 300
       behaviors:
       - !type:ChangeConstructionNodeBehavior
-        node: diagonalGirder # SIS-DiagonalGirder
+        node: diagonalGirder # SIS
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Construction
-    graph: DiagonalGirder # SIS-DiagonalGirder
+    graph: DiagonalGirder # SIS
     node: diagonalshuttleWall
   - type: RadiationBlocker
     resistance: 5
@@ -1053,17 +1053,17 @@
         damage: 200
       behaviors:
       - !type:ChangeConstructionNodeBehavior
-        node: diagonalGirder # SIS-DiagonalGirder
+        node: diagonalGirder # SIS
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  # SIS-DiagonalGirder Start
+  # SIS-Start
   - type: Construction
     graph: DiagonalGirder
     node: diagonalSolidWall
-  # SIS-DiagonalGirder End
+  # SIS-End
 
 - type: entity
   parent: WallSolid
@@ -1455,7 +1455,7 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          DiagonalGirder: # SIS-DiagonalGirder
+          DiagonalGirder: # SIS
             min: 1
             max: 1
       - !type:PlaySoundBehavior

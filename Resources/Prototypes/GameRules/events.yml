@@ -22,12 +22,12 @@
     - id: SolarFlare
     - id: SnakeSpawn
     - id: SpiderClownSpawn
-    # SIS-PsiMonkey Start
-    - id: BluePsiMonkeySpawn
-    - id: RedPsiMonkeySpawn
-    # SIS-PsiMonkey End
     - id: SpiderSpawn
     - id: VentClog
+    # SIS-Start
+    - id: BluePsiMonkeySpawn
+    - id: RedPsiMonkeySpawn
+    # SIS-End
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -38,7 +38,7 @@
     - id: RevenantSpawn
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
-    - id: BansheeSpawn # SIS-Banshee
+    - id: BansheeSpawn # SIS
 
 - type: entityTable
   id: ModerateAntagEventsTable

@@ -21,7 +21,7 @@
     whitelist:
       tags:
         - Trash
-        # SIS-Trash_Bag_Buff Start
+        # SIS-Start
         - CartridgeAntiMateriel
         - CartridgeCap
         - CartridgeCaselessRifle
@@ -33,7 +33,7 @@
         - CartridgeRifle
         - CartridgeRocket
         - ShellShotgun
-        # SIS-Trash_Bag_Buff End
+        # SIS-End
   - type: UseDelay
     delay: 0.5
   - type: Tag

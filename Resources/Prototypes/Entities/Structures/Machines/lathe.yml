@@ -387,7 +387,6 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
-    - SecurityModules # SIS-Security_Cyborg
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
@@ -396,6 +395,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - SecurityModules # SIS
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

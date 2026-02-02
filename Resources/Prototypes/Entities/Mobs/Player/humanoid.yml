@@ -26,7 +26,7 @@
     implants:
     - MindShieldImplant
     - DeathRattleImplantCentcomm
-  # SIS-HumanoidCentcomm Start
+  # SIS-Start
   speciesBlacklist:
   - Arachnid
   - Diona
@@ -37,7 +37,7 @@
   - Vox
   - Vulpkanin
   - Kobold
-  # SIS-HumanoidCentcomm End
+  # SIS-End
 
 ## Death Squad
 

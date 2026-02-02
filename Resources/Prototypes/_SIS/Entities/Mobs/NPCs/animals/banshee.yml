@@ -72,7 +72,7 @@
     soundEmpty: null
   - type: RechargeBasicEntityAmmo
     showExamineText: false
-    rechargeCooldown: 20
+    rechargeCooldown: 30
     rechargeSound: null
   - type: BasicEntityAmmoProvider
     proto: BulletScreechSpread
@@ -92,7 +92,7 @@
     icon:
       sprite: _SIS/Objects/Actions/banshee.rsi
       state: repulse
-    useDelay: 15
+    useDelay: 25
     sound: !type:SoundPathSpecifier
       path: /Audio/_SIS/Ghosts/Banshee/scream.ogg
 

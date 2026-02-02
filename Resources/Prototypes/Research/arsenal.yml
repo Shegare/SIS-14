@@ -218,8 +218,8 @@
   cost: 15000
   recipeUnlocks:
   - WeaponAdvancedLaser
-  - BorgModuleAdvancedSecurity # SIS-Security_Cyborg
   - PortableRecharger
+  - BorgModuleAdvancedSecurity # SIS
 
 - type: technology
   id: ThermalWeaponry
