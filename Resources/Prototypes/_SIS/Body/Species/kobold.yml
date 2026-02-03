@@ -225,7 +225,7 @@
   id: OrganKoboldArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganKoboldExternal ]
+  parent: [ OrganBaseHandLeftDecorative, OrganKoboldExternal ]
   id: OrganKoboldHandLeft
 
 - type: entity
