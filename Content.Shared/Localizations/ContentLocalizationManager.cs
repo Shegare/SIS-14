@@ -55,6 +55,7 @@ namespace Content.Shared.Localizations
 
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
+            _loc.AddFunction(cultureEn, "NATURALPERCENT", FormatNaturalPercent); // SIS-RU_Localization
         }
 
         private ILocValue FormatMany(LocArgs args)
