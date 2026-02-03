@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 271.2.0
+  engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/27/2026 04:05:45
-  entityCount: 31167
+  time: 02/03/2026 04:03:24
+  entityCount: 31168
 maps:
 - 1
 grids:
@@ -15517,7 +15517,7 @@ entities:
       pos: -22.5,26.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -245564.78
+      secondsUntilStateChange: -245651
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16373,7 +16373,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344393.44
+      secondsUntilStateChange: -344479.66
       state: Opening
   - uid: 6934
     components:
@@ -16385,7 +16385,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344396.06
+      secondsUntilStateChange: -344482.28
       state: Opening
   - uid: 6935
     components:
@@ -16397,7 +16397,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344394.9
+      secondsUntilStateChange: -344481.12
       state: Opening
   - uid: 6936
     components:
@@ -16408,7 +16408,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -344394.12
+      secondsUntilStateChange: -344480.34
       state: Opening
 - proto: AirlockTheatreLocked
   entities:
@@ -83484,11 +83484,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,15.5
       parent: 21002
-  - uid: 29784
-    components:
-    - type: Transform
-      pos: -56.5,-16.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 9892
@@ -83532,6 +83527,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -57.5,-3.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 505
+    components:
+    - type: Transform
+      pos: -56.5,-16.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -100353,7 +100355,7 @@ entities:
       pos: -13.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -335717.44
+      secondsUntilStateChange: -335803.66
     - type: DeviceNetwork
       deviceLists:
       - 18275
@@ -104621,6 +104623,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -41.5,13.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 20864
+    components:
+    - type: Transform
+      pos: -41.5,17.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -147308,7 +147317,7 @@ entities:
       pos: 36.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -372549.22
+      secondsUntilStateChange: -372635.44
       state: Opening
   - uid: 5211
     components:
@@ -204468,7 +204477,7 @@ entities:
       pos: 24.5,2.5
       parent: 21002
     - type: Door
-      secondsUntilStateChange: -717753.75
+      secondsUntilStateChange: -717839.94
       state: Opening
   - uid: 28863
     components:

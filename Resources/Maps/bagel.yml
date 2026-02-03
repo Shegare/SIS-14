@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 271.1.0
+  engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/22/2026 02:05:58
-  entityCount: 25402
+  time: 02/03/2026 04:04:20
+  entityCount: 25404
 maps:
 - 943
 grids:
@@ -62822,6 +62822,9 @@ entities:
     - type: Transform
       pos: 50.5,14.5
       parent: 60
+    - type: AccessReader
+      accessListsOriginal:
+      - - Quartermaster
 - proto: ComputerCargoOrders
   entities:
   - uid: 18899
@@ -63046,11 +63049,11 @@ entities:
       parent: 60
 - proto: ComputerRadar
   entities:
-  - uid: 19022
+  - uid: 6504
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 51.5,2.5
+      rot: 3.141592653589793 rad
+      pos: 54.5,-1.5
       parent: 60
 - proto: ComputerResearchAndDevelopment
   entities:
@@ -63098,6 +63101,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 42.5,-0.5
       parent: 60
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 22153
@@ -63118,6 +63124,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 49.5,11.5
+      parent: 60
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 1457
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 51.5,2.5
       parent: 60
 - proto: ComputerSolarControl
   entities:
@@ -75428,6 +75442,13 @@ entities:
     components:
     - type: Transform
       pos: -44.5,34.5
+      parent: 60
+- proto: GasMinerPlasma
+  entities:
+  - uid: 5955
+    components:
+    - type: Transform
+      pos: -44.5,40.5
       parent: 60
 - proto: GasMinerWaterVapor
   entities:
