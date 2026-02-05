@@ -27,7 +27,11 @@ public sealed class SandboxTest
             ContentAssemblies = new[]
             {
                 typeof(Shared.Entry.EntryPoint).Assembly,
-                typeof(Client.Entry.EntryPoint).Assembly
+                typeof(Client.Entry.EntryPoint).Assembly,
+                // SIS-Project Start
+                typeof(Content.SIS.Shared.EntryPoint).Assembly,
+                typeof(Content.SIS.Client.EntryPoint).Assembly
+                // SIS-Project End
             },
             Options = new GameControllerOptions { LoadConfigAndUserData = false }
         };
