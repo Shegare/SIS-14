@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._SIS.Respawn;
+namespace Content.SIS.Shared.Respawn;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class RespawnStatusComponent : Component

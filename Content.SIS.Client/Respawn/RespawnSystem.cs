@@ -1,5 +1,5 @@
-using Content.Shared._SIS.Respawn;
+using Content.SIS.Shared.Respawn;
 
-namespace Content.Client._SIS.Respawn;
+namespace Content.SIS.Client.Respawn;
 
 public sealed class RespawnSystem : SharedRespawnSystem;

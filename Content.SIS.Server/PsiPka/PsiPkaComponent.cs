@@ -1,4 +1,4 @@
-namespace Content.Server._SIS.PsiPka;
+namespace Content.SIS.Server.PsiPka;
 
 [RegisterComponent]
 public sealed partial class PsiPkaComponent : Component

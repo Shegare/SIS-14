@@ -1,6 +1,6 @@
 <DefaultWindow xmlns="https://spacestation14.io"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-               x:Class="Content.Client._SIS.Respawn.UI.RespawnWindow"
+               x:Class="Content.SIS.Client.Respawn.UI.RespawnWindow"
                Title="{Loc 'ghost-respawn-title'}"
                MinSize="500 300"
                SetSize="500 300">

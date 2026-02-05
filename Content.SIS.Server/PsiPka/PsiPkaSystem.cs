@@ -1,6 +1,6 @@
 using Content.Shared.Actions;
 
-namespace Content.Server._SIS.PsiPka;
+namespace Content.SIS.Server.PsiPka;
 
 public sealed class PsiPkaSystem : EntitySystem
 {

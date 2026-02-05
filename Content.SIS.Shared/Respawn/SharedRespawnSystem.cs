@@ -1,6 +1,6 @@
 using Robust.Shared.Timing;
 
-namespace Content.Shared._SIS.Respawn;
+namespace Content.SIS.Shared.Respawn;
 
 public abstract class SharedRespawnSystem : EntitySystem
 {

@@ -1,5 +1,5 @@
 using Content.Server.GameTicking;
-using Content.Shared._SIS.Respawn;
+using Content.SIS.Shared.Respawn;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
@@ -10,7 +10,7 @@ using Content.Shared.Mobs.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
-namespace Content.Server._SIS.Respawn;
+namespace Content.SIS.Server.Respawn;
 
 public sealed class RespawnSystem : SharedRespawnSystem
 {

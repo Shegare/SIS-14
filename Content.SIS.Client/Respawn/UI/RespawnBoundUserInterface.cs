@@ -1,10 +1,10 @@
-using Content.Shared._SIS.Respawn;
+using Content.SIS.Shared.Respawn;
 using Content.Shared.Mind;
 using JetBrains.Annotations;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
 
-namespace Content.Client._SIS.Respawn.UI;
+namespace Content.SIS.Client.Respawn.UI;
 
 [UsedImplicitly]
 public sealed class RespawnBoundUserInterface : BoundUserInterface
