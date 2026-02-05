@@ -1,3 +1,8 @@
+// SPDX-FileCopyrightText: 2022-2025 Space Wizards Federation
+// SPDX-FileCopyrightText: 2026 Skill Issue Station contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 #nullable enable
 using System.Linq;
 using System.Reflection;
@@ -92,17 +97,28 @@ public sealed class ContentPoolManager : PoolManager<TestPair>
         return testContext.FullName.Replace("Content.IntegrationTests.Tests.", "");
     }
 
+    // SIS-IntegrationTests Start
     public override void Startup(params Assembly[] extraAssemblies)
     {
         DefaultCvars.AddRange(PoolManager.TestCvars);
 
         var shared = extraAssemblies
-                .Append(typeof(Shared.Entry.EntryPoint).Assembly)
-                .Append(typeof(PoolManager).Assembly)
-                .ToArray();
+            .Append(typeof(Shared.Entry.EntryPoint).Assembly)
+            .Append(typeof(Content.SIS.Shared.SISEntryPoint).Assembly)
+            .Append(typeof(PoolManager).Assembly)
+            .ToArray();
 
-        Startup([typeof(Client.Entry.EntryPoint).Assembly],
-            [typeof(Server.Entry.EntryPoint).Assembly],
-            shared);
+        var server = new[] {
+            typeof(Server.Entry.EntryPoint).Assembly,
+            typeof(Content.SIS.Server.SISEntryPoint).Assembly
+        };
+
+        var client = new[] {
+            typeof(Client.Entry.EntryPoint).Assembly,
+            typeof(Content.SIS.Client.SISEntryPoint).Assembly
+        };
+
+        Startup(client, server, shared);
     }
+    // SIS-IntegrationTests End
 }
