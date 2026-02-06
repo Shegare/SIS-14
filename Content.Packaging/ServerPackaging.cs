@@ -1,5 +1,11 @@
+// SPDX-FileCopyrightText: 2023-2026 Space Wizards Federation
+// SPDX-FileCopyrightText: 2024-2025 Goob Station contributors
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics;
 using System.IO.Compression;
+using Content.ModuleManager;
 using Robust.Packaging;
 using Robust.Packaging.AssetProcessing;
 using Robust.Packaging.AssetProcessing.Passes;
@@ -36,6 +42,17 @@ public static class ServerPackaging
         .Where(o => o.BuildByDefault)
         .Select(o => o.Rid)
         .ToList();
+
+    // Goob-Modules Start
+    private static readonly List<string> CoreServerContentAssemblies = new()
+    {
+        "Content.Server.Database",
+        "Content.Server",
+        "Content.Shared",
+        "Content.Shared.Database",
+        "Content.ModuleManager", // I cant be fucked to figure out how to this dynamically
+    };
+    // Goob-Modules End
 
     private static readonly List<string> ServerNotExtraAssemblies = new()
     {
@@ -97,30 +114,37 @@ public static class ServerPackaging
 
         if (!skipBuild)
         {
-            var startInfo = new ProcessStartInfo
+            // Goob-Modules Start
+            var serverModules = FindServerModules();
+
+            foreach (var module in serverModules)
             {
-                FileName = "dotnet",
-                ArgumentList =
+                var startInfo = new ProcessStartInfo
                 {
-                    "build",
-                    Path.Combine("Content.Server", "Content.Server.csproj"),
-                    "-c", configuration,
-                    "--nologo",
-                    "/v:m",
-                    $"/p:TargetOs={platform.TargetOs}",
-                    "/t:Rebuild",
-                    "/p:FullRelease=true",
-                    "/m"
+                    FileName = "dotnet",
+                    ArgumentList =
+                    {
+                        "build",
+                        Path.Combine(module, $"{module}.csproj"),
+                        "-c", configuration,
+                        "--nologo",
+                        "/v:m",
+                        $"/p:TargetOs={platform.TargetOs}",
+                        "/t:Rebuild",
+                        "/p:FullRelease=true",
+                        "/m"
+                    }
+                };
+
+                if (logBuild)
+                {
+                    startInfo.ArgumentList.Add($"/bl:{Path.Combine("release", $"server-{platform.Rid}.binlog")}");
+                    startInfo.ArgumentList.Add("/p:ReportAnalyzer=true");
                 }
-            };
 
-            if (logBuild)
-            {
-                startInfo.ArgumentList.Add($"/bl:{Path.Combine("release", $"server-{platform.Rid}.binlog")}");
-                startInfo.ArgumentList.Add("/p:ReportAnalyzer=true");
+                await ProcessHelpers.RunCheck(startInfo);
             }
-
-            await ProcessHelpers.RunCheck(startInfo);
+            // Goob-Modules End
 
             await PublishClientServer(platform.Rid, platform.TargetOs, configuration);
         }
@@ -140,6 +164,56 @@ public static class ServerPackaging
 
         logger.Info($"Finished packaging server in {sw.Elapsed}");
     }
+
+    // Goob-Modules Start
+    private static List<string> FindServerModules(string path = ".")
+    {
+        var serverModules = new List<string> { "Content.Server" };
+
+        var directories = Directory.GetDirectories(path, "Content.*");
+        foreach (var dir in directories)
+        {
+            var dirName = Path.GetFileName(dir);
+
+            // Look for Content.{name}.Server projects
+            if (dirName != "Content.Server" && dirName.EndsWith(".Server"))
+            {
+                var projectPath = Path.Combine(dir, $"{dirName}.csproj");
+                if (File.Exists(projectPath))
+                {
+                    serverModules.Add(dirName);
+                }
+            }
+        }
+
+        return serverModules;
+    }
+
+    private static List<string> FindAllServerModules(string path = ".")
+    {
+        var modules = new List<string>(CoreServerContentAssemblies);
+        modules.AddRange(ModuleDiscovery.DiscoverModules(path)
+            .Where(m => m.Type is not ModuleType.Client)
+            .Select(m => m.Name)
+            .Distinct()
+        );
+
+        var directories = Directory.GetDirectories(path, "Content.*");
+        foreach (var dir in directories)
+        {
+            var dirName = Path.GetFileName(dir);
+
+            // Throw out anything that does not end with ".Server" or ".Shared"
+            if ((!dirName.EndsWith(".Server") && !dirName.EndsWith(".Shared")) || modules.Contains(dirName))
+                continue;
+            var projectPath = Path.Combine(dir, $"{dirName}.csproj");
+            if (File.Exists(projectPath))
+                modules.Add(dirName);
+        }
+
+        return modules;
+    }
+    // Goob-Modules End
 
     private static async Task PublishClientServer(string runtime, string targetOs, string configuration)
     {
@@ -182,9 +256,19 @@ public static class ServerPackaging
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");
 
+        var allModuleNames = FindAllServerModules(); // Goob-Modules
+
         var deps = DepsHandler.Load(Path.Combine(sourcePath, "Content.Server.deps.json"));
 
-        var contentAssemblies = GetContentAssemblyNamesToCopy(deps);
+        // Goob-Modules Start
+        var contentAssemblies = GetContentAssemblyNamesToCopy(deps).ToList();
+
+        foreach (var moduleName in allModuleNames)
+        {
+            if (!contentAssemblies.Contains(moduleName))
+                contentAssemblies.Add(moduleName);
+        }
+        // Goob-Modules End
 
         await RobustSharedPackaging.DoResourceCopy(
             Path.Combine("RobustToolbox", "bin", "Server",
