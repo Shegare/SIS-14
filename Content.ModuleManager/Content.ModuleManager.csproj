@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AsmResolver.DotNet" />
+      <PackageReference Include="AsmResolver.DotNet" Version="5.5.1" />
     </ItemGroup>
 
 </Project>
