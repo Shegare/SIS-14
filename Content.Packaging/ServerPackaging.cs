@@ -256,17 +256,18 @@ public static class ServerPackaging
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");
 
-        var allModuleNames = FindAllServerModules(); // Goob-Modules
-
         var deps = DepsHandler.Load(Path.Combine(sourcePath, "Content.Server.deps.json"));
 
         // Goob-Modules Start
+        var allModuleNames = FindAllServerModules();
         var contentAssemblies = GetContentAssemblyNamesToCopy(deps).ToList();
 
         foreach (var moduleName in allModuleNames)
         {
             if (!contentAssemblies.Contains(moduleName))
+            {
                 contentAssemblies.Add(moduleName);
+            }
         }
         // Goob-Modules End
 
