@@ -150,13 +150,11 @@ public static class ClientPackaging
 
         var inputPass = graph.Input;
 
-        var modules = FindAllModules(contentDir); // Goob-Modules
-
         await RobustSharedPackaging.WriteContentAssemblies(
             inputPass,
             contentDir,
             "Content.Client",
-            modules.ToArray(), // Goob-Modules
+            FindAllModules(contentDir).ToArray(), // Goob-Modules
             cancel: cancel);
 
         await RobustClientPackaging.WriteClientResources(
