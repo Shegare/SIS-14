@@ -11,4 +11,9 @@
 
   <Import Project="..\RobustToolbox\Imports\Shared.props" />
   <Import Project="..\RobustToolbox\Imports\Packaging.props" />
+  <!-- Goob-Modules Start -->
+  <ItemGroup>
+    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
+  </ItemGroup>
+  <!-- Goob-Modules End -->
 </Project>
