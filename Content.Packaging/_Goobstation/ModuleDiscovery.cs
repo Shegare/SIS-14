@@ -1,8 +1,4 @@
-﻿// SPDX-FileCopyrightText: 2024-2025 Goob Station contributors
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
-
-using AsmResolver.DotNet;
+﻿using AsmResolver.DotNet;
 using AsmResolver.DotNet.Serialized;
 using Content.ModuleManager;
 
