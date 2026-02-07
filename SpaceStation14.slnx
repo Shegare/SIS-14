@@ -13,6 +13,33 @@
   <Folder Name="/Build/">
     <File Path="Tools/generate_hashes.ps1" />
   </Folder>
+  <Folder Name="/Modules/" />
+  <Folder Name="/Modules/Goobstation/">
+    <Project Path="Content.Goobstation.Client/Content.Goobstation.Client.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+    <Project Path="Content.Goobstation.Common/Content.Goobstation.Common.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+    <Project Path="Content.Goobstation.Maths/Content.Goobstation.Maths.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+    <Project Path="Content.Goobstation.Server/Content.Goobstation.Server.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+    <Project Path="Content.Goobstation.Shared/Content.Goobstation.Shared.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+    <Project Path="Content.Goobstation.UIKit/Content.Goobstation.UIKit.csproj">
+      <BuildType Solution="DebugOpt|*" Project="Debug" />
+      <BuildType Solution="Tools|*" Project="Debug" />
+    </Project>
+  </Folder>
   <Folder Name="/MSBuild/">
     <File Path="MSBuild/Content.props" />
   </Folder>
