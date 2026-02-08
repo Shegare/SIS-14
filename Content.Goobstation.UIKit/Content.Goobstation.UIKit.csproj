@@ -13,6 +13,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Client\Content.Goobstation.Client.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>
