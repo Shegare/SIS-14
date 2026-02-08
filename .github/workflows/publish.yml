@@ -33,6 +33,7 @@ jobs:
       with:
         dotnet-version: 10.0.x
         cache: true # SIS-Test_Packaging
+        cache-dependency-path: '**/*.csproj' # SIS-Test_Packaging
 
     - name: Get Engine Tag
       run: |
