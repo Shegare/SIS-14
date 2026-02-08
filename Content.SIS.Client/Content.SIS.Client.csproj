@@ -5,14 +5,6 @@
     <WarningsAsErrors>RA0032;nullable</WarningsAsErrors>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Nett" />
-    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
-    <PackageReference Include="SixLabors.ImageSharp" />
-    <PackageReference Include="Pidgin" />
-    <PackageReference Include="Robust.Shared.AuthLib" />
-  </ItemGroup>
-
   <Import Project="../MSBuild/Content.props" />
 
   <Import Project="..\RobustToolbox\Imports\Lidgren.props" />
@@ -21,6 +13,10 @@
 
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Content.Client\Content.Client.csproj" />
