@@ -29,7 +29,7 @@
 
 ### Модификации на основе MIT-кода
 
-Исходный код из [Space Station 14](https://github.com/space-wizards/space-station-14) и других MIT-проектов может быть модифицирован и перелицензирован под AGPL-3.0-or-later.
+Исходный код из [Space Station 14](https://github.com/space-wizards/space-station-14) и других MIT-проектов может быть модифицирован и перелицензирован.
 
 Текущая лицензия таких файлов определяется по SPDX-заголовку. Например:
 
