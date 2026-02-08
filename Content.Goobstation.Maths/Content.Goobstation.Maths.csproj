@@ -3,6 +3,6 @@
   <Import Project="..\RobustToolbox\Imports\Shared.props" />
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
+    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

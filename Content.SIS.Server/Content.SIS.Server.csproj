@@ -12,10 +12,7 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Server.Database\Content.Server.Database.csproj" />
-    <ProjectReference Include="..\Content.Shared.Database\Content.Shared.Database.csproj" />
     <ProjectReference Include="..\Content.Server\Content.Server.csproj" />
-    <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

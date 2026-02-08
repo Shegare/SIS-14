@@ -6,12 +6,8 @@
   </PropertyGroup>
 
   <Import Project="../MSBuild/Content.props" />
-
-  <Import Project="..\RobustToolbox\Imports\Lidgren.props" />
-  <Import Project="..\RobustToolbox\Imports\Client.props" />
-  <Import Project="..\RobustToolbox\Imports\Shared.props" />
-
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
+
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
 
   <ItemGroup>
@@ -19,13 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Client\Content.Client.csproj" />
-    <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
+    <ProjectReference Include="..\Content.Client\Content.Client.csproj" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Common\Content.Goobstation.Common.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
+    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Goobstation.Common\Content.Goobstation.Common.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

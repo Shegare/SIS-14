@@ -12,15 +12,16 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Server.Database\Content.Server.Database.csproj" />
-    <ProjectReference Include="..\Content.Shared.Database\Content.Shared.Database.csproj" />
-    <ProjectReference Include="..\Content.Server\Content.Server.csproj" />
-    <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
+    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
+    <ProjectReference Include="..\Content.Server\Content.Server.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>
