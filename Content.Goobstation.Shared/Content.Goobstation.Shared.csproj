@@ -13,11 +13,6 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.CompNetworkGenerator.targets" />
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
-    <PackageReference Include="YamlDotNet" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Content.Shared.Database\Content.Shared.Database.csproj" />
     <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
   </ItemGroup>
