@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Module.Common\Content.Module.Common.csproj" />
+    <ProjectReference Include="..\Content.Common.Data\Content.Common.Data.csproj" />
     <ProjectReference Include="..\Content.Module.Client\Content.Module.Client.csproj" />
     <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
   </ItemGroup>

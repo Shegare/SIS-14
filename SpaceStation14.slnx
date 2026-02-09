@@ -15,25 +15,18 @@
   </Folder>
   <Folder Name="/Modules/" />
   <Folder Name="/Modules/Common/">
-    <Project Path="Content.Common.Client/Content.Common.Client.csproj">
-      <BuildType Solution="DebugOpt|*" Project="Debug" />
-      <BuildType Solution="Tools|*" Project="Debug" />
-    </Project>
-    <Project Path="Content.Common.Server/Content.Common.Server.csproj">
-      <BuildType Solution="DebugOpt|*" Project="Debug" />
-      <BuildType Solution="Tools|*" Project="Debug" />
-    </Project>
-    <Project Path="Content.Common.Shared/Content.Common.Shared.csproj">
-      <BuildType Solution="DebugOpt|*" Project="Debug" />
-      <BuildType Solution="Tools|*" Project="Debug" />
-    </Project>
+    <Project Path="Content.Common.Client/Content.Common.Client.csproj" />
+    <Project Path="Content.Common.Server/Content.Common.Server.csproj" />
+    <Project Path="Content.Common.Shared/Content.Common.Shared.csproj" />
+    <Project Path="Content.Common.Data\Content.Common.Data.csproj" />
   </Folder>
   <Folder Name="/Modules/Core/">
     <Project Path="Content.Module.Client/Content.Module.Client.csproj" />
-    <Project Path="Content.Module.Common/Content.Module.Common.csproj" />
-    <Project Path="Content.Module.Maths/Content.Module.Maths.csproj" />
     <Project Path="Content.Module.Server/Content.Module.Server.csproj" />
     <Project Path="Content.Module.Shared/Content.Module.Shared.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Other/">
+    <Project Path="Content.Module.Maths/Content.Module.Maths.csproj" />
     <Project Path="Content.Module.UIKit/Content.Module.UIKit.csproj" />
   </Folder>
   <Folder Name="/Modules/SIS/">
