@@ -347,6 +347,43 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         }
     }
 
+    // Goob-Sprinting Start
+    public void ToggleStaminaDrain(EntityUid target, float drainRate, bool enabled, bool modifiesSpeed, string key, EntityUid? source = null, bool applyResistances = false)
+    {
+        if (!TryComp<StaminaComponent>(target, out var stamina))
+            return;
+
+        // If theres no source, we assume its the target that caused the drain.
+        var actualSource = source ?? target;
+
+        if (enabled)
+        {
+            stamina.ActiveDrains.TryAdd(key, (drainRate, modifiesSpeed, GetNetEntity(actualSource), applyResistances));
+            EnsureComp<ActiveStaminaComponent>(target);
+        }
+        else
+        {
+            if (stamina.ActiveDrains.ContainsKey(key))
+                stamina.ActiveDrains.Remove(key);
+        }
+
+        Dirty(target, stamina);
+    }
+    // Goob-Sprinting End
+
+    // Goob-Sprinting Start
+    public void ModifyStaminaDrain(EntityUid target, string key, float newValue, StaminaComponent? component = null)
+    {
+        if (!Resolve(target, ref component, false))
+            return;
+
+        if (component.ActiveDrains.ContainsKey(key))
+            component.ActiveDrains[key] = (newValue, component.ActiveDrains[key].Item2, component.ActiveDrains[key].Item3, component.ActiveDrains[key].Item4);
+
+        Dirty(target, component);
+    }
+    // Goob-Sprinting End
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -359,11 +396,22 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             // Just in case we have active but not stamina we'll check and account for it.
             if (!stamQuery.TryGetComponent(uid, out var comp) ||
-                comp.StaminaDamage <= 0f && !comp.Critical)
+                comp.StaminaDamage <= 0f && !comp.Critical && comp.ActiveDrains.Count == 0) // Goob-Sprinting
             {
                 RemComp<ActiveStaminaComponent>(uid);
                 continue;
             }
+
+            // Goob-Sprinting Start
+            if (comp.ActiveDrains.Count > 0)
+                foreach (var (drainRate, _, source, applyResistances) in comp.ActiveDrains.Values)
+                    TakeStaminaDamage(uid,
+                        drainRate * frameTime,
+                        comp,
+                        source: GetEntity(source),
+                        visual: false,
+                        ignoreResist: applyResistances);
+            // Goob-Sprinting End
 
             // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
             var nextUpdate = comp.NextUpdate;
@@ -375,12 +423,13 @@ public abstract partial class SharedStaminaSystem : EntitySystem
             if (comp.Critical)
                 ExitStamCrit(uid, comp);
 
-            comp.NextUpdate += TimeSpan.FromSeconds(1f);
-
-            TakeStaminaDamage(
-                uid,
-                comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier : -comp.Decay, // Recover faster after crit
-                comp);
+            // Goob-Sprinting Start
+            if (!comp.ActiveDrains.Values.Any(x => x.DrainRate > 0))
+                TakeStaminaDamage(
+                    uid,
+                    comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier : -comp.Decay, // Recover faster after crit
+                    comp);
+            // Goob-Sprinting End
 
             Dirty(uid, comp);
         }

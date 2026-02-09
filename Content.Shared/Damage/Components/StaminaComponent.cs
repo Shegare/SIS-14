@@ -173,4 +173,9 @@ public sealed partial class StaminaComponent : Component
     public Vector2 StartOffset = Vector2.Zero;
 
     #endregion
+
+    // Goob-Sprinting Start
+    [DataField, AutoNetworkedField]
+    public Dictionary<string, (float DrainRate, bool ModifiesSpeed, NetEntity? Source, bool ApplyResistances)> ActiveDrains = new();
+    // Goob-Sprinting End
 }

@@ -131,6 +131,8 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.OpenDecalSpawnWindow);
             common.AddFunction(ContentKeyFunctions.OpenAdminMenu);
             common.AddFunction(ContentKeyFunctions.OpenGuidebook);
+
+            human.AddFunction(ContentKeyFunctions.Sprint); // Goob-Sprinting
         }
     }
 }
