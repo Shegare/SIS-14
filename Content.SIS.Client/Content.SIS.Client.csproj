@@ -22,7 +22,7 @@
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
     <ProjectReference Include="..\Content.SIS.Shared\Content.SIS.Shared.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\Content.Module.Common\Content.Module.Common.csproj" />
     <ProjectReference Include="..\Content.Module.Client\Content.Module.Client.csproj" />

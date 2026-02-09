@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../MSBuild/Content.props" />
+  <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
+
+  <Import Project="..\RobustToolbox\Imports\Shared.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\Content.Common.Shared\Content.Common.Shared.csproj" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

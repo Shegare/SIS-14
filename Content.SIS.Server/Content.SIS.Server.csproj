@@ -12,6 +12,10 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Content.Server\Content.Server.csproj" />
   </ItemGroup>
 
@@ -19,7 +23,7 @@
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
     <ProjectReference Include="..\Content.SIS.Shared\Content.SIS.Shared.csproj" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" />
     <ProjectReference Include="..\Content.Module.Server\Content.Module.Server.csproj" />
