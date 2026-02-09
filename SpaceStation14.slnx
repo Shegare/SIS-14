@@ -13,14 +13,13 @@
   <Folder Name="/Build/">
     <File Path="Tools/generate_hashes.ps1" />
   </Folder>
-  <Folder Name="/Modules/" />
-  <Folder Name="/Modules/Goobstation/">
-    <Project Path="Content.Goobstation.Client/Content.Goobstation.Client.csproj" />
-    <Project Path="Content.Goobstation.Common/Content.Goobstation.Common.csproj" />
-    <Project Path="Content.Goobstation.Maths/Content.Goobstation.Maths.csproj" />
-    <Project Path="Content.Goobstation.Server/Content.Goobstation.Server.csproj" />
-    <Project Path="Content.Goobstation.Shared/Content.Goobstation.Shared.csproj" />
-    <Project Path="Content.Goobstation.UIKit/Content.Goobstation.UIKit.csproj" />
+  <Folder Name="/Modules/">
+    <Project Path="Content.Module.Client/Content.Module.Client.csproj" />
+    <Project Path="Content.Module.Common/Content.Module.Common.csproj" />
+    <Project Path="Content.Module.Maths/Content.Module.Maths.csproj" />
+    <Project Path="Content.Module.Server/Content.Module.Server.csproj" />
+    <Project Path="Content.Module.Shared/Content.Module.Shared.csproj" />
+    <Project Path="Content.Module.UIKit/Content.Module.UIKit.csproj" />
   </Folder>
   <Folder Name="/MSBuild/">
     <File Path="MSBuild/Content.props" />

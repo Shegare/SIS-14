@@ -22,12 +22,10 @@
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
     <ProjectReference Include="..\Content.SIS.Shared\Content.SIS.Shared.csproj" />
   </ItemGroup>
-
-  <!-- SIS-Modules Start -->
+  
   <ItemGroup>
-    <ProjectReference Include="..\Content.Goobstation.Common\Content.Goobstation.Common.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Client\Content.Goobstation.Client.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
+    <ProjectReference Include="..\Content.Module.Common\Content.Module.Common.csproj" />
+    <ProjectReference Include="..\Content.Module.Client\Content.Module.Client.csproj" />
+    <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
   </ItemGroup>
-  <!-- SIS-Modules End -->
 </Project>

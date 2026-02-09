@@ -19,12 +19,10 @@
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
     <ProjectReference Include="..\Content.SIS.Shared\Content.SIS.Shared.csproj" />
   </ItemGroup>
-
-  <!-- SIS-Modules Start -->
+  
   <ItemGroup>
-    <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Server\Content.Goobstation.Server.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
+    <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" />
+    <ProjectReference Include="..\Content.Module.Server\Content.Module.Server.csproj" />
+    <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
   </ItemGroup>
-  <!-- SIS-Modules End -->
 </Project>

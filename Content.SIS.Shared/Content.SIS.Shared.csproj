@@ -16,11 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" />
   </ItemGroup>
-
-  <!-- SIS-Modules Start -->
+  
   <ItemGroup>
-    <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" />
+    <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" />
+    <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
   </ItemGroup>
-  <!-- SIS-Modules End -->
 </Project>

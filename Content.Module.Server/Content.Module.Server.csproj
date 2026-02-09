@@ -21,8 +21,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Maths\Content.Goobstation.Maths.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Common\Content.Goobstation.Common.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.Common\Content.Module.Common.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

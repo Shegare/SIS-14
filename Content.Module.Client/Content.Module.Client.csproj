@@ -20,8 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.UIKit\Content.Goobstation.UIKit.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Common\Content.Goobstation.Common.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Goobstation.Shared\Content.Goobstation.Shared.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.Common\Content.Module.Common.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.UIKit\Content.Module.UIKit.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>

@@ -28,14 +28,11 @@ public sealed class SandboxTest
             {
                 typeof(Shared.Entry.EntryPoint).Assembly,
                 typeof(Client.Entry.EntryPoint).Assembly,
-                // SIS-Project Start
+                // SIS-Modules Start
                 typeof(SIS.Shared.Entry.EntryPoint).Assembly,
                 typeof(SIS.Client.Entry.EntryPoint).Assembly,
-                // SIS-Project End
-
-                // SIS-Modules Start
-                typeof(Goobstation.Shared.Entry.EntryPoint).Assembly,
-                typeof(Goobstation.Client.Entry.EntryPoint).Assembly,
+                typeof(Module.Shared.Entry.EntryPoint).Assembly,
+                typeof(Module.Client.Entry.EntryPoint).Assembly,
                 // SIS-Modules End
             },
             Options = new GameControllerOptions { LoadConfigAndUserData = false }
