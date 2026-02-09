@@ -170,6 +170,10 @@
     allowedStates:
     - Dead
   - type: Rootable
+  # Goob-Start
+  - type: Sprinter # Goobstation: bro you're a literal bundle of roots what did you expect
+    canSprint: false
+  # Goob-End
 
 - type: entity
   parent: OrganBase

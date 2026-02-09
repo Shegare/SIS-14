@@ -160,6 +160,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: Sprinter # Goob
 
 - type: entity
   abstract: true

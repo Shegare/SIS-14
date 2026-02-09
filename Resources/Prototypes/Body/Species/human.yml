@@ -93,6 +93,10 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
+  # Goob-Start
+  - type: Sprinter # Goobstation: human major
+    staminaDrainRate: 8
+  # Goob-End
 
 - type: entity
   parent: OrganBase

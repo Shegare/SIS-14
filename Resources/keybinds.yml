@@ -44,6 +44,11 @@ binds:
 - function: Walk
   type: State
   key: Shift
+# Goob-Start
+- function: Sprint
+  type: State
+  key: Space
+# Goob-End
 # Shuttle
 - function: ShuttleStrafeUp
   type: State
