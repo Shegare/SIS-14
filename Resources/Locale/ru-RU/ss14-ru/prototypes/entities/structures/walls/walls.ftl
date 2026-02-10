@@ -109,5 +109,7 @@ ent-WallChromiteCobblebrick = хромитовая булыжниковая ст
     .desc = { ent-WallCobblebrick.desc }
 ent-WallAndesiteCobblebrick = андезитовая булыжниковая стена
     .desc = { ent-WallCobblebrick.desc }
+ent-WallIronsandCobblebrick = ironsand brick wall
+    .desc = The pale, rounded shapes that make up this wall look strikingly different from the iron sands they were allegedly made from.
 ent-Cardwall = картонная стена
     .desc = Сокращение бюджета наносит сильный удар.

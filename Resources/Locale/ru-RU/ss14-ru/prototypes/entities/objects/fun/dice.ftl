@@ -14,3 +14,7 @@ ent-d6Dice = d6
     .desc = Кость с 6 сторонами. Стандартный и исправный.
 ent-d4Dice = d4
     .desc = Кость с 4 сторонами. Отдых для ботанов.
+ent-DiceBag = bag of dice
+    .desc = Contains all the luck you'll ever need.
+ent-MagicDiceBag = bag of dice
+    .desc = { ent-DiceBag.desc }

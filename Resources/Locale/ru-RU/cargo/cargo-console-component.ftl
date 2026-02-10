@@ -1,6 +1,8 @@
 ## UI
 
 cargo-console-menu-title = Консоль заказа грузов
+cargo-console-menu-flavor-left = Order even more pizza boxes than usual!
+cargo-console-menu-flavor-right = v2.1
 cargo-console-menu-account-name-label = Аккаунт:{ " " }
 cargo-console-menu-account-name-none-text = Нет
 cargo-console-menu-account-name-format = [bold][color={ $color }]{ $name }[/color][/bold] [font="Monospace"]\[{ $code }\][/font]
@@ -18,7 +20,13 @@ cargo-console-menu-search-bar-placeholder = Поиск
 cargo-console-menu-requests-label = Запросы
 cargo-console-menu-orders-label = Заказы
 cargo-console-menu-order-reason-description = Причина: { $reason }
+cargo-console-menu-order-row-title = { $productName } (x{ $orderAmount } for { $orderPrice }$)
 cargo-console-menu-populate-categories-all-text = Все
+cargo-console-menu-order-row-product-description = Reason: { $orderReason }
+cargo-console-menu-order-row-button-approve = Approve
+cargo-console-menu-order-row-button-cancel = Cancel
+cargo-console-menu-order-row-alerts-reason-absent = The reason is not specified
+cargo-console-menu-order-row-alerts-requester-unknown = Unknown
 cargo-console-menu-populate-orders-cargo-order-row-product-name-text = { $productName } (x{ $orderAmount }) от { $orderRequester } со счёта [color={ $accountColor }]{ $account }[/color]
 cargo-console-menu-cargo-order-row-approve-button = Одобрить
 cargo-console-menu-cargo-order-row-cancel-button = Отменить

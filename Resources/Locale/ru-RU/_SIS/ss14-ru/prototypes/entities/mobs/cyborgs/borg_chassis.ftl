@@ -1,2 +1,2 @@
-ent-BorgChassisSecurity = киборг-охранник 
+ent-BorgChassisSecurity = киборг-охранник
     .desc = { ent-BorgChassisSelectable.desc }

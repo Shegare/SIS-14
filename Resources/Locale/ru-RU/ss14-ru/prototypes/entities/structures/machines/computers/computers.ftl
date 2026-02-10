@@ -90,3 +90,7 @@ ent-StationAiUploadComputer = консоль загрузки ИИ
     .desc = Используется для обновления законов станционного ИИ.
 ent-StationAiFixerComputer = консоль восстановления ИИ
     .desc = Используется для ремонта повреждённых искусственных интеллектов.
+ent-ComputerNukieDelivery = syndicate delivery computer
+    .desc =
+        A computer that can bluespace in certain equipment for Nuclear Operations. 
+        The circuitboard is integrated into the frame and can't be recovered if deconstructed.

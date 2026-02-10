@@ -1,0 +1,12 @@
+ent-BlastDoorCentralCommandOpen = { ent-BlastDoorOpen }
+    .suffix = Central Command, Locked
+    .desc = { ent-BlastDoorOpen.desc }
+ent-ShuttersWindowCentralCommandOpen = { ent-ShuttersWindowOpen }
+    .suffix = Central Command, Locked
+    .desc = { ent-ShuttersWindowOpen.desc }
+ent-ShuttersNormalCentralCommand = { ent-ShuttersNormal }
+    .suffix = Central Command, Locked
+    .desc = { ent-ShuttersNormal.desc }
+ent-ShuttersNormalCentralCommandOpen = { ent-ShuttersNormalOpen }
+    .suffix = Central Command, Locked
+    .desc = { ent-ShuttersNormalOpen.desc }

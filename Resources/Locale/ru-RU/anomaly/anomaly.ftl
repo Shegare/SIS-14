@@ -74,12 +74,12 @@ anomaly-command-supercritical = Целевая аномалия переходи
 # Flavor text on the footer
 anomaly-generator-flavor-left = Аномалия может возникнуть внутри оператора.
 anomaly-generator-flavor-right = v1.1
-anomaly-behavior-unknown = [color=red]ОШИБКА. Невозможно считать.[/color]
+anomaly-behavior-unknown =  [color=red]ОШИБКА. Невозможно считать.[/color]
 anomaly-behavior-title = Анализ отклонений поведения:
-anomaly-behavior-point = [color=gold]Аномалия генерирует { $mod }% очков[/color]
-anomaly-behavior-safe = [color=forestgreen]Аномалия чрезвычайно стабильна. Крайне редкие импульсы.[/color]
-anomaly-behavior-slow = [color=forestgreen]Частота импульсов значительно снижена.[/color]
-anomaly-behavior-light = [color=forestgreen]Мощность импульсов значительно снижена.[/color]
+anomaly-behavior-point =  [color=gold]Аномалия генерирует { $mod }% очков[/color]
+anomaly-behavior-safe =  [color=forestgreen]Аномалия чрезвычайно стабильна. Крайне редкие импульсы.[/color]
+anomaly-behavior-slow =  [color=forestgreen]Частота импульсов значительно снижена.[/color]
+anomaly-behavior-light =  [color=forestgreen]Мощность импульсов значительно снижена.[/color]
 anomaly-behavior-balanced = Отклонения поведения не обнаружены.
 anomaly-behavior-delayed-force = Частота пульсаций значительно снижена, но их сила повышена.
 anomaly-behavior-rapid = Частота пульсаций значительно повышена, но их сила снижена.
@@ -88,7 +88,8 @@ anomaly-behavior-nonsensivity = Обнаружена слабая реакция
 anomaly-behavior-sensivity = Обнаружена сильная реакция на частицы.
 anomaly-behavior-invisibility = Обнаружено искажение светового потока.
 anomaly-behavior-secret = Обнаружены помехи. Некоторые данные не могут быть считаны
-anomaly-behavior-inconstancy = [color=crimson]Обнаружено непостоянство. Со временем типы частиц могут поменяться.[/color]
-anomaly-behavior-fast = [color=crimson]Частота импульсов значительно повышена.[/color]
-anomaly-behavior-strenght = [color=crimson]Мощность импульсов значительно повышена.[/color]
-anomaly-behavior-moving = [color=crimson]Обнаружена координатная нестабильность.[/color]
+anomaly-behavior-inconstancy =  [color=crimson]Обнаружено непостоянство. Со временем типы частиц могут поменяться.[/color]
+anomaly-behavior-fast =  [color=crimson]Частота импульсов значительно повышена.[/color]
+anomaly-behavior-strenght =  [color=crimson]Мощность импульсов значительно повышена.[/color]
+anomaly-behavior-moving =  [color=crimson]Обнаружена координатная нестабильность.[/color]
+anomaly-secret-admin =  [color=red](ERROR)[/color]
