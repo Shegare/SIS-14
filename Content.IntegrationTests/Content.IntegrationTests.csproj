@@ -19,10 +19,12 @@
     <ProjectReference Include="..\Content.SIS.Client\Content.SIS.Client.csproj" />
     <ProjectReference Include="..\Content.SIS.Server\Content.SIS.Server.csproj" />
     <ProjectReference Include="..\Content.SIS.Shared\Content.SIS.Shared.csproj" />
-        
+
     <ProjectReference Include="..\Content.Module.Client\Content.Module.Client.csproj" />
     <ProjectReference Include="..\Content.Module.Server\Content.Module.Server.csproj" />
     <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
+
+    <ProjectReference Include="..\Content.Common.Data\Content.Common.Data.csproj" />
     <!-- SIS-Modules End -->
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />

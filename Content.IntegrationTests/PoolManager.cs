@@ -120,6 +120,7 @@ public sealed class ContentPoolManager : PoolManager<TestPair>
             .Append(typeof(Shared.Entry.EntryPoint).Assembly)
             .Append(typeof(SIS.Shared.Entry.EntryPoint).Assembly)
             .Append(typeof(Module.Shared.Entry.EntryPoint).Assembly)
+            .Append(typeof(Common.Data.Entry.EntryPoint).Assembly)
             .Append(typeof(PoolManager).Assembly)
             .ToArray();
 

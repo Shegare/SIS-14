@@ -31,6 +31,7 @@ public sealed class SandboxTest
                 // SIS-Modules Start
                 typeof(SIS.Shared.Entry.EntryPoint).Assembly,
                 typeof(SIS.Client.Entry.EntryPoint).Assembly,
+
                 typeof(Module.Shared.Entry.EntryPoint).Assembly,
                 typeof(Module.Client.Entry.EntryPoint).Assembly,
                 // SIS-Modules End
