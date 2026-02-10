@@ -24,8 +24,10 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
 
+  <!-- SIS-Modules Start -->
   <ItemGroup>
     <ProjectReference Include="..\Content.Common.Client\Content.Common.Client.csproj" />
     <ProjectReference Include="..\Content.Common.Shared\Content.Common.Shared.csproj" />
   </ItemGroup>
+  <!-- SIS-Modules End -->
 </Project>

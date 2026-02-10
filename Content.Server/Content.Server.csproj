@@ -28,8 +28,10 @@
   <Import Project="..\RobustToolbox\Imports\Shared.props" />
   <Import Project="..\RobustToolbox\Imports\Packaging.props" />
 
+  <!-- SIS-Modules Start -->
   <ItemGroup>
     <ProjectReference Include="..\Content.Common.Server\Content.Common.Server.csproj" />
     <ProjectReference Include="..\Content.Common.Shared\Content.Common.Shared.csproj" />
   </ItemGroup>
+  <!-- SIS-Modules End -->
 </Project>

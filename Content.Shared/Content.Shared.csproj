@@ -19,8 +19,10 @@
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\Robust.CompNetworkGenerator.targets" />
 
+  <!-- SIS-Modules Start -->
   <ItemGroup>
     <ProjectReference Include="..\Content.Common.Data\Content.Common.Data.csproj" />
     <ProjectReference Include="..\Content.Common.Shared\Content.Common.Shared.csproj" />
   </ItemGroup>
+  <!-- SIS-Modules End -->
 </Project>
