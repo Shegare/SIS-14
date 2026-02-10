@@ -53,7 +53,8 @@
 | Библиотеки / <br/>Пространства имён | Проект | Исходный репозиторий | Исходная лицензия |
 |-------------------------------------|-------|-----------------------|----------|
 | `Content.SIS.*` / `_SIS`            | Skill Issue Station | https://github.com/Shegare/SIS-14 | AGPL-3.0-or-later |
-| `Content.Goobstation.*` / `_Goobstation`    | Goob Station 14 | https://github.com/Goob-Station/Goob-Station | AGPL-3.0-or-later |
+| `_Goobstation`    | Goob Station 14 | https://github.com/Goob-Station/Goob-Station | AGPL-3.0-or-later |
+| `_EinsteinEngines`    | Einstein Engines | https://github.com/Simple-Station/Einstein-Engines | AGPL-3.0-or-later |
 | `Axolotl`                           | Space Axolotl | https://github.com/space-axolotl-14/space-axolotl-14 | MIT |
 
 Дополнительные репозитории с портированным кодом (без пространств имён):
