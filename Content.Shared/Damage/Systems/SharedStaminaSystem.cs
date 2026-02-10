@@ -468,7 +468,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
                         comp,
                         source: GetEntity(source),
                         visual: false,
-                        ignoreResist: applyResistances);
+                        ignoreResist: !applyResistances);
             // Goob-Sprinting End
 
             // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
@@ -477,7 +477,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
             if (nextUpdate > curTime)
                 continue;
 
-            // Handle exiting critical condition and restoring stamina damage
+            comp.NextUpdate = curTime + TimeSpan.FromSeconds(1f);
+
             if (comp.Critical)
                 ExitStamCrit(uid, comp);
 
