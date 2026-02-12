@@ -483,4 +483,24 @@ public enum LogType
     /// Events related to players connecting/disconnecting.
     /// </summary>
     Connection = 104,
+
+    /// <summary>
+    /// SecretPlus related game interactions.
+    /// </summary>
+    SecretPlus = 10001, // Goobstation
+
+    /// <summary>
+    /// GameDirector related game interactions.
+    /// </summary>
+    GameDirector = 10002, // Goobstation
+
+    /// <summary>
+    /// Supermatter events, mostly activations.
+    /// </summary>
+    Supermatter = 10003, // Goobstation
+
+    /// <summary>
+    /// Antag objective info.
+    /// </summary>
+    AntagObjective = 10004, // Goobstation
 }
