@@ -393,6 +393,11 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+  # Goobstation-Start
+  - type: ClothingGrantComponent # Goobstation: Make sure the CE doesn't get cooked by supermatter
+    component:
+    - type: SupermatterImmune
+  # Goobstation-End
 
 #Chief Medical Officer's Hardsuit
 - type: entity

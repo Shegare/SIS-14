@@ -119,6 +119,7 @@
     - TeslaEngine
     - SingularityTeslaEngine
     - Power
+  - type: SupermatterImmune # Goobstation
 
 - type: entity
   id: TeslaMiniEnergyBall
