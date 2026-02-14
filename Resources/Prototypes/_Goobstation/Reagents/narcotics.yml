@@ -1,0 +1,39 @@
+- type: reagent
+  id: NitrosylPlasmide
+  name: reagent-name-nitrosyl-plasmide
+  group: Narcotics
+  desc: reagent-desc-nitrosyl-plasmide
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: sour
+  color: "#e1a116"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:Jitter
+      - !type:ModifyKnockdown
+        time: 3
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
+        time: 3
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 10
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectForcedSleeping
+        type: Remove
+        time: 10
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.1
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentCondition
+          reagent: NitrosylPlasmide
+          min: 1
+    Respiration:
+      effects:
+      - !type:Jitter
