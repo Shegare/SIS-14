@@ -48,7 +48,6 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 150
-        refresh: false
       - !type:Emote
         conditions:
         - !type:ReagentCondition
@@ -147,7 +146,6 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 150
-        refresh: false
       - !type:Emote
         conditions:
         - !type:ReagentCondition
