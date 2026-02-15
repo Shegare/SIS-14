@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Reactions;
@@ -6,6 +13,7 @@ using JetBrains.Annotations;
 namespace Content.Server.Atmos.Reactions;
 
 /// <summary>
+///     Assmos - /tg/ gases
 ///     Forms BZ from mixing Plasma and Nitrous Oxide at low pressure. Also decomposes Nitrous Oxide when there are more than 3 parts Plasma per N2O.
 /// </summary>
 [UsedImplicitly]
@@ -13,9 +21,6 @@ public sealed partial class BZFormationReaction : IGasReactionEffect
 {
     public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
     {
-        if (mixture.Temperature > 313f)
-            return ReactionResult.NoReaction;
-
         var initN2O = mixture.GetMoles(Gas.NitrousOxide);
         var initPlasma = mixture.GetMoles(Gas.Plasma);
         var pressure = mixture.Pressure;
@@ -28,7 +33,8 @@ public sealed partial class BZFormationReaction : IGasReactionEffect
         var nitrousOxideDecomposed =  Math.Max(4f * (initPlasma / (initN2O + initPlasma) - 0.75f), 0);
         var nitrogenAdded = 0f;
         var oxygenAdded = 0f;
-        if (nitrousOxideDecomposed > 0) {
+        if (nitrousOxideDecomposed > 0)
+        {
             var amountDecomposed = 0.4f * bzFormed * nitrousOxideDecomposed;
             nitrogenAdded = amountDecomposed;
             oxygenAdded = 0.5f * amountDecomposed;
