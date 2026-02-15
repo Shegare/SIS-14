@@ -7,12 +7,12 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.EntityEffects.Effects;
 
-public sealed partial class NitriumMovespeedModifierSystem : EntityEffectSystem<MovementSpeedModifierComponent, NitriumMovespeedModifier>
+public sealed partial class NitriumMovementSpeedModifierSystem : EntityEffectSystem<MovementSpeedModifierComponent, NitriumMovementSpeedModifier>
 {
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly MovementModStatusSystem _movementModStatus = default!;
 
-    protected override void Effect(Entity<MovementSpeedModifierComponent> entity, ref EntityEffectEvent<NitriumMovespeedModifier> args)
+    protected override void Effect(Entity<MovementSpeedModifierComponent> entity, ref EntityEffectEvent<NitriumMovementSpeedModifier> args)
     {
         var proto = args.Effect.EffectProto;
         var sprintMod = args.Effect.SprintSpeedModifier;
@@ -49,7 +49,7 @@ public sealed partial class NitriumMovespeedModifierSystem : EntityEffectSystem<
     }
 }
 
-public sealed partial class NitriumMovespeedModifier : BaseStatusEntityEffect<NitriumMovespeedModifier>
+public sealed partial class NitriumMovementSpeedModifier : BaseStatusEntityEffect<NitriumMovementSpeedModifier>
 {
     [DataField]
     public float WalkSpeedModifier = 1f;
