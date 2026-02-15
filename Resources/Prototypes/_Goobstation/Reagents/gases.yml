@@ -8,211 +8,205 @@
   flavor: bitter
   color: "#9370db"
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
         emote: Cough
         showInChat: true
         probability: 0.1
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.5
-        - !type:OrganType
-          type: Slime
-          shouldHave: false
-        - !type:OrganType # Shitmed - Cybernetic Organs
-          type: Cybernetic
-          shouldHave: false
-        scaleByQuantity: true
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
+        - !type:MetabolizerTypeCondition # Shitmed - Cybernetic Organs
+          type: [ Cybernetic ]
+          inverted: true
         ignoreResistances: true
         damage:
           types:
             Asphyxiation: 10
             Poison: 2.5
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.3
-        - !type:OrganType
-          type: Slime
-          shouldHave: false
-        key: SeeingRainbows
-        component: SeeingRainbows
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
+        effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 150
         refresh: false
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
         emote: Laugh
         showInChat: true
         probability: 0.1
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
         emote: Scream
         showInChat: true
         probability: 0.01
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.5
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         type: Local
         visualType: Medium
         messages: [ "effect-sleepy" ]
         probability: 0.1
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 1
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 1
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
-        key: ForcedSleep
-        component: ForcedSleeping
+        effectProto: StatusEffectForcedSleeping
         time: 10
-        type: Add
-    Gas:
+        type: Update
+    Respiration:
       effects:
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
         emote: Cough
         showInChat: true
         probability: 0.1
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.5
-        - !type:OrganType
-          type: Slime
-          shouldHave: false
-        - !type:OrganType # Shitmed - Cybernetic Organs
-          type: Cybernetic
-          shouldHave: false
-        scaleByQuantity: true
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
+        - !type:MetabolizerTypeCondition # Shitmed - Cybernetic Organs
+          type: [ Cybernetic ]
+          inverted: true
         ignoreResistances: true
         damage:
           types:
             Asphyxiation: 10
             Poison: 2.5
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.3
-        - !type:OrganType
-          type: Slime
-          shouldHave: false
-        key: SeeingRainbows
-        component: SeeingRainbows
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+          inverted: true
+        effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 150
         refresh: false
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
         emote: Laugh
         showInChat: true
         probability: 0.1
       - !type:Emote
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.2
-        - !type:OrganType
-          type: Slime
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
         emote: Scream
         showInChat: true
         probability: 0.01
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 0.5
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         type: Local
         visualType: Medium
         messages: [ "effect-sleepy" ]
         probability: 0.1
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 1
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: BZ
           min: 1
-        - !type:OrganType
-          type: Slime
-        - !type:BloodReagentThreshold
+        - !type:MetabolizerTypeCondition
+          type: [ Slime ]
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
-        key: ForcedSleep
-        component: ForcedSleeping
+        effectProto: StatusEffectForcedSleeping
         time: 10
-        type: Add
+        type: Update
 
 - type: reagent
   id: Healium
@@ -222,14 +216,13 @@
   flavor: strange
   color: "#90560b"
   metabolisms:
-    Narcotic:
+    Bloodstream:
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           max: 24
-        scaleByQuantity: true
         ignoreResistances: true
         damage:
           groups:
@@ -238,7 +231,7 @@
             Brute: -2
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 24
         ignoreResistances: true
@@ -249,42 +242,40 @@
             Brute: -20
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 4
-        - !type:BloodReagentThreshold
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         type: Local
         visualType: Medium
         messages: [ "effect-sleepy" ]
         probability: 0.01
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 8
-        - !type:BloodReagentThreshold
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.01
-        key: ForcedSleep
-        component: ForcedSleeping
+        effectProto: StatusEffectForcedSleeping
         time: 1
-        type: Add
+        type: Update
       - !type:Drunk
         boozePower: 45
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 4
-    Gas:
+    Respiration:
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           max: 24
-        scaleByQuantity: true
         ignoreResistances: true
         damage:
           groups:
@@ -293,7 +284,7 @@
             Brute: -2
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 24
         ignoreResistances: true
@@ -304,32 +295,31 @@
             Brute: -20
       - !type:PopupMessage
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 4
-        - !type:BloodReagentThreshold
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.1
         type: Local
         visualType: Medium
         messages: [ "effect-sleepy" ]
         probability: 0.01
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 8
-        - !type:BloodReagentThreshold
+        - !type:ReagentCondition
           reagent: NitrosylPlasmide
           max: 0.01
-        key: ForcedSleep
-        component: ForcedSleeping
+        effectProto: StatusEffectForcedSleeping
         time: 1
-        type: Add
+        type: Update
       - !type:Drunk
         boozePower: 45
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Healium
           min: 4
 
@@ -341,41 +331,41 @@
   flavor: sour
   color: "#90560B"
   metabolisms:
-    Narcotic:
+    Bloodstream:
       effects:
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 1
           max: 8
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 8
           max: 12
         walkSpeedModifier: 1.4
         sprintSpeedModifier: 1.4
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 12
         walkSpeedModifier: 1.6
         sprintSpeedModifier: 1.6
-      - !type:AddReagentToBlood
+      - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 6
         reagent: NitrosylPlasmide
         amount: 2.5
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 8
         key: Stutter
@@ -383,48 +373,48 @@
         time: 8
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 10
         ignoreResistances: true
         damage:
           types:
             Asphyxiation: 15
-    Gas:
+    Respiration:
       effects:
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 1
           max: 8
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 8
           max: 12
         walkSpeedModifier: 1.4
         sprintSpeedModifier: 1.4
-      - !type:NitriumMovespeedModifier
+      - !type:NitriumMovementSpeedModifier
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 12
         walkSpeedModifier: 1.6
         sprintSpeedModifier: 1.6
-      - !type:AddReagentToBlood
+      - !type:AdjustReagent
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 6
         reagent: NitrosylPlasmide
         amount: 2.5
       - !type:GenericStatusEffect
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 8
         key: Stutter
@@ -432,7 +422,7 @@
         time: 8
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Nitrium
           min: 10
         ignoreResistances: true
@@ -448,47 +438,46 @@
   flavor: bitter
   color: "#7b68ee"
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Human
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Animal
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Rat
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Plant
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
-          type: Cybernetic # Woundmed - Cybernetic Organs
+        - !type:MetabolizerTypeCondition
+          type: [ Cybernetic ] # Woundmed - Cybernetic Organs
       # Convert Pluox into CO2.
       - !type:ModifyLungGas
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Vox
-          shouldHave: false
+          inverted: true
         ratios:
           CarbonDioxide: 1.0
           Oxygen: -1.0
       - !type:HealthChange
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Vox
-        scaleByQuantity: true
         ignoreResistances: true
         damage:
           types:
@@ -497,53 +486,54 @@
       - !type:AdjustAlert
         alertType: Toxins
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Pluoxium
           min: 0.5
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Vox
         clear: true
         time: 5
-    Gas:
+    Respiration:
       effects:
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Human
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Animal
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Rat
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
+        - !type:MetabolizerTypeCondition
           type: Plant
       - !type:Oxygenate
         factor: 8
         conditions:
-        - !type:OrganType
-          type: Cybernetic
+        - !type:MetabolizerTypeCondition
+          type: [ Cybernetic ]
       # Convert Pluoxium into CO2.
       - !type:ModifyLungGas
         conditions:
-        - !type:OrganType
-          type: Cybernetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [ Cybernetic ]
+          inverted: true
         ratios:
           CarbonDioxide: 1.0
           Pluoxium: -1.0
       - !type:ModifyLungGas
         conditions:
-        - !type:OrganType
-          type: Cybernetic
-          shouldHave: true
+        - !type:MetabolizerTypeCondition
+          type: [ Cybernetic ]
+          inverted: false
         ratios:
           CarbonDioxide: 0.5
           Pluoxium: -0.5
