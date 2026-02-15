@@ -16,7 +16,7 @@
   specificHeat: 10
   heatCapacityRatio: 1.4
   molarMass: 15
-  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  gasOverlaySprite: /Textures/_Goobstation/Effects/atmospherics.rsi
   gasOverlayState: healium
   color: fa8072
   reagent: Healium
@@ -27,7 +27,7 @@
   name: gases-nitrium
   specificHeat: 10
   heatCapacityRatio: 1.4
-  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  gasOverlaySprite: /Textures/_Goobstation/Effects/atmospherics.rsi
   gasOverlayState: nitrium
   molarMass: 8
   color: a52a2a
