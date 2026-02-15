@@ -395,31 +395,6 @@ namespace Content.Shared.Atmos
         public const float AmmoniaOxygenReactionRate = 10f;
 
         /// <summary>
-        ///     The amount of energy 1 mole of BZ forming from N2O and plasma releases.
-        /// </summary>
-        public const float BZFormationEnergy = 80e3f; // Assmos - /tg/ gases
-
-        /// <summary>
-        ///     The amount of energy 1 mol of Healium forming from BZ and frezon releases.
-        /// </summary>
-        public const float HealiumProductionEnergy = 9e3f; // Assmos - /tg/ gases
-
-        /// <summary>
-        ///     The amount of energy 1 mol of Nitrium forming from Tritium, Nitrogen and BZ releases.
-        /// </summary>
-        public const float NitriumProductionEnergy = -100e3f; // Assmos - /tg/ gases
-
-        /// <summary>
-        ///     The amount of energy 1 mol of Pluoxium forming releases.
-        /// </summary>
-        public const float PluoxiumProductionEnergy = 250; // Assmos - /tg/ gases
-
-        /// <summary>
-        ///     The amount of energy 1 mol of Nitrium decomposing into nitrogen and water vapor releases.
-        /// </summary>
-        public const float NitriumDecompositionEnergy = 30e3f; // Assmos - /tg/ gases
-
-        /// <summary>
         ///     Determines at what pressure the ultra-high pressure red icon is displayed.
         /// </summary>
         public const float HazardHighPressure = 550f;
@@ -488,6 +463,33 @@ namespace Content.Shared.Atmos
         public const float MaxTransferRate = 200;
 
         #endregion
+
+        // Goob-Gases Start
+        /// <summary>
+        ///     The amount of energy 1 mole of BZ forming from N2O and plasma releases.
+        /// </summary>
+        public const float BZFormationEnergy = 80e3f; // Assmos - /tg/ gases
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Healium forming from BZ and frezon releases.
+        /// </summary>
+        public const float HealiumProductionEnergy = 9e3f; // Assmos - /tg/ gases
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Nitrium forming from Tritium, Nitrogen and BZ releases.
+        /// </summary>
+        public const float NitriumProductionEnergy = -100e3f; // Assmos - /tg/ gases
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Pluoxium forming releases.
+        /// </summary>
+        public const float PluoxiumProductionEnergy = 250; // Assmos - /tg/ gases
+
+        /// <summary>
+        ///     The amount of energy 1 mol of Nitrium decomposing into nitrogen and water vapor releases.
+        /// </summary>
+        public const float NitriumDecompositionEnergy = 30e3f; // Assmos - /tg/ gases
+        // Goob-Gases End
     }
 
     /// <summary>
@@ -505,9 +507,11 @@ namespace Content.Shared.Atmos
         Ammonia = 6,
         NitrousOxide = 7,
         Frezon = 8,
-        BZ = 9, // Assmos - /tg/ gases
-        Healium = 10, // Assmos - /tg/ gases
-        Nitrium = 11, // Assmos - /tg/ gases
-        Pluoxium = 12, // Assmos - /tg/ gases
+        // Goob-Gases Start
+        BZ = 9,
+        Healium = 10,
+        Nitrium = 11,
+        Pluoxium = 12,
+        // Goob-Gases End
     }
 }
