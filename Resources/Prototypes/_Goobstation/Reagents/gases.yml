@@ -442,22 +442,22 @@
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Human
+          type: [ Human ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Animal
+          type: [ Animal ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Rat
+          type: [ Rat ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Plant
+          type: [ Plant ]
       - !type:Oxygenate
         factor: 8
         conditions:
@@ -467,7 +467,7 @@
       - !type:ModifyLungGas
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Vox
+          type: [ Vox ]
           inverted: true
         ratios:
           CarbonDioxide: 1.0
@@ -475,7 +475,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Vox
+          type: [ Vox ]
         ignoreResistances: true
         damage:
           types:
@@ -488,7 +488,7 @@
           reagent: Pluoxium
           min: 0.5
         - !type:MetabolizerTypeCondition
-          type: Vox
+          type: [ Vox ]
         clear: true
         time: 5
     Respiration:
@@ -497,22 +497,22 @@
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Human
+          type: [ Human ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Animal
+          type: [ Animal ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Rat
+          type: [ Rat ]
       - !type:Oxygenate
         factor: 8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: Plant
+          type: [ Plant ]
       - !type:Oxygenate
         factor: 8
         conditions:
