@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+# SPDX-FileCopyrightText: 2026 Skill Issue Station contributors
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -7,15 +8,15 @@
   id: FishingRodMakeshift
   start: start
   graph:
-    - node: start
-      edges:
-        - to: makeshiftRod
-          steps:
-            - material: Cloth
-              amount: 3
-              doAfter: 2
-            - material: WoodPlank
-              amount: 5
-              doAfter: 2
-    - node: makeshiftRod
-      entity: FishingRodMakeshift
+  - node: start
+    edges:
+    - to: makeshiftRod
+      steps:
+      - material: Cloth
+        amount: 3
+        doAfter: 2
+      - material: WoodPlank
+        amount: 5
+        doAfter: 2
+  - node: makeshiftRod
+    entity: FishingRodMakeshift

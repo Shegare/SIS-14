@@ -67,24 +67,24 @@
   id: WaterFishingLootTable
   table: !type:GroupSelector
     children:
-      - !type:NestedSelector
-        tableId: BasicFishingLootTable
-        weight: 70
-      - !type:NestedSelector
-        tableId: WaterFishTable
-        weight: 20
-      - !type:NestedSelector
-        tableId: RareFishTable
-        weight: 10
+    - !type:NestedSelector
+      tableId: BasicFishingLootTable
+      weight: 70
+    - !type:NestedSelector
+      tableId: WaterFishTable
+      weight: 20
+    - !type:NestedSelector
+      tableId: RareFishTable
+      weight: 10
 
 # Items from Lava
 - type: entityTable
   id: LavaFishingLootTable
   table: !type:GroupSelector
     children:
-      # TODO: lava/plasma fish
-      - !type:NestedSelector
-        tableId: BasicFishingLootTable
+    # TODO: lava/plasma fish
+    - !type:NestedSelector
+      tableId: BasicFishingLootTable
 
 # Items from Plasma
 - type: entityTable
@@ -92,18 +92,18 @@
   table: !type:GroupSelector
     children:
     # TODO: lava/plasma fish
-      - !type:NestedSelector
-        tableId: BasicFishingLootTable
+    - !type:NestedSelector
+      tableId: BasicFishingLootTable
 
 # Items from Toilets
 - type: entityTable
   id: ToiletFishingLootTable
   table: !type:GroupSelector
     children:
-      # like water but no rare fishes
-      - !type:NestedSelector
-        tableId: BasicFishingLootTable
-        weight: 80
-      - !type:NestedSelector
-        tableId: WaterFishTable
-        weight: 20
+    # like water but no rare fishes
+    - !type:NestedSelector
+      tableId: BasicFishingLootTable
+      weight: 80
+    - !type:NestedSelector
+      tableId: WaterFishTable
+      weight: 20
