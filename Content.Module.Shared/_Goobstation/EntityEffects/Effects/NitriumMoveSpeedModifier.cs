@@ -71,11 +71,10 @@ public sealed partial class NitriumMovementSpeedModifier : BaseStatusEntityEffec
     public EntProtoId EffectProto = MovementModStatusSystem.ReagentSpeed;
 
     public override string? EntityEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys) =>
-    Time == null
-        ? null
-        : Loc.GetString("reagent-effect-guidebook-movespeed-modifier",
-            ("chance", Probability),
-            ("walkspeed", WalkSpeedModifier),
-            ("sprintspeed", SprintSpeedModifier),
-            ("time", Time.Value.TotalSeconds));
+        Time == null
+            ? null
+            : Loc.GetString("entity-effect-guidebook-movespeed-modifier",
+                ("chance", Probability),
+                ("sprintspeed", SprintSpeedModifier),
+                ("time", Time.Value.TotalSeconds));
 }
