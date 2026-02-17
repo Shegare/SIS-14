@@ -39,13 +39,13 @@
         - ReagentId: Water
           Quantity: 9999999
   # Goob-Start
-  #- type: SolutionRegeneration # Goobstation - laggy as shit
+  #- type: SolutionRegeneration # Goob: laggy as shit
   #  solution: tank
   #  generated:
   #    reagents:
   #    - ReagentId: Water
   #      Quantity: 100
-  # Goob-Start
+  # Goob-End
   - type: DrainableSolution
     solution: pool
   - type: SpeedModifierContacts
@@ -76,7 +76,7 @@
         - HighImpassable
         density: 1000
         hard: false
-      # Goob-Ebd
+      # Goob-End
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepWater
@@ -91,7 +91,7 @@
   - type: TileEntityEffect
     effects:
     - !type:Extinguish
-    # Goob-Start
+  # Goob-Start
   - type: FishingSpot
     fishList: !type:NestedSelector
       tableId: WaterFishingLootTable
