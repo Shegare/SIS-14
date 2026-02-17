@@ -1,0 +1,13 @@
+ent-FishingRod = удочка
+    .desc = Время отправиться на рыбалку!
+ent-FishingRodGoon = удочка
+    .desc = Время отправиться на рыбалку!
+    .suffix = Неуклюжая
+ent-FishingRodMakeshift = самодельная удочка
+    .desc = Наверное, будет сложно поймать рыбу с её помощью.
+ent-FishingRodGolden = золотая удочка
+    .desc = Наконец-то вы поймали 250 рыб. Вот ваш трофей.
+ent-FishingLure = рыболовная приманка
+    .desc = рыба, иди сюда
+ent-FishingLureMakeshift = рыболовная приманка
+    .desc = рыба, иди сюда
