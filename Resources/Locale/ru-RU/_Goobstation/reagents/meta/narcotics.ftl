@@ -1,2 +1,2 @@
-reagent-name-nitrosyl-plasmide = нитрозил плазмид
+reagent-name-nitrosyl-plasmide = нитрозил-плазмид
 reagent-desc-nitrosyl-plasmide = Мощный стимулятор, который может предотвращать сонливость, оглушение и падения.
