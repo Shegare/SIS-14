@@ -25,7 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" />
     <ProjectReference Include="..\Content.Module.Server\Content.Module.Server.csproj" />
     <ProjectReference Include="..\Content.Module.Shared\Content.Module.Shared.csproj" />
   </ItemGroup>

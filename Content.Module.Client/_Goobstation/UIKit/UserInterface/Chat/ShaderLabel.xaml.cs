@@ -2,7 +2,7 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 
-namespace Content.Goobstation.UIKit.UserInterface.Chat;
+namespace Content.Module.Client._Goobstation.UIKit.UserInterface.Chat;
 
 public sealed class ShaderLabel : Label
 {

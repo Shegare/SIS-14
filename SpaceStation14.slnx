@@ -25,10 +25,6 @@
     <Project Path="Content.Module.Server/Content.Module.Server.csproj" />
     <Project Path="Content.Module.Shared/Content.Module.Shared.csproj" />
   </Folder>
-  <Folder Name="/Modules/Other/">
-    <Project Path="Content.Module.Maths/Content.Module.Maths.csproj" />
-    <Project Path="Content.Module.UIKit/Content.Module.UIKit.csproj" />
-  </Folder>
   <Folder Name="/Modules/SIS/">
     <Project Path="Content.SIS.Client/Content.SIS.Client.csproj" />
     <Project Path="Content.SIS.Server/Content.SIS.Server.csproj" />

@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.ModuleManager\Content.ModuleManager.csproj" PrivateAssets="All" />
-    <ProjectReference Include="..\Content.Module.Maths\Content.Module.Maths.csproj" PrivateAssets="All" />
     <ProjectReference Include="..\Content.Common.Data\Content.Common.Data.csproj" PrivateAssets="All" />
   </ItemGroup>
 </Project>
