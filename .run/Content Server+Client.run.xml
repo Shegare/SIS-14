@@ -4,4 +4,11 @@
     <toRun name="Content.Server" type="DotNetProject" />
     <method v="2" />
   </configuration>
+  <!-- SIS-Modules Start -->
+  <configuration default="false" name="SIS Content Server+Client" type="CompoundRunConfigurationType">
+    <toRun name="Content.SIS.Client" type="DotNetProject" />
+    <toRun name="Content.SIS.Server" type="DotNetProject" />
+    <method v="2" />
+  </configuration>
+  <!-- SIS-Modules End -->
 </component>
