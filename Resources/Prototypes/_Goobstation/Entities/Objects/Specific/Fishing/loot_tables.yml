@@ -33,7 +33,7 @@
 
 # All types of the rare and unique fishes
 - type: entityTable
-  id: RareFishTable
+  id:
   table: !type:GroupSelector
     children:
     - id: FishAlien
@@ -48,7 +48,7 @@
 
 # Fish from water
 - type: entityTable
-  id: WaterFishTable
+  id:
   table: !type:GroupSelector
     children:
     - id: FishAngler
@@ -64,7 +64,7 @@
 
 # Items from Water
 - type: entityTable
-  id: WaterFishingLootTable
+  id:
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
@@ -79,7 +79,7 @@
 
 # Items from Lava
 - type: entityTable
-  id: LavaFishingLootTable
+  id:
   table: !type:GroupSelector
     children:
     # TODO: lava/plasma fish
@@ -88,7 +88,7 @@
 
 # Items from Plasma
 - type: entityTable
-  id: PlasmaFishingLootTable
+  id:
   table: !type:GroupSelector
     children:
     # TODO: lava/plasma fish
@@ -97,7 +97,7 @@
 
 # Items from Toilets
 - type: entityTable
-  id: ToiletFishingLootTable
+  id:
   table: !type:GroupSelector
     children:
     # like water but no rare fishes
