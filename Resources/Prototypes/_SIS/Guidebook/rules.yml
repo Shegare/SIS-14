@@ -37,14 +37,14 @@
   name: guide-entry-rules-c6
   ruleEntry: true
   priority: 5
-  text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC4.0.xml"
+  text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC4-0.xml"
 
 - type: guideEntry
   id: SISRuleC4.1
   name: guide-entry-rules-c7
   ruleEntry: true
   priority: 6
-  text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC4.1.xml"
+  text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC4-1.xml"
 
 - type: guideEntry
   id: SISRuleC5
