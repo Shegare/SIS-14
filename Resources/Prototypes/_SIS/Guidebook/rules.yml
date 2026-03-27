@@ -33,14 +33,14 @@
   text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC3.xml"
 
 - type: guideEntry
-  id: SISRuleC4.0
+  id: SISRuleC4-0
   name: guide-entry-rules-c6
   ruleEntry: true
   priority: 5
   text: "/ServerInfo/_SIS/ServerRules/CoreRules/RuleC4-0.xml"
 
 - type: guideEntry
-  id: SISRuleC4.1
+  id: SISRuleC4-1
   name: guide-entry-rules-c7
   ruleEntry: true
   priority: 6
