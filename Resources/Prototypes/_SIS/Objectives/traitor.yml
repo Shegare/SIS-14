@@ -1,0 +1,9 @@
+- type: entity
+  parent: BaseTraitorStealObjective
+  id: CEBackpackStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ ChiefEngineer ]
+  - type: StealCondition
+    stealGroup: ClothingBackpackChiefEngineer
+    owner: job-name-ce

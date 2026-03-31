@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ClothingBackpackDuffel, BaseGrandTheftContraband]
+  id: ClothingBackpackChiefEngineer
+  name: ChiefEngineer backpack
+  description: It's a tough backpack for the daily grind of station life.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/erteng.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterHardsuitEngineeringWhite
+    slot: outerClothing
+    requiredSlot: BACK
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: ClothingBackpackChiefEngineer

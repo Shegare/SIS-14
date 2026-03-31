@@ -4,3 +4,11 @@
   sprite:
     sprite: Objects/Misc/module.rsi
     state: cpuboard
+
+
+- type: stealTargetGroup
+  id: ClothingBackpackChiefEngineer
+  name: steal-target-groups-Chief-Engineer-backpack
+  sprite:
+    sprite: Clothing/Back/Backpacks/erteng.rsi
+    state: icon
