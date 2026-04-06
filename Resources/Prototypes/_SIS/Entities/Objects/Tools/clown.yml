@@ -1,0 +1,23 @@
+ # SIS new funny stuff for clown-from tag168043-dev
+
+- type: entity
+  id: ToolboxClown
+  name: ClownToolbox
+  description: HONK!
+  parent: [ BaseItem ]
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/Toolboxes/foolbox.rsi
+    state: icon
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
+    possibleSets:
+    - AnnoyingSet
+    - ClothSet
+    - GunsSet
+  - type: ActivatableUI
+    key: enum.ThiefBackpackUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ThiefBackpackUIKey.Key:
+        type: ThiefBackpackBoundUserInterface
