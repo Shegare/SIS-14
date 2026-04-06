@@ -68,6 +68,7 @@
     - id: MobDuckMallard
     - id: ClothingBeltHolster
     - id: PowerCellHighPrinted
+    - id: MobCatCake
     - id: ClothingMaskWeldingGas
     - id: AdvMopItem
     - id: CombatKnife
@@ -190,7 +191,7 @@
     - id: MobBreadDog
 
 - type: entityTable
-  id:  BODA
+  id: WaterFishingLootTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
@@ -219,7 +220,7 @@
       weight: 0.05
 
 - type: entityTable
-  id : Plasma
+  id: LavaFishingLootTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
@@ -245,7 +246,7 @@
       weight: 0.1
 
 - type: entityTable
-  id:  lalalava
+  id: PlasmaFishingLootTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
@@ -271,7 +272,7 @@
       weight: 0.1
 
 - type: entityTable
-  id: tyalet
+  id: ToiletFishingLootTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
