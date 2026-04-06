@@ -26,7 +26,6 @@
     - id: EmergencyOxygenTankFilled
     - id: Flare
     - id: LightTubeBroken
-    - id: MobMouse
     - id: ToyRipley
     - id: PillCanister
     - id: FishingRodMakeshift
@@ -65,7 +64,6 @@
     - id: HandHeldMassScannerEmpty
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingEyesGlassesSunglasses
-    - id: MobDuckMallard
     - id: ClothingBeltHolster
     - id: PowerCellHighPrinted
     - id: ClothingMaskWeldingGas
@@ -151,7 +149,7 @@
     - id: MobBasilisk
 
 - type: entityTable
-  id: GoodMobsTable
+  id: PeacefullyMobsTable
   table: !type:GroupSelector
     children:
     - id: MobMonkey
@@ -160,9 +158,10 @@
     - id: MobRaccoon
     - id: MobHamster
     - id: MobSnake
+    - id: MobMouse
     - id: MobMouseCancer
-    - id: MobMouse1
     - id: MobChicken
+    - id: MobDuckMallard
 
 - type: entityTable
   id: RareEvilMobsTable
@@ -183,7 +182,7 @@
     - id: MobDragon
 
 - type: entityTable
-  id: RareGoodMobsTable
+  id: RarePeacefullyMobsTable
   table: !type:GroupSelector
     children:
     - id: MobCatCake
@@ -200,7 +199,7 @@
       tableId: RareFishTable
       weight: 15
     - !type:NestedSelector
-      tableId: GoodMobsTable
+      tableId: PeacefullyMobsTable
       weight: 7
     - !type:NestedSelector
       tableId: EvilMobsTable
@@ -278,7 +277,7 @@
       tableId: TrashFishItems
       weight: 57
     - !type:NestedSelector
-      tableId: GoodMobsTable
+      tableId: PeacefullyMobsTable
       weight: 15
     - !type:NestedSelector
       tableId: RareFishTable
@@ -290,7 +289,7 @@
       tableId: EvilMobsTable
       weight: 5
     - !type:NestedSelector
-      tableId: RareGoodMobsTable
+      tableId: RarePeacefullyMobsTable
       weight: 2
     - !type:NestedSelector
       tableId: RareEvilMobsTable
