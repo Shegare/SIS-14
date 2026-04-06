@@ -63,47 +63,55 @@
     - id: FishTropical
 
 # Items from Water
-- type: entityTable
-  id: WaterFishingLootTable
-  table: !type:GroupSelector
-    children:
-    - !type:NestedSelector
-      tableId: BasicFishingLootTable
-      weight: 70
-    - !type:NestedSelector
-      tableId: WaterFishTable
-      weight: 20
-    - !type:NestedSelector
-      tableId: RareFishTable
-      weight: 10
+# SIS-Start
+#- type: entityTable
+#  id: WaterFishingLootTable
+#  table: !type:GroupSelector
+#    children:
+#    - !type:NestedSelector
+#      tableId: BasicFishingLootTable
+#      weight: 70
+#    - !type:NestedSelector
+#      tableId: WaterFishTable
+#      weight: 20
+#    - !type:NestedSelector
+#      tableId: RareFishTable
+#      weight: 10
+# SIS-End
 
 # Items from Lava
-- type: entityTable
-  id: LavaFishingLootTable
-  table: !type:GroupSelector
-    children:
-    # TODO: lava/plasma fish
-    - !type:NestedSelector
-      tableId: BasicFishingLootTable
+# SIS-Start
+#- type: entityTable
+#  id: LavaFishingLootTable
+#  table: !type:GroupSelector
+#    children:
+#    # TODO: lava/plasma fish
+#    - !type:NestedSelector
+#      tableId: BasicFishingLootTable
+# SIS-End
 
 # Items from Plasma
-- type: entityTable
-  id: PlasmaFishingLootTable
-  table: !type:GroupSelector
-    children:
-    # TODO: lava/plasma fish
-    - !type:NestedSelector
-      tableId: BasicFishingLootTable
+# SIS-Start
+#- type: entityTable
+#  id: PlasmaFishingLootTable
+#  table: !type:GroupSelector
+#    children:
+#    # TODO: lava/plasma fish
+#    - !type:NestedSelector
+#      tableId: BasicFishingLootTable
+# SIS-End
 
 # Items from Toilets
-- type: entityTable
-  id: ToiletFishingLootTable
-  table: !type:GroupSelector
-    children:
-    # like water but no rare fishes
-    - !type:NestedSelector
-      tableId: BasicFishingLootTable
-      weight: 80
-    - !type:NestedSelector
-      tableId: WaterFishTable
-      weight: 20
+# SIS-Start
+#- type: entityTable
+#  id: ToiletFishingLootTable
+#  table: !type:GroupSelector
+#    children:
+#    # like water but no rare fishes
+#    - !type:NestedSelector
+#      tableId: BasicFishingLootTable
+#      weight: 80
+#    - !type:NestedSelector
+#      tableId: WaterFishTable
+#      weight: 20
+# SIS-End
