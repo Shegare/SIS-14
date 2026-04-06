@@ -1,5 +1,5 @@
 - type: entityTable
-  id: TrashFishItems
+  id: TrashFishItemsTable
   table: !type:GroupSelector
     children:
     - id: ClothingUniformJumpsuitTacticool
@@ -48,7 +48,7 @@
     - id: ClothingHandsGlovesFingerless
 
 - type: entityTable
-  id: RareFishItems
+  id: RareFishItemsTable
   table: !type:GroupSelector
     children:
     - id: ClothingHeadHelmetScrap
@@ -73,7 +73,7 @@
     - id: FishingRod
 
 - type: entityTable
-  id: SuperRareFishItems
+  id: SuperRareFishItemsTable
   table: !type:GroupSelector
     children:
     - id: BluespaceBeaker
@@ -95,7 +95,7 @@
     - id: ClothingOuterCoatAMG
 
 - type: entityTable
-  id: LegendaryFishItems
+  id: LegendaryFishItemsTable
   table: !type:GroupSelector
     children:
     - id: ClothingBackpackChameleonFill
@@ -122,7 +122,7 @@
     - id: AmmoTechFabCircuitboard
 
 - type: entityTable
-  id: GodFishItems
+  id: GodFishItemsTable
   table: !type:GroupSelector
     children:
     - id: MobNarsie
@@ -193,7 +193,7 @@
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: TrashFishItems
+      tableId: TrashFishItemsTable
       weight: 60
     - !type:NestedSelector
       tableId: RareFishTable
@@ -205,16 +205,16 @@
       tableId: EvilMobsTable
       weight: 3
     - !type:NestedSelector
-      tableId: RareFishItems
+      tableId: RareFishItemsTable
       weight: 10.45
     - !type:NestedSelector
-      tableId: SuperRareFishItems
+      tableId: SuperRareFishItemsTable
       weight: 4
     - !type:NestedSelector
-      tableId: LegendaryFishItems
+      tableId: LegendaryFishItemsTable
       weight: 0.5
     - !type:NestedSelector
-      tableId: GodFishItems
+      tableId: GodFishItemsTable
       weight: 0.05
 
 - type: entityTable
@@ -228,19 +228,19 @@
       tableId: RareEvilMobsTable
       weight: 12.5
     - !type:NestedSelector
-      tableId: RareFishItems
+      tableId: RareFishItemsTable
       weight: 50
     - !type:NestedSelector
-      tableId: SuperRareFishItems
+      tableId: SuperRareFishItemsTable
       weight: 8.9
     - !type:NestedSelector
-      tableId: LegendaryFishItems
+      tableId: LegendaryFishItemsTable
       weight: 2
     - !type:NestedSelector
       tableId: SuperRareEvilMobsTable
       weight: 1.5
     - !type:NestedSelector
-      tableId: GodFishItems
+      tableId: GodFishItemsTable
       weight: 0.1
 
 - type: entityTable
@@ -254,19 +254,19 @@
       tableId: RareEvilMobsTable
       weight: 12.5
     - !type:NestedSelector
-      tableId: RareFishItems
+      tableId: RareFishItemsTable
       weight: 50
     - !type:NestedSelector
-      tableId: SuperRareFishItems
+      tableId: SuperRareFishItemsTable
       weight: 8.9
     - !type:NestedSelector
-      tableId: LegendaryFishItems
+      tableId: LegendaryFishItemsTable
       weight: 2
     - !type:NestedSelector
       tableId: SuperRareEvilMobsTable
       weight: 1.5
     - !type:NestedSelector
-      tableId: GodFishItems
+      tableId: GodFishItemsTable
       weight: 0.1
 
 - type: entityTable
@@ -274,7 +274,7 @@
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: TrashFishItems
+      tableId: TrashFishItemsTable
       weight: 57
     - !type:NestedSelector
       tableId: PeacefullyMobsTable
@@ -283,7 +283,7 @@
       tableId: RareFishTable
       weight: 15
     - !type:NestedSelector
-      tableId: RareFishItems
+      tableId: RareFishItemsTable
       weight: 5
     - !type:NestedSelector
       tableId: EvilMobsTable
