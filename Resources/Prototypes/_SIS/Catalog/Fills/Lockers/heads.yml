@@ -1,5 +1,0 @@
-- type: entityTable
-  id: FillChiefEngineerHardsuit
-  table: !type:AllSelector
-    children:
-    - id: ClothingBackpackChiefEngineer #SIS backpack
