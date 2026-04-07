@@ -58,7 +58,6 @@
     - SleeperSet
     - CommunicatorSet
     - SmugglerSet
-    - StealthSet # SIS new set
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface
