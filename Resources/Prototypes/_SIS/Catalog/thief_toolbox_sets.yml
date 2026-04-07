@@ -1,4 +1,4 @@
-- type: thiefBackpackSet # SIS new set for thief
+- type: thiefBackpackSet
   id: StealthSet
   name: thief-backpack-category-stealth-name
   description: thief-backpack-category-stealth-description

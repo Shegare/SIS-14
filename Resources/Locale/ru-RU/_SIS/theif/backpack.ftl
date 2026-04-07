@@ -1,4 +1,3 @@
-
 thief-backpack-category-stealth-name = Набор тихони
 thief-backpack-category-stealth-description =
     Набор для самых тихих воришек, если что-то
