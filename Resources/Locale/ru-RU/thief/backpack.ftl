@@ -1,4 +1,6 @@
-thief-backpack-window-title = Набор неопределенности
+# SIS-Start
+thief-backpack-window-title = Набор неопределённости
+# SIS-End
 thief-backpack-window-description =
     Внутри находятся ваши орудия труда, которые растворятся, когда вы будете готовы.
     Выберите { $maxCount } { $maxCount ->

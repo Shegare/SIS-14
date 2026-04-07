@@ -1,4 +1,3 @@
-
 clown-backpack-category-annoying-name = Набор занозы
 clown-backpack-category-annoying-description =
     Хотите быть той еще занозой? Этот набор именно для вас,
@@ -10,10 +9,10 @@ clown-backpack-category-annoying-description =
 clown-backpack-category-cloth-name = Набор хонкашопера
 clown-backpack-category-cloth-description =
     Набор для самых привлекательных и моднявых клоунов!
-    В комплект входит: банановые клоунские маска,костюм,туфли
+    В комплект входит: банановые клоунские маска, костюм, туфли
     скафандр клоуна, игрушку клоуна, бананиум, рюкзак клоуна ОБР.
 
-clown-backpack-category-guns-name = Набор провосудия
+clown-backpack-category-guns-name = Набор правосудия
 clown-backpack-category-guns-description =
     ВЫ вершитель закона на этой станции и никто вам не может перечить!
     В комплект входят: пирогомет и 6 зарядов к нему, маска клоуна-офицера,

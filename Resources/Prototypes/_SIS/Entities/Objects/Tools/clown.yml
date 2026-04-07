@@ -1,8 +1,6 @@
- # SIS new funny stuff for clown-from tag168043-dev
-
 - type: entity
   id: ToolboxClown
-  name: ClownToolbox
+  name: набор хонконеопределённости
   description: HONK!
   parent: [ BaseItem ]
   components:

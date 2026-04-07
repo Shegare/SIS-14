@@ -36,7 +36,7 @@
     id: ClownPDA
     ears: ClothingHeadsetService
     inhand:
-    - ToolboxClown
+    - ToolboxClown #SIS
   storage:
     back:
     - RubberStampClown
