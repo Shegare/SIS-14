@@ -35,8 +35,8 @@
     pocket2: ClownRecorder
     id: ClownPDA
     ears: ClothingHeadsetService
-    inhand:
-    - ToolboxClown #SIS
+  inhand:
+  - ToolboxClown #SIS
   storage:
     back:
     - RubberStampClown
