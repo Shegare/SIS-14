@@ -1,5 +1,0 @@
-- type: weightedRandom
-  id: TraitorObjectiveGroupSteal
-  weights:
-   CEBackpackStealObjective: 1
-   
