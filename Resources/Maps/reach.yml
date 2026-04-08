@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/26/2026 19:16:55
-  entityCount: 2781
+  time: 04/08/2026 09:59:45
+  entityCount: 2782
 maps:
 - 1
 grids:
@@ -1428,6 +1428,16 @@ entities:
     - type: ExplosionAirtightGrid
     - type: TileHistory
       chunkHistory: {}
+- proto: AccessConfigurator
+  entities:
+  - uid: 2782
+    components:
+    - type: Transform
+      parent: 1647
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+      storage: 1647
 - proto: AirAlarm
   entities:
   - uid: 3
@@ -1966,7 +1976,7 @@ entities:
       pos: -6.5,4.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1558.4391
+      secondsUntilStateChange: -1632.9207
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6750,6 +6760,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,10.5
       parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
   - uid: 952
     components:
     - type: Transform
@@ -13122,6 +13134,17 @@ entities:
     - type: Transform
       pos: 21.5,-2.5
       parent: 2
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2782
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: EntityStorage
       air:
         volume: 200

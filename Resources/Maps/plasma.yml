@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/07/2026 03:19:06
-  entityCount: 26504
+  time: 04/08/2026 10:03:31
+  entityCount: 26506
 maps:
 - 1
 grids:
@@ -14624,7 +14624,7 @@ entities:
       pos: -131.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -62983.973
+      secondsUntilStateChange: -63185.094
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -66745,11 +66745,10 @@ entities:
     - type: Transform
       pos: -90.5,25.5
       parent: 2
-  - uid: 26345
+  - uid: 26506
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -96.5,32.5
+      pos: -93.5,35.5
       parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
@@ -66787,6 +66786,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -96.5,33.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 16998
@@ -66812,6 +66814,14 @@ entities:
     components:
     - type: Transform
       pos: -91.5,25.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 26345
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -96.5,32.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -84446,6 +84456,11 @@ entities:
       parent: 2
     missingComponents:
     - GasMiner
+  - uid: 26505
+    components:
+    - type: Transform
+      pos: -110.5,2.5
+      parent: 2
 - proto: GasMinerWaterVapor
   entities:
   - uid: 7359
@@ -170808,7 +170823,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -263090.72
+      secondsUntilStateChange: -263291.84
       state: Opening
     - type: Airlock
       autoClose: False

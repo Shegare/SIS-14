@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/08/2026 15:02:53
-  entityCount: 20047
+  time: 04/08/2026 10:09:02
+  entityCount: 20048
 maps:
 - 1
 grids:
@@ -10166,7 +10166,7 @@ entities:
       pos: 11.5,-30.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -260311.42
+      secondsUntilStateChange: -260371.31
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10522,7 +10522,7 @@ entities:
       pos: 34.5,-36.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -35809.105
+      secondsUntilStateChange: -35868.99
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -45806,12 +45806,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -54.5,-46.5
       parent: 2
-  - uid: 17228
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 53.5,-103.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 5053
@@ -45841,6 +45835,9 @@ entities:
     - type: Transform
       pos: 53.5,-96.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 6924
@@ -45855,6 +45852,14 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 30.5,-101.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 17228
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 53.5,-103.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -61150,6 +61155,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 34.5,-60.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 19378
+    components:
+    - type: Transform
+      pos: 42.5,-60.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:

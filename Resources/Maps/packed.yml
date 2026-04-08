@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/18/2026 17:37:36
-  entityCount: 16015
+  time: 04/08/2026 10:05:27
+  entityCount: 16016
 maps:
 - 126
 grids:
@@ -42348,6 +42348,9 @@ entities:
     - type: Transform
       pos: 14.5,25.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Quartermaster
 - proto: ComputerCargoOrders
   entities:
   - uid: 4319
@@ -42356,6 +42359,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.5,21.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Cargo
   - uid: 5285
     components:
     - type: Transform
@@ -42568,12 +42574,6 @@ entities:
     - type: Transform
       pos: 20.5,46.5
       parent: 2
-  - uid: 9957
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 4.5,39.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 5375
@@ -42652,6 +42652,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 6.5,25.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 9957
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,39.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -43538,7 +43546,7 @@ entities:
       pos: 59.5,39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19693.469
+      secondsUntilStateChange: -19761.928
       state: Closing
 - proto: CurtainsWhiteOpen
   entities:
@@ -49394,7 +49402,7 @@ entities:
       pos: 26.5,37.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -66987.26
+      secondsUntilStateChange: -67055.72
       state: Closing
   - uid: 9362
     components:
@@ -51181,6 +51189,13 @@ entities:
     components:
     - type: Transform
       pos: 49.5,-25.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 16016
+    components:
+    - type: Transform
+      pos: 49.5,-31.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -72455,7 +72470,7 @@ entities:
       pos: 12.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5159.2036
+      secondsUntilStateChange: -5227.6626
       state: Closing
   - uid: 5750
     components:

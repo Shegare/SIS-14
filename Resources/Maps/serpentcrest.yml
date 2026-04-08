@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/05/2026 17:56:37
-  entityCount: 29072
+  time: 04/08/2026 09:58:14
+  entityCount: 29073
 maps:
 - 1
 grids:
@@ -74030,12 +74030,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 54.5,-54.5
       parent: 2
-  - uid: 20571
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 51.5,-43.5
-      parent: 2
   - uid: 26314
     components:
     - type: Transform
@@ -74101,6 +74095,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 58.5,-37.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 20570
@@ -74116,6 +74113,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 63.5,-18.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 5968
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 51.5,-43.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -75810,32 +75815,6 @@ entities:
     - type: Transform
       pos: -2.5,-23.5
       parent: 2
-- proto: CrateVendingMachineRestockDonutFilled
-  entities:
-  - uid: 5077
-    components:
-    - type: Transform
-      pos: -9.5,21.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5078
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: CrayonBox
   entities:
   - uid: 6046
@@ -90088,6 +90067,13 @@ entities:
     components:
     - type: Transform
       pos: -34.5,24.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 5969
+    components:
+    - type: Transform
+      pos: -34.5,16.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -164564,6 +164550,30 @@ entities:
     - type: Transform
       pos: 5.5,-18.5
       parent: 2
+- proto: VendingMachineRestockDonut
+  entities:
+  - uid: 5077
+    components:
+    - type: Transform
+      pos: -9.5,21.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        temperature: 293.14673
+        moles:
+          Oxygen: 1.7459903
+          Nitrogen: 6.568249
+      closeSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/closetclose.ogg
+      openSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/closetopen.ogg
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          ents:
+          - 5078
+        paper_label: !type:ContainerSlot {}
 - proto: VendingMachineRestockHotDrinks
   entities:
   - uid: 5078

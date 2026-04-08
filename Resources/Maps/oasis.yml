@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.0
+  engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/13/2026 09:17:40
-  entityCount: 31155
+  time: 04/08/2026 10:07:44
+  entityCount: 31156
 maps:
 - 1
 grids:
@@ -16164,7 +16164,7 @@ entities:
       pos: -22.5,26.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -257120.67
+      secondsUntilStateChange: -257235.8
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17024,7 +17024,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -355949.3
+      secondsUntilStateChange: -356064.44
       state: Opening
   - uid: 6934
     components:
@@ -17036,7 +17036,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -355951.94
+      secondsUntilStateChange: -356067.06
       state: Opening
   - uid: 6935
     components:
@@ -17048,7 +17048,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -355950.78
+      secondsUntilStateChange: -356065.9
       state: Opening
   - uid: 6936
     components:
@@ -17059,7 +17059,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -355950
+      secondsUntilStateChange: -356065.12
       state: Opening
 - proto: AirlockTheatreLocked
   entities:
@@ -83876,6 +83876,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -52.5,-8.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Quartermaster
 - proto: ComputerCargoOrders
   entities:
   - uid: 2382
@@ -84161,11 +84164,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.5,15.5
       parent: 21002
-  - uid: 29784
-    components:
-    - type: Transform
-      pos: -56.5,-16.5
-      parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
   - uid: 9892
@@ -84196,6 +84194,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -57.5,-20.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
+- proto: ComputerSalvageJobBoard
+  entities:
+  - uid: 9211
+    components:
+    - type: Transform
+      pos: -56.5,-16.5
+      parent: 2
 - proto: ComputerShuttleCargo
   entities:
   - uid: 11278
@@ -84209,6 +84217,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -57.5,-3.5
+      parent: 2
+- proto: ComputerShuttleSalvage
+  entities:
+  - uid: 23926
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -57.5,-21.5
       parent: 2
 - proto: ComputerSolarControl
   entities:
@@ -101033,7 +101049,7 @@ entities:
       pos: -13.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -347273.3
+      secondsUntilStateChange: -347388.44
     - type: DeviceNetwork
       deviceLists:
       - 18275
@@ -105310,6 +105326,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -41.5,13.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 28553
+    components:
+    - type: Transform
+      pos: -41.5,17.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -147463,6 +147486,9 @@ entities:
     - type: Transform
       pos: -54.5,-18.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
 - proto: HolopadCommandBridge
   entities:
   - uid: 12888
@@ -148035,7 +148061,7 @@ entities:
       pos: 36.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -384105.1
+      secondsUntilStateChange: -384220.22
       state: Opening
   - uid: 5211
     components:
@@ -152182,11 +152208,6 @@ entities:
     components:
     - type: Transform
       pos: -42.5,13.5
-      parent: 2
-  - uid: 9211
-    components:
-    - type: Transform
-      pos: -57.5,-21.5
       parent: 2
   - uid: 9780
     components:
@@ -205202,7 +205223,7 @@ entities:
       pos: 24.5,2.5
       parent: 21002
     - type: Door
-      secondsUntilStateChange: -729309.7
+      secondsUntilStateChange: -729424.8
       state: Opening
   - uid: 28863
     components:
