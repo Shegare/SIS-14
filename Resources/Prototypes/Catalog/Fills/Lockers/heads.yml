@@ -175,7 +175,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasAtmos
-#    - id: ClothingOuterHardsuitEngineeringWhite  #SIS backpack CE  
+    - id: ClothingBackpackChiefEngineer #SIS
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
     - id: OxygenTankFilled

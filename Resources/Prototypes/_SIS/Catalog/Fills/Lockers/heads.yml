@@ -1,9 +1,0 @@
-- type: entityTable
-  id: FillChiefEngineerHardsuit
-  table: !type:AllSelector
-    children:
-    - id: ClothingBackpackChiefEngineer #SIS backpack
-    - id: ClothingShoesBootsMagAdv
-    - id: JetpackVoidFilled
-    - id: OxygenTankFilled
-    - id: ClothingMaskGasAtmos

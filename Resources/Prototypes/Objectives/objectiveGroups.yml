@@ -19,7 +19,7 @@
     CorgiMeatStealObjective: 1
     ClipboardStealObjective: 1
     KnuckleDustersStealObjective: 1
-    CEBackpackStealObjective: 1 # SiS new objective
+    CEBackpackStealObjective: 1 # SiS
     CaptainGunStealObjective: 0.5
     CaptainJetpackStealObjective: 0.5
     HandTeleporterStealObjective: 0.5

@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingBackpackDuffel, BaseGrandTheftContraband]
   id: ClothingBackpackChiefEngineer
-  name: ChiefEngineer backpack
-  description: It's a tough backpack for the daily grind of station life.
+  name: продвинутый рюкзак старшего инженера
+  description: Рюкзак специально разработанный для свободной работы старшего инженера на объектах
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/erteng.rsi
