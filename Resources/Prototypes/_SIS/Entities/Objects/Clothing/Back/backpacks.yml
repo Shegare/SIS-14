@@ -2,10 +2,15 @@
   parent: [ClothingBackpackDuffel, BaseGrandTheftContraband]
   id: ClothingBackpackChiefEngineer
   name: продвинутый рюкзак старшего инженера
-  description: Рюкзак специально разработанный для свободной работы старшего инженера на объектах
+  description: Модифицированный рюкзак старшего инженера со встроенной системой быстрого развёртывания скафандра.
   components:
   - type: Sprite
     sprite: Clothing/Back/Backpacks/erteng.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot { }
+      storagebase: !type:Container
+        ents: [ ]
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterHardsuitEngineeringWhite
     slot: outerClothing
