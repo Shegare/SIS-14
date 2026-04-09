@@ -1,7 +1,7 @@
 - type: entity
   id: ToolboxClown
   name: набор хонконеопределённости
-  description: HONK!
+  description: ХОНК!
   parent: [ BaseItem ]
   components:
   - type: Sprite
