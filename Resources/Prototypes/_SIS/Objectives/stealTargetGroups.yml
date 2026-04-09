@@ -7,7 +7,7 @@
 
 - type: stealTargetGroup
   id: ClothingBackpackChiefEngineer
-  name: продвинутый рюкзак старшего инженера
+  name: steal-target-groups-clothing-backpack-chief-engineer
   sprite:
     sprite: Clothing/Back/Backpacks/erteng.rsi
     state: icon
