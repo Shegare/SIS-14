@@ -175,10 +175,10 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasAtmos
-    - id: ClothingBackpackChiefEngineer #SIS
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
     - id: OxygenTankFilled
+    - id: ClothingBackpackChiefEngineer # SIS
 
 # No hardsuit locker
 - type: entity
