@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/10/2026 05:17:46
-  entityCount: 11480
+  time: 04/10/2026 05:50:25
+  entityCount: 11481
 maps:
 - 658
 grids:
@@ -795,7 +795,7 @@ entities:
             2: 57344
           8,5:
             0: 272
-            4: 17472
+            3: 17472
           8,6:
             2: 65345
           8,7:
@@ -836,10 +836,10 @@ entities:
             0: 53759
           11,2:
             0: 4319
-            3: 49152
+            4: 49152
           11,3:
             0: 61457
-            3: 204
+            4: 204
           11,-1:
             0: 30583
           11,4:
@@ -851,9 +851,9 @@ entities:
             0: 28791
           12,2:
             0: 119
-            3: 28672
+            4: 28672
           12,3:
-            3: 119
+            4: 119
             0: 61440
           12,-1:
             0: 29311
@@ -1272,16 +1272,16 @@ entities:
             2: 65534
           9,5:
             5: 4368
-            3: 17472
+            4: 17472
           9,6:
             2: 7936
           10,5:
-            3: 4368
+            4: 4368
             6: 17472
           10,6:
             2: 3840
           11,5:
-            3: 21840
+            4: 21840
           11,6:
             2: 3856
           12,5:
@@ -1407,11 +1407,11 @@ entities:
           moles: {}
         - volume: 2500
           temperature: 293.15
-          moles: {}
-        - volume: 2500
-          temperature: 293.15
           moles:
             Nitrogen: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles: {}
         - volume: 2500
           temperature: 293.15
           moles:
@@ -3342,10 +3342,10 @@ entities:
       parent: 31
     - type: DeviceList
       devices:
-      - 1877
-      - 8793
-      - 8790
       - 1416
+      - 8790
+      - 8793
+      - 1877
     - type: Fixtures
       fixtures: {}
   - uid: 7104
@@ -3428,10 +3428,11 @@ entities:
     - type: DeviceList
       devices:
       - 8788
-      - 5629
-      - 1877
-      - 8793
       - 8764
+      - 5629
+      - 8793
+      - 1877
+      - 7749
     - type: Fixtures
       fixtures: {}
   - uid: 9042
@@ -32594,11 +32595,12 @@ entities:
       parent: 31
     - type: DeviceList
       devices:
+      - 7749
+      - 8788
+      - 8764
+      - 5629
       - 8793
       - 1877
-      - 5629
-      - 8764
-      - 8788
     - type: Fixtures
       fixtures: {}
   - uid: 888
@@ -32625,10 +32627,10 @@ entities:
       parent: 31
     - type: DeviceList
       devices:
-      - 1877
-      - 8793
-      - 8790
       - 1416
+      - 8790
+      - 8793
+      - 1877
     - type: Fixtures
       fixtures: {}
   - uid: 9041
@@ -32892,14 +32894,8 @@ entities:
   - uid: 328
     components:
     - type: Transform
-      pos: -22.5,14.5
+      pos: -22.5,13.5
       parent: 31
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-    - type: AccessReader
-      accessListsOriginal:
-      - - Engineering
   - uid: 337
     components:
     - type: Transform
@@ -33076,11 +33072,8 @@ entities:
   - uid: 7251
     components:
     - type: Transform
-      pos: -22.5,13.5
+      pos: -22.5,14.5
       parent: 31
-    - type: DeviceNetwork
-      configurators:
-      - invalid
   - uid: 11101
     components:
     - type: Transform
@@ -44858,6 +44851,10 @@ entities:
     - type: Transform
       pos: -11.5,11.5
       parent: 31
+    - type: DeviceNetwork
+      deviceLists:
+      - 336
+      - 8866
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 8416
@@ -48385,6 +48382,22 @@ entities:
     - type: Transform
       pos: 54.5,-9.5
       parent: 31
+- proto: Holopad
+  entities:
+  - uid: 10220
+    components:
+    - type: MetaData
+      name: голопад (СБ — Общая Тюрьма)
+    - type: Transform
+      pos: -17.5,9.5
+      parent: 31
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+    - type: Label
+      currentLabel: СБ — Общая Тюрьма
+    - type: NameModifier
+      baseName: голопад
 - proto: HolopadCargoBayLongRange
   entities:
   - uid: 934
