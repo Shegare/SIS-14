@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/10/2026 05:50:25
-  entityCount: 11481
+  time: 04/14/2026 13:02:14
+  entityCount: 11482
 maps:
 - 658
 grids:
@@ -816,7 +816,8 @@ entities:
             0: 255
             2: 61440
           9,-1:
-            0: 60942
+            0: 60430
+            4: 512
           10,0:
             0: 65481
           10,1:
@@ -836,10 +837,10 @@ entities:
             0: 53759
           11,2:
             0: 4319
-            4: 49152
+            5: 49152
           11,3:
             0: 61457
-            4: 204
+            5: 204
           11,-1:
             0: 30583
           11,4:
@@ -851,9 +852,9 @@ entities:
             0: 28791
           12,2:
             0: 119
-            4: 28672
+            5: 28672
           12,3:
-            4: 119
+            5: 119
             0: 61440
           12,-1:
             0: 29311
@@ -1271,17 +1272,17 @@ entities:
           8,8:
             2: 65534
           9,5:
-            5: 4368
-            4: 17472
+            6: 4368
+            5: 17472
           9,6:
             2: 7936
           10,5:
-            4: 4368
-            6: 17472
+            5: 4368
+            7: 17472
           10,6:
             2: 3840
           11,5:
-            4: 21840
+            5: 21840
           11,6:
             2: 3856
           12,5:
@@ -1409,6 +1410,11 @@ entities:
           temperature: 293.15
           moles:
             Nitrogen: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 21.6852
+            Nitrogen: 81.57766
         - volume: 2500
           temperature: 293.15
           moles: {}
@@ -3292,11 +3298,6 @@ entities:
     components:
     - type: Transform
       pos: 38.38827,-0.43327445
-      parent: 31
-  - uid: 6684
-    components:
-    - type: Transform
-      pos: -37.568184,29.675117
       parent: 31
 - proto: AirAlarm
   entities:
@@ -6733,6 +6734,11 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-30.5
+      parent: 31
+  - uid: 9633
+    components:
+    - type: Transform
+      pos: 12.5,7.5
       parent: 31
 - proto: BorgModuleFireExtinguisher
   entities:
@@ -14496,6 +14502,11 @@ entities:
     components:
     - type: Transform
       pos: -30.5,-15.5
+      parent: 31
+  - uid: 10547
+    components:
+    - type: Transform
+      pos: 54.5,-11.5
       parent: 31
   - uid: 10556
     components:
@@ -30916,12 +30927,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,4.5
-      parent: 31
-  - uid: 9633
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 17.5,10.5
       parent: 31
   - uid: 9638
     components:
@@ -48288,6 +48293,13 @@ entities:
     - type: Transform
       pos: -2.5260825,30.718403
       parent: 31
+- proto: HarmonicaInstrument
+  entities:
+  - uid: 6916
+    components:
+    - type: Transform
+      pos: -16.672352,10.561478
+      parent: 31
 - proto: HeatExchanger
   entities:
   - uid: 3508
@@ -49586,25 +49598,17 @@ entities:
     - type: Transform
       pos: 37.5,-1.5
       parent: 31
+    - type: AccessReader
+      accessListsOriginal:
+      - - ChiefEngineer
     - type: EntityStorage
       air:
         volume: 200
         immutable: False
         temperature: 293.14673
         moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 6916
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+          Oxygen: 1.8856695
+          Nitrogen: 7.0937095
 - proto: LockerChiefMedicalOfficerFilledHardsuit
   entities:
   - uid: 4134
@@ -49948,6 +49952,13 @@ entities:
     components:
     - type: Transform
       pos: -3.5,-43.5
+      parent: 31
+- proto: MachineMaterialSilo
+  entities:
+  - uid: 6684
+    components:
+    - type: Transform
+      pos: -11.5,-20.5
       parent: 31
 - proto: MagazinePistol
   entities:
@@ -51769,7 +51780,7 @@ entities:
   - uid: 2316
     components:
     - type: Transform
-      pos: -11.5,-20.5
+      pos: -9.5,-22.5
       parent: 31
   - uid: 8833
     components:
@@ -52389,14 +52400,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 12.5,-25.5
-      parent: 31
-    - type: ApcPowerReceiver
-      powerLoad: 0
-  - uid: 1359
-    components:
-    - type: Transform
-      rot: 3.141592697301183 rad
-      pos: 31.5,2.5
       parent: 31
     - type: ApcPowerReceiver
       powerLoad: 0
@@ -54176,6 +54179,11 @@ entities:
     components:
     - type: Transform
       pos: -30.5,1.5
+      parent: 31
+  - uid: 1359
+    components:
+    - type: Transform
+      pos: -37.5,29.5
       parent: 31
   - uid: 5710
     components:
@@ -70628,16 +70636,6 @@ entities:
     - type: Transform
       pos: -14.594447,16.787762
       parent: 31
-- proto: WeaponLauncherRocket
-  entities:
-  - uid: 6916
-    components:
-    - type: Transform
-      parent: 558
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-      storage: 558
 - proto: WeaponPistolMk58
   entities:
   - uid: 4096
