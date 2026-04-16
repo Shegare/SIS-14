@@ -540,3 +540,16 @@
       amount: 1
   products:
     Lye: 2
+  
+- type: reaction
+  id: Phentanylum
+  impact: Medium
+  reactants:
+    SulfuricAcid:
+      amount: 1
+    Sugar:
+      amount: 2
+    Ephedrine: 
+      amount: 2
+  products:
+     Phentanylum: 1
