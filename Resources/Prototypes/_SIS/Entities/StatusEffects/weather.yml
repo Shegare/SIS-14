@@ -1,0 +1,27 @@
+- type: entity
+  parent: WeatherBase
+  id: PoppyPlayTime
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: poppy
+    sound:
+      path: /Audio/Effects/Weather/poppy.ogg
+      params:
+        loop: true
+        volume: -9
+
+- type: entity
+  parent: WeatherBase
+  id: light
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: light
+    sound:
+      path: /Audio/Effects/Weather/light.ogg
+      params:
+        loop: true
+        volume: -1
