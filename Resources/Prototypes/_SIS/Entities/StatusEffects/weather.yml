@@ -4,10 +4,10 @@
   components:
   - type: WeatherStatusEffect
     sprite:
-      sprite: /Textures/Effects/weather.rsi
-      state: poppy
+      sprite: /Textures/_SIS/Effects/weater.rsi
+      state: empty
     sound:
-      path: /Audio/Effects/Weather/poppy.ogg
+      path: /Audio/_SIS/Effects/Weather/poppy.ogg
       params:
         loop: true
         volume: -9
@@ -18,10 +18,10 @@
   components:
   - type: WeatherStatusEffect
     sprite:
-      sprite: /Textures/Effects/weather.rsi
-      state: light
+      sprite: /Textures/_SIS/Effects/weater.rsi
+      state: empty
     sound:
-      path: /Audio/Effects/Weather/light.ogg
+      path: /Audio/_SIS/Effects/Weather/light.ogg
       params:
         loop: true
         volume: -1

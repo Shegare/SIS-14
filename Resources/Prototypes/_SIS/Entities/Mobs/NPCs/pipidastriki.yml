@@ -1,11 +1,11 @@
 - type: entity
   name: сущность
   parent: MobXenoRunner
-  id: MobXenoRounny
+  id: Monster1
   components:
   - type: Sprite
+    sprite: _SIS/Mobs/Aliens/Pipidastr/run.rsi
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/run.rsi
     offset: 0,0.6
   - type: MeleeWeapon
     damage:
@@ -26,11 +26,11 @@
 - type: entity
   name: сущность
   parent: MobXeno
-  id: MobXenoQueenn
+  id: Monster2
   components:
   - type: Sprite
+    sprite: _SIS/Mobs/Aliens/Pipidastr/queenn.rsi
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/queen.rsi
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
